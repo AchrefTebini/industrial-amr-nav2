@@ -3,6 +3,10 @@
      industrial_amr_navigation/config) come from these values; keep them in sync. -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+  <!-- The x offsets of the wheels, casters, lidar and camera below are
+       measured from the chassis centre. base_link sits on the drive-axle
+       midpoint, the point the robot turns about, so the chassis centre is
+       at x = chassis_x in base_link. -->
   <xacro:property name="chassis_length"  value="0.60" />
   <xacro:property name="chassis_width"   value="0.40" />
   <xacro:property name="chassis_height"  value="0.15" />
@@ -14,12 +18,15 @@
   <xacro:property name="wheel_x_offset"  value="-0.20"/>   <!-- rear-wheel drive -->
   <xacro:property name="wheel_y_offset"  value="${chassis_width/2 + wheel_width/2 + 0.005}" />
 
+  <!-- Chassis centre in base_link (base_link is on the drive axle). -->
+  <xacro:property name="chassis_x"       value="${-wheel_x_offset}" />
+
   <xacro:property name="caster_radius"   value="0.035"/>
   <xacro:property name="caster_mass"     value="0.1"  />
   <xacro:property name="caster_x_offset" value="0.22" />
   <xacro:property name="caster_y_offset" value="0.12" />
 
-  <!-- Sensor z values are in base_link, which is the chassis bottom. -->
+  <!-- Sensor z values are in base_link, which is at the chassis bottom. -->
   <xacro:property name="lidar_radius" value="0.04" />
   <xacro:property name="lidar_length" value="0.04" />
   <xacro:property name="lidar_x"  value="0.20" />

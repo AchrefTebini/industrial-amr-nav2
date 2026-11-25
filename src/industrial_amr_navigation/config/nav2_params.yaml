@@ -366,8 +366,10 @@ global_costmap:
       update_frequency: 1.0
       publish_frequency: 1.0
       resolution: 0.05            # same as the SLAM map
-      # URDF: chassis 0.60 x 0.40 m, wheels reach +/-0.245 m in Y.
-      footprint: "[ [-0.30, -0.25], [-0.30, 0.25], [0.30, 0.25], [0.30, -0.25] ]"
+      # URDF: chassis 0.60 x 0.40 m, wheels reach +/-0.245 m in Y. base_footprint
+      # is on the drive axle, 0.20 m behind the chassis centre, so x runs
+      # from -0.10 to 0.50.
+      footprint: "[ [-0.10, -0.25], [-0.10, 0.25], [0.50, 0.25], [0.50, -0.25] ]"
       track_unknown_space: true
       transform_tolerance: 0.5
       always_send_full_costmap: true
@@ -392,7 +394,10 @@ global_costmap:
           obstacle_min_range: 0.12
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        # Circumscribed radius is about 0.39 m, plus a safety margin.
+        # The footprint is about the drive axle, so its circumscribed radius is
+        # about 0.56 m. 0.55 m is kept from the centred-frame configuration
+        # (circumscribed 0.39 m) for comparability; MPPI warns that it is below
+        # the circumscribed radius and checks the full footprint everywhere.
         inflation_radius: 0.55
         # Higher values make the cost fall off faster, so the high-cost band gets narrower.
         cost_scaling_factor: 3.0
@@ -416,7 +421,7 @@ local_costmap:
       width: 3
       height: 3
       resolution: 0.05
-      footprint: "[ [-0.30, -0.25], [-0.30, 0.25], [0.30, 0.25], [0.30, -0.25] ]"
+      footprint: "[ [-0.10, -0.25], [-0.10, 0.25], [0.50, 0.25], [0.50, -0.25] ]"
       transform_tolerance: 0.5
       always_send_full_costmap: true
 

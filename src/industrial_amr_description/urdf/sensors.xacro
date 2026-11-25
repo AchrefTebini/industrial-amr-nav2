@@ -24,7 +24,7 @@
   <joint name="lidar_joint" type="fixed">
     <parent link="base_link" />
     <child  link="lidar_link" />
-    <origin xyz="${lidar_x} 0 ${lidar_z}" rpy="0 0 0" />
+    <origin xyz="${chassis_x + lidar_x} 0 ${lidar_z}" rpy="0 0 0" />
   </joint>
 
   <xacro:if value="${use_sim}">
@@ -82,7 +82,7 @@
   <joint name="camera_joint" type="fixed">
     <parent link="base_link" />
     <child  link="camera_link" />
-    <origin xyz="${camera_x} 0 ${camera_z}" rpy="0 0 0" />
+    <origin xyz="${chassis_x + camera_x} 0 ${camera_z}" rpy="0 0 0" />
   </joint>
 
   <!-- Images use the ROS optical convention: Z forward, X right, Y down. -->

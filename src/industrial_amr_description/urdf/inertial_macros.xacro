@@ -2,8 +2,10 @@
 <!-- Reusable inertia tensors for primitive shapes. -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <xacro:macro name="box_inertia" params="m x y z">
+  <!-- xyz: centre of mass in the link frame. -->
+  <xacro:macro name="box_inertia" params="m x y z xyz:='0 0 0'">
     <inertial>
+      <origin xyz="${xyz}" rpy="0 0 0" />
       <mass value="${m}" />
       <inertia
         ixx="${(1.0/12.0)*m*(y*y + z*z)}" ixy="0" ixz="0"
