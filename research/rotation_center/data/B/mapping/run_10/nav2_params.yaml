@@ -1,0 +1,467 @@
+# Nav2 settings for the industrial AMR, shared by both launch modes. In
+# mapping mode slam_toolbox provides the map and map->odom and AMCL is not
+# started; in navigation mode map_server and AMCL provide them.
+#
+# Velocity commands go controller -> cmd_vel_nav -> velocity_smoother ->
+# cmd_vel_smoothed -> collision_monitor -> cmd_vel -> Gazebo DiffDrive.
+#
+# use_sim_time is not set here because the launch files inject it. Topics are
+# relative so the stack can run in a namespace. Values marked "URDF:" come
+# from industrial_amr_description/urdf/properties.xacro; keep them in sync.
+#
+# Velocity limits are vx in [-0.35, 0.5] m/s and |wz| <= 1.5 rad/s. MPPI and
+# the velocity smoother must agree on them.
+
+# Navigation mode only.
+amcl:
+  ros__parameters:
+    global_frame_id: "map"
+    odom_frame_id: "odom"
+    base_frame_id: "base_footprint"
+    scan_topic: "scan"
+    transform_tolerance: 0.5
+
+    # KLD sampling picks the particle count between these bounds. The high
+    # maximum only costs CPU while the filter is uncertain, e.g. right after
+    # reinitialize_global_localization.
+    min_particles: 500
+    max_particles: 5000
+    # KLD error bound and confidence.
+    pf_err: 0.05
+    pf_z: 0.99
+    # Inject random particles when the scan likelihood drops, so the filter
+    # can recover from a wrong pose. 0.0 disables it.
+    recovery_alpha_slow: 0.001
+    recovery_alpha_fast: 0.1
+    resample_interval: 1
+    # The filter only updates after this much motion (m, rad).
+    update_min_d: 0.25
+    update_min_a: 0.2
+
+    # Odometry noise:
+    #   alpha1: rotation noise from rotation
+    #   alpha2: rotation noise from translation
+    #   alpha3: translation noise from translation
+    #   alpha4: translation noise from rotation
+    robot_model_type: "nav2_amcl::DifferentialMotionModel"
+    alpha1: 0.2
+    alpha2: 0.2
+    alpha3: 0.2
+    alpha4: 0.2
+
+    # likelihood_field only uses z_hit, z_rand and sigma_hit.
+    laser_model_type: "likelihood_field"
+    max_beams: 60
+    sigma_hit: 0.2
+    z_hit: 0.95
+    z_rand: 0.05
+    # URDF: lidar_range_min / lidar_range_max
+    laser_min_range: 0.12
+    laser_max_range: 12.0
+
+    # Matches the default spawn pose in industrial_amr_gazebo/sim.launch.py.
+    # When spawning elsewhere, use RViz "2D Pose Estimate" or run
+    # `ros2 run industrial_amr_exploration global_localizer`.
+    set_initial_pose: true
+    initial_pose:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 0.0
+
+
+# Uses the default NavigateToPose and NavigateThroughPoses trees.
+bt_navigator:
+  ros__parameters:
+    global_frame: map
+    robot_base_frame: base_footprint
+    odom_topic: odom
+    bt_loop_duration: 10
+    default_server_timeout: 20
+    wait_for_service_timeout: 1000
+    action_server_result_timeout: 900.0
+    navigators: ["navigate_to_pose", "navigate_through_poses"]
+    navigate_to_pose:
+      plugin: "nav2_bt_navigator::NavigateToPoseNavigator"
+    navigate_through_poses:
+      plugin: "nav2_bt_navigator::NavigateThroughPosesNavigator"
+    # Jazzy loads the built-in BT plugins itself, so there is no plugin list.
+    error_code_names:
+      - compute_path_error_code
+      - follow_path_error_code
+
+
+controller_server:
+  ros__parameters:
+    controller_frequency: 20.0
+
+    goal_checker_plugins: ["general_goal_checker"]
+    general_goal_checker:
+      plugin: "nav2_controller::SimpleGoalChecker"
+      # A diff drive can't fix a small lateral offset directly (it has to
+      # turn, drive and turn back), and MPPI tends to stall doing that. At
+      # 0.10 m the robot crept for 30-40 s before each goal and tripped the
+      # progress checker. Precise positioning is the docking server's job.
+      xy_goal_tolerance: 0.20      # m
+      yaw_goal_tolerance: 0.15     # rad (~9°)
+      # Once xy is within tolerance, keep it latched while the robot finishes
+      # rotating, even if it drifts slightly outside.
+      stateful: true
+
+    # Abort if the robot moves less than 0.5 m within 10 s.
+    progress_checker_plugins: ["progress_checker"]
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.5
+      movement_time_allowance: 10.0
+
+    controller_plugins: ["FollowPath"]
+    FollowPath:
+      plugin: "nav2_mppi_controller::MPPIController"
+      motion_model: "DiffDrive"
+      # 56 steps * 0.05 s = 2.8 s horizon, about 1.4 m at full speed.
+      time_steps: 56
+      model_dt: 0.05
+      batch_size: 2000
+      iteration_count: 1
+      temperature: 0.3
+      gamma: 0.015
+      regenerate_noises: true
+      # Keep in sync with velocity_smoother.
+      vx_max: 0.5
+      vx_min: -0.35
+      wz_max: 1.5
+      ax_max: 3.0
+      ax_min: -3.0
+      az_max: 3.5
+      vx_std: 0.2
+      wz_std: 0.4
+      prune_distance: 1.7
+      transform_tolerance: 0.1
+      # Publishes optimal_trajectory (nav_msgs/Path, shown as "Local Plan" in
+      # navigation.rviz), transformed_global_plan and the candidate
+      # trajectories (MarkerArray). MPPI has no local_plan topic. Measured
+      # overhead without subscribers: about 1% CPU.
+      visualize: true
+      TrajectoryVisualizer:
+        trajectory_step: 5
+        time_step: 3
+      critics: [
+        "ConstraintCritic", "CostCritic", "GoalCritic",
+        "GoalAngleCritic", "PathAlignCritic", "PathFollowCritic",
+        "PathAngleCritic", "PreferForwardCritic"]
+      ConstraintCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 4.0
+      GoalCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 5.0
+        threshold_to_consider: 1.4
+      GoalAngleCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 3.0
+        threshold_to_consider: 0.5
+      PreferForwardCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 5.0
+        threshold_to_consider: 0.5
+      CostCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 3.81
+        near_collision_cost: 253
+        critical_cost: 300.0
+        # The robot is rectangular, so check the whole footprint.
+        consider_footprint: true
+        collision_cost: 1000000.0
+      PathAlignCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 14.0
+        max_heuristic_delay: 0.1
+      PathFollowCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 5.0
+      PathAngleCritic:
+        enabled: true
+        cost_power: 1
+        cost_weight: 2.0
+
+
+planner_server:
+  ros__parameters:
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_navfn_planner::NavfnPlanner"
+      use_astar: true
+      # Exploration needs this: frontier goals sit next to unknown space.
+      allow_unknown: true
+      # If the goal cell is blocked, accept a plan that ends up to 0.5 m away.
+      tolerance: 0.5
+
+
+smoother_server:
+  ros__parameters:
+    smoother_plugins: ["simple_smoother"]
+    simple_smoother:
+      plugin: "nav2_smoother::SimpleSmoother"
+      tolerance: 1.0e-10
+      max_its: 1000
+      do_refinement: true
+
+
+# Unused (there is no route graph yet), but Jazzy's navigation_launch always
+# starts route_server. The values come from the nav2_bringup reference config.
+# Don't shorten a list to `[]`: an empty YAML list has no type and crashes the
+# node at startup.
+route_server:
+  ros__parameters:
+    boundary_radius_to_achieve_node: 1.0
+    radius_to_achieve_node: 2.0
+    smooth_corners: true
+    edge_cost_functions: ["DistanceScorer", "CostmapScorer"]
+    DistanceScorer:
+      plugin: "nav2_route::DistanceScorer"
+    CostmapScorer:
+      plugin: "nav2_route::CostmapScorer"
+    operations: ["AdjustSpeedLimit", "ReroutingService", "CollisionMonitor"]
+    AdjustSpeedLimit:
+      plugin: "nav2_route::AdjustSpeedLimit"
+    ReroutingService:
+      plugin: "nav2_route::ReroutingService"
+    CollisionMonitor:
+      plugin: "nav2_route::CollisionMonitor"
+      max_collision_dist: 3.0
+
+
+behavior_server:
+  ros__parameters:
+    local_costmap_topic: local_costmap/costmap_raw
+    global_costmap_topic: global_costmap/costmap_raw
+    local_footprint_topic: local_costmap/published_footprint
+    global_footprint_topic: global_costmap/published_footprint
+    cycle_frequency: 10.0
+    behavior_plugins: ["spin", "backup", "drive_on_heading", "wait"]
+    spin:
+      plugin: "nav2_behaviors::Spin"
+    backup:
+      plugin: "nav2_behaviors::BackUp"
+    drive_on_heading:
+      plugin: "nav2_behaviors::DriveOnHeading"
+    wait:
+      plugin: "nav2_behaviors::Wait"
+    local_frame: odom
+    global_frame: map
+    robot_base_frame: base_footprint
+    transform_tolerance: 0.5
+    simulate_ahead_time: 2.0
+    # Recoveries rotate slower than normal navigation on purpose.
+    max_rotational_vel: 1.0
+    min_rotational_vel: 0.4
+    rotational_acc_lim: 2.0
+
+
+velocity_smoother:
+  ros__parameters:
+    smoothing_frequency: 20.0
+    scale_velocities: false
+    feedback: "OPEN_LOOP"
+    # [vx, vy, wz]. Keep in sync with the MPPI limits.
+    max_velocity: [0.5, 0.0, 1.5]
+    min_velocity: [-0.35, 0.0, -1.5]
+    max_accel: [1.5, 0.0, 2.5]
+    max_decel: [-1.5, 0.0, -2.5]
+    odom_topic: "odom"
+    odom_duration: 0.1
+    deadband_velocity: [0.0, 0.0, 0.0]
+
+
+collision_monitor:
+  ros__parameters:
+    base_frame_id: "base_footprint"
+    odom_frame_id: "odom"
+    cmd_vel_in_topic: "cmd_vel_smoothed"
+    cmd_vel_out_topic: "cmd_vel"
+    state_topic: "collision_monitor_state"
+    transform_tolerance: 0.5
+    source_timeout: 1.0
+    base_shift_correction: true
+    stop_pub_timeout: 2.0
+    # Slow down so that no collision happens within the next 1.2 s.
+    polygons: ["FootprintApproach"]
+    FootprintApproach:
+      type: "polygon"
+      action_type: "approach"
+      footprint_topic: "local_costmap/published_footprint"
+      time_before_collision: 1.2
+      simulation_time_step: 0.1
+      min_points: 6
+      visualize: false
+      enabled: true
+    observation_sources: ["scan"]
+    scan:
+      type: "scan"
+      topic: "scan"
+      enabled: true
+
+
+waypoint_follower:
+  ros__parameters:
+    loop_rate: 20
+    stop_on_failure: false
+    waypoint_task_executor_plugin: "wait_at_waypoint"
+    wait_at_waypoint:
+      plugin: "nav2_waypoint_follower::WaitAtWaypoint"
+      enabled: true
+      waypoint_pause_duration: 200   # ms
+
+
+# Jazzy's navigation_launch always starts docking_server. The charger in the
+# world has no dock detector wired up yet.
+docking_server:
+  ros__parameters:
+    controller_frequency: 50.0
+    initial_perception_timeout: 5.0
+    wait_charge_timeout: 5.0
+    dock_approach_timeout: 30.0
+    undock_linear_tolerance: 0.05
+    undock_angular_tolerance: 0.1
+    max_retries: 3
+    base_frame: "base_footprint"
+    fixed_frame: "odom"
+    dock_backwards: false
+    dock_prestaging_tolerance: 0.5
+    dock_plugins: ['simple_charging_dock']
+    simple_charging_dock:
+      plugin: 'opennav_docking::SimpleChargingDock'
+      docking_threshold: 0.05
+      staging_x_offset: -0.7
+      use_external_detection_pose: true
+
+
+# Navigation mode only. The map file comes from the launch file's `map`
+# argument.
+map_server:
+  ros__parameters: {}
+
+
+# Keepout zones, both modes. The mask (maps/charger_keepout.yaml, passed by
+# nav2.launch.py) covers the charger's base plate, which is below the LIDAR
+# plane, plus a 0.3 m margin because filters are applied after inflation.
+# Started by nav2.launch.py with its own lifecycle manager.
+filter_mask_server:
+  ros__parameters:
+    frame_id: "map"
+    topic_name: "/keepout_filter_mask"
+
+costmap_filter_info_server:
+  ros__parameters:
+    type: 0                  # 0 = keepout
+    # Absolute, because the costmaps' KeepoutFilter resolves relative names
+    # under /global_costmap and /local_costmap.
+    filter_info_topic: "/costmap_filter_info"
+    mask_topic: "/keepout_filter_mask"
+    base: 0.0
+    multiplier: 1.0
+
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      global_frame: map
+      robot_base_frame: base_footprint
+      update_frequency: 1.0
+      publish_frequency: 1.0
+      resolution: 0.05            # same as the SLAM map
+      # URDF: chassis 0.60 x 0.40 m, wheels reach +/-0.245 m in Y. base_footprint
+      # is on the drive axle, 0.20 m behind the chassis centre, so x runs
+      # from -0.10 to 0.50.
+      footprint: "[ [-0.10, -0.25], [-0.10, 0.25], [0.50, 0.25], [0.50, -0.25] ]"
+      track_unknown_space: true
+      transform_tolerance: 0.5
+      always_send_full_costmap: true
+
+      # The obstacle layer adds obstacles that aren't in the static map, so
+      # global plans go around them.
+      plugins: ["static_layer", "obstacle_layer", "inflation_layer"]
+      static_layer:
+        plugin: "nav2_costmap_2d::StaticLayer"
+        map_subscribe_transient_local: true
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: scan
+        scan:
+          topic: scan
+          data_type: "LaserScan"
+          clearing: true
+          marking: true
+          raytrace_max_range: 4.0
+          raytrace_min_range: 0.12   # URDF: lidar_range_min
+          obstacle_max_range: 3.0
+          obstacle_min_range: 0.12
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        # The footprint is about the drive axle, so its circumscribed radius is
+        # about 0.56 m. 0.55 m is kept from the centred-frame configuration
+        # (circumscribed 0.39 m) for comparability; MPPI warns that it is below
+        # the circumscribed radius and checks the full footprint everywhere.
+        inflation_radius: 0.55
+        # Higher values make the cost fall off faster, so the high-cost band
+        # gets narrower.
+        cost_scaling_factor: 3.0
+      # Obstacles the LIDAR can't see (the charger's 0.10 m base plate) come
+      # from a keepout mask instead; see filter_mask_server below. Filters
+      # are applied after the inflation layer.
+      filters: ["keepout_filter"]
+      keepout_filter:
+        plugin: "nav2_costmap_2d::KeepoutFilter"
+        enabled: true
+        # Absolute: a relative name resolves under the costmap's namespace.
+        filter_info_topic: "/costmap_filter_info"
+
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      global_frame: odom
+      robot_base_frame: base_footprint
+      update_frequency: 5.0
+      publish_frequency: 2.0
+      rolling_window: true
+      width: 3
+      height: 3
+      resolution: 0.05
+      footprint: "[ [-0.10, -0.25], [-0.10, 0.25], [0.50, 0.25], [0.50, -0.25] ]"
+      transform_tolerance: 0.5
+      always_send_full_costmap: true
+
+      plugins: ["obstacle_layer", "inflation_layer"]
+      obstacle_layer:
+        plugin: "nav2_costmap_2d::ObstacleLayer"
+        observation_sources: scan
+        scan:
+          topic: scan
+          data_type: "LaserScan"
+          clearing: true
+          marking: true
+          raytrace_max_range: 4.0
+          raytrace_min_range: 0.12
+          obstacle_max_range: 3.0
+          obstacle_min_range: 0.12
+          inf_is_valid: false
+      inflation_layer:
+        plugin: "nav2_costmap_2d::InflationLayer"
+        inflation_radius: 0.55
+        cost_scaling_factor: 3.0
+      filters: ["keepout_filter"]
+      keepout_filter:
+        plugin: "nav2_costmap_2d::KeepoutFilter"
+        enabled: true
+        # Absolute: a relative name resolves under the costmap's namespace.
+        filter_info_topic: "/costmap_filter_info"
+

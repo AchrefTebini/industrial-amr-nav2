@@ -1,0 +1,94 @@
+wall_t,sim_t,node,level,msg
+1791640834.536,,rosbag2_recorder,20,Subscribed to topic '/tf'
+1791640834.539,,rosbag2_recorder,20,Subscribed to topic '/tf_static'
+1791640835.101,,waypoint_follower,20,"
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791640835.101,,waypoint_follower,20,Creating
+1791640835.269,,global_costmap.global_costmap,20,"
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791640835.269,,global_costmap.global_costmap,20,Creating Costmap
+1791640835.314,,lifecycle_manager_navigation,20,Creating
+1791640835.318,,docking_server,20,"
+	docking_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791640835.322,,docking_server,20,Creating docking_server
+1791640835.328,,filter_mask_server,20,"
+	filter_mask_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791640835.329,,filter_mask_server,20,Creating
+1791640835.337,,lifecycle_manager_navigation,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1791640835.353,,bt_navigator,20,"
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791640835.358,,bt_navigator,20,Creating
+1791640835.385,,slam_toolbox,20,Node using stack size 40000000
+1791640835.623,,rosbag2_recorder,20,Subscribed to topic '/odom'
+1791640835.635,,rosbag2_recorder,20,Subscribed to topic '/clock'
+1791640835.673,,lifecycle_manager_navigation,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791640835.674,,lifecycle_manager_navigation,20,[34m[1mConfiguring controller_server[0m[0m
+1791640835.834,,lifecycle_manager_costmap_filters,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791640835.835,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring filter_mask_server[0m[0m
+1791640835.835,,filter_mask_server,20,Configuring
+1791640835.844,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring costmap_filter_info_server[0m[0m
+1791640835.844,,costmap_filter_info_server,20,Configuring
+1791640835.845,,ros_gz_sim,20,Waiting messages on topic [robot_description].
+1791640835.852,,lifecycle_manager_costmap_filters,20,[34m[1mActivating filter_mask_server[0m[0m
+1791640835.853,,filter_mask_server,20,Activating
+1791640835.853,,filter_mask_server,20,Creating bond (filter_mask_server) to lifecycle manager.
+1791640835.911,,slam_toolbox,20,Configuring
+1791640835.920,,slam_toolbox,20,Using solver plugin solver_plugins::CeresSolver
+1791640835.920,,slam_toolbox,20,CeresSolver: Using SCHUR_JACOBI preconditioner.
+1791640835.946,,slam_toolbox,20,Activating
+1791640835.959,,lifecycle_manager_costmap_filters,20,Server filter_mask_server connected with bond.
+1791640835.959,,lifecycle_manager_costmap_filters,20,[34m[1mActivating costmap_filter_info_server[0m[0m
+1791640835.959,,costmap_filter_info_server,20,Activating
+1791640835.959,,costmap_filter_info_server,20,Creating bond (costmap_filter_info_server) to lifecycle manager.
+1791640836.064,,lifecycle_manager_costmap_filters,20,Server costmap_filter_info_server connected with bond.
+1791640836.064,,lifecycle_manager_costmap_filters,20,[34m[1mManaged nodes are active[0m[0m
+1791640836.065,,lifecycle_manager_costmap_filters,20,[34m[1mCreating bond timer...[0m[0m
+1791640837.511,0.001,rosbag2_recorder,20,Subscribed to topic '/map'
+1791640837.879,0.110,gzserver,20,InitializeCanonicalLinks
+1791640837.879,0.110,gzserver,20,Creating services on gzserver
+1791640837.884,0.110,gzserver,20,Created service /gzserver/delete_entity
+1791640837.886,0.110,gzserver,20,Created service /gzserver/get_entities
+1791640837.889,0.110,gzserver,20,Created service /gzserver/get_entity_info
+1791640837.890,0.110,gzserver,20,Created service /gzserver/get_entity_state
+1791640837.893,0.110,gzserver,20,Created service /gzserver/get_entities_states
+1791640837.895,0.110,gzserver,20,Created service /gzserver/get_simulation_state
+1791640837.898,0.110,gzserver,20,Created service /gzserver/get_simulator_features
+1791640837.903,0.110,gzserver,20,Created service /gzserver/reset_simulation
+1791640837.905,0.110,gzserver,20,Created service /gzserver/set_entity_state
+1791640837.907,0.110,gzserver,20,Created service /gzserver/set_simulation_state
+1791640837.909,0.110,gzserver,20,Created service /gzserver/spawn_entity
+1791640837.910,0.110,gzserver,20,Created service /gzserver/step_simulation
+1791640837.922,0.110,gzserver,20,Created action /gzserver/simulate_steps
+1791640838.762,1.003,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640844.750,6.925,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640849.762,11.944,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640854.792,16.941,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640859.807,21.956,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640864.824,26.968,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640869.836,31.990,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640874.856,36.901,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640879.864,41.924,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640884.883,46.934,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640889.899,51.949,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640894.919,56.960,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640899.930,61.975,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640904.948,66.986,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640909.961,72.000,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640914.978,76.916,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640919.991,81.932,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640925.012,86.939,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640930.023,91.955,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640935.044,96.963,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640940.051,101.985,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640945.073,106.995,frontier_explorer,20,Waiting for navigate_to_pose action server...
+1791640950.083,111.916,frontier_explorer,20,Waiting for navigate_to_pose action server...

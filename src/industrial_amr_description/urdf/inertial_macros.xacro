@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- Reusable inertia tensors for primitive shapes. -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="box_inertia" params="m x y z">
+    <inertial>
+      <mass value="${m}" />
+      <inertia
+        ixx="${(1.0/12.0)*m*(y*y + z*z)}" ixy="0" ixz="0"
+        iyy="${(1.0/12.0)*m*(x*x + z*z)}" iyz="0"
+        izz="${(1.0/12.0)*m*(x*x + y*y)}" />
+    </inertial>
+  </xacro:macro>
+
+  <!-- The cylinder's axis is Z. Pass the same rpy as the visual/collision
+       origin when the shape is rotated, so the inertia turns with it. -->
+  <xacro:macro name="cylinder_inertia" params="m r h rpy:='0 0 0'">
+    <inertial>
+      <origin xyz="0 0 0" rpy="${rpy}" />
+      <mass value="${m}" />
+      <inertia
+        ixx="${(1.0/12.0)*m*(3*r*r + h*h)}" ixy="0" ixz="0"
+        iyy="${(1.0/12.0)*m*(3*r*r + h*h)}" iyz="0"
+        izz="${(1.0/2.0)*m*r*r}" />
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="sphere_inertia" params="m r">
+    <inertial>
+      <mass value="${m}" />
+      <inertia
+        ixx="${(2.0/5.0)*m*r*r}" ixy="0" ixz="0"
+        iyy="${(2.0/5.0)*m*r*r}" iyz="0"
+        izz="${(2.0/5.0)*m*r*r}" />
+    </inertial>
+  </xacro:macro>
+
+
+</robot>

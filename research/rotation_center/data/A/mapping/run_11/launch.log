@@ -1,0 +1,759 @@
+[INFO] [launch]: All log files can be found below /home/achref/.ros/log/2026-11-16-22-31-17-303800-Achref-Laptop-72093
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gzserver-1]: process started with pid [72135]
+[INFO] [robot_state_publisher-2]: process started with pid [72136]
+[INFO] [create-3]: process started with pid [72137]
+[INFO] [parameter_bridge-4]: process started with pid [72138]
+[INFO] [image_bridge-5]: process started with pid [72139]
+[INFO] [async_slam_toolbox_node-6]: process started with pid [72144]
+[INFO] [controller_server-7]: process started with pid [72145]
+[INFO] [smoother_server-8]: process started with pid [72146]
+[INFO] [planner_server-9]: process started with pid [72147]
+[INFO] [route_server-10]: process started with pid [72148]
+[INFO] [behavior_server-11]: process started with pid [72149]
+[INFO] [bt_navigator-12]: process started with pid [72150]
+[INFO] [waypoint_follower-13]: process started with pid [72151]
+[INFO] [velocity_smoother-14]: process started with pid [72152]
+[INFO] [collision_monitor-15]: process started with pid [72155]
+[INFO] [opennav_docking-16]: process started with pid [72156]
+[INFO] [lifecycle_manager-17]: process started with pid [72161]
+[INFO] [map_server-18]: process started with pid [72162]
+[INFO] [costmap_filter_info_server-19]: process started with pid [72164]
+[INFO] [lifecycle_manager-20]: process started with pid [72165]
+[INFO] [frontier_explorer-21]: process started with pid [72172]
+[robot_state_publisher-2] [INFO] [1794864678.096484768] [robot_state_publisher]: Robot initialized
+[smoother_server-8] [INFO] [1794864678.116453266] [smoother_server]: 
+[smoother_server-8] 	smoother_server lifecycle node launched. 
+[smoother_server-8] 	Waiting on external lifecycle transitions to activate
+[smoother_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-8] [INFO] [1794864678.119259404] [smoother_server]: Creating smoother server
+[route_server-10] [INFO] [1794864678.128382429] [route_server]: 
+[route_server-10] 	route_server lifecycle node launched. 
+[route_server-10] 	Waiting on external lifecycle transitions to activate
+[route_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[create-3] [INFO] [1794864678.159218712] [ros_gz_sim]: Requesting list of world names.
+[costmap_filter_info_server-19] [INFO] [1794864678.163776392] [costmap_filter_info_server]: This is costmap filter info publisher
+[lifecycle_manager-20] [INFO] [1794864678.165049701] [lifecycle_manager_costmap_filters]: Creating
+[lifecycle_manager-20] [INFO] [1794864678.170763398] [lifecycle_manager_costmap_filters]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[bt_navigator-12] [INFO] [1794864678.170822439] [bt_navigator]: 
+[bt_navigator-12] 	bt_navigator lifecycle node launched. 
+[bt_navigator-12] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[async_slam_toolbox_node-6] [INFO] [1794864678.172219091] [slam_toolbox]: Node using stack size 40000000
+[collision_monitor-15] [INFO] [1794864678.176379219] [collision_monitor]: 
+[collision_monitor-15] 	collision_monitor lifecycle node launched. 
+[collision_monitor-15] 	Waiting on external lifecycle transitions to activate
+[collision_monitor-15] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-12] [INFO] [1794864678.177478258] [bt_navigator]: Creating
+[planner_server-9] [INFO] [1794864678.210947511] [planner_server]: 
+[planner_server-9] 	planner_server lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1794864678.212632548] [planner_server]: Creating
+[planner_server-9] [INFO] [1794864678.223476308] [global_costmap.global_costmap]: 
+[planner_server-9] 	global_costmap lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1794864678.224099397] [global_costmap.global_costmap]: Creating Costmap
+[lifecycle_manager-17] [INFO] [1794864678.225370431] [lifecycle_manager_navigation]: Creating
+[lifecycle_manager-17] [INFO] [1794864678.230516664] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[async_slam_toolbox_node-6] [INFO] [1794864678.296855857] [slam_toolbox]: Configuring
+[async_slam_toolbox_node-6] [INFO] [1794864678.302568622] [slam_toolbox]: Using solver plugin solver_plugins::CeresSolver
+[async_slam_toolbox_node-6] [INFO] [1794864678.302859873] [slam_toolbox]: CeresSolver: Using SCHUR_JACOBI preconditioner.
+[INFO] [launch.user]: [LifecycleLaunch] Slamtoolbox node is activating.
+[async_slam_toolbox_node-6] [INFO] [1794864678.321121392] [slam_toolbox]: Activating
+[gzserver-1] [1;32m[Msg] [0m[1;32mLoading SDF world file[[0m[1;32m/home/achref/industrial_amr_ws/install/industrial_amr_gazebo/share/industrial_amr_gazebo/worlds/industrial_room.sdf[0m[1;32m].[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing entity system service on [[0m[1;32m/[0m[1;32mentity/system/add[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;36m[Dbg] [Physics.cc:1004] [0m[1;36mLoaded [[0m[1;36mgz::physics::dartsim::Plugin[0m[1;36m] from library [[0m[1;36m/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Physics[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/industrial_room/create_multiple[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mCreate[0m[1;32m service on [[0m[1;32m/world/industrial_room/create_multiple/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/industrial_room/remove[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mRemove[0m[1;32m service on [[0m[1;32m/world/industrial_room/remove/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_pose[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_pose/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_pose_vector[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPose[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_pose_vector/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/industrial_room/light_config[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mLight configuration[0m[1;32m service on [[0m[1;32m/world/industrial_room/light_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_physics[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPhysics[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_physics/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_spherical_coordinates[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mSphericalCoordinates[0m[1;32m service on [[0m[1;32m/world/industrial_room/set_spherical_coordinates/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/industrial_room/enable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mEnable collision[0m[1;32m service on [[0m[1;32m/world/industrial_room/enable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/industrial_room/disable_collision[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mDisable collision[0m[1;32m service on [[0m[1;32m/world/industrial_room/disable_collision/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/industrial_room/visual_config[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/industrial_room/visual_config/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/industrial_room/wheel_slip[0m[1;32m] (async)[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mMaterial[0m[1;32m service on [[0m[1;32m/world/industrial_room/wheel_slip/blocking[0m[1;32m] (blocking)[0m[1;32m[0m
+[waypoint_follower-13] [INFO] [1794864678.560363471] [waypoint_follower]: 
+[waypoint_follower-13] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-13] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-13] [INFO] [1794864678.560910436] [waypoint_follower]: Creating
+[behavior_server-11] [INFO] [1794864678.565929949] [behavior_server]: 
+[behavior_server-11] 	behavior_server lifecycle node launched. 
+[behavior_server-11] 	Waiting on external lifecycle transitions to activate
+[behavior_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-18] [INFO] [1794864678.591523607] [filter_mask_server]: 
+[map_server-18] 	filter_mask_server lifecycle node launched. 
+[map_server-18] 	Waiting on external lifecycle transitions to activate
+[map_server-18] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-18] [INFO] [1794864678.591841388] [filter_mask_server]: Creating
+[controller_server-7] [INFO] [1794864678.614921421] [controller_server]: 
+[controller_server-7] 	controller_server lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[opennav_docking-16] [INFO] [1794864678.621227999] [docking_server]: 
+[opennav_docking-16] 	docking_server lifecycle node launched. 
+[opennav_docking-16] 	Waiting on external lifecycle transitions to activate
+[opennav_docking-16] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[opennav_docking-16] [INFO] [1794864678.621415725] [docking_server]: Creating docking_server
+[controller_server-7] [INFO] [1794864678.622743516] [controller_server]: Creating controller server
+[costmap_filter_info_server-19] [INFO] [1794864678.635671077] [costmap_filter_info_server]: 
+[costmap_filter_info_server-19] 	costmap_filter_info_server lifecycle node launched. 
+[costmap_filter_info_server-19] 	Waiting on external lifecycle transitions to activate
+[costmap_filter_info_server-19] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-14] [INFO] [1794864678.646553389] [velocity_smoother]: 
+[velocity_smoother-14] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-14] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[create-3] [INFO] [1794864678.653408886] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[controller_server-7] [INFO] [1794864678.657100899] [local_costmap.local_costmap]: 
+[controller_server-7] 	local_costmap lifecycle node launched. 
+[controller_server-7] 	Waiting on external lifecycle transitions to activate
+[controller_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-7] [INFO] [1794864678.657696525] [local_costmap.local_costmap]: Creating Costmap
+[create-3] [INFO] [1794864678.664963340] [ros_gz_sim]: Entity creation successful.
+[lifecycle_manager-20] [INFO] [1794864678.690265897] [lifecycle_manager_costmap_filters]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-20] [INFO] [1794864678.690320760] [lifecycle_manager_costmap_filters]: [34m[1mConfiguring filter_mask_server[0m[0m
+[map_server-18] [INFO] [1794864678.690692003] [filter_mask_server]: Configuring
+[map_server-18] [INFO] [1794864678.690786732] [map_io]: Loading yaml file: /home/achref/industrial_amr_ws/install/industrial_amr_navigation/share/industrial_amr_navigation/maps/charger_keepout.yaml
+[map_server-18] [INFO] [1794864678.691104092] [map_io]: resolution: 0.05
+[map_server-18] [INFO] [1794864678.691118479] [map_io]: origin[0]: -5.2
+[map_server-18] [INFO] [1794864678.691125943] [map_io]: origin[1]: -4.2
+[map_server-18] [INFO] [1794864678.691131263] [map_io]: origin[2]: 0
+[map_server-18] [INFO] [1794864678.691136563] [map_io]: free_thresh: 0.196
+[map_server-18] [INFO] [1794864678.691142074] [map_io]: occupied_thresh: 0.65
+[map_server-18] [INFO] [1794864678.691149508] [map_io]: mode: trinary
+[map_server-18] [INFO] [1794864678.691155800] [map_io]: negate: 0
+[map_server-18] [INFO] [1794864678.691369444] [map_io]: Loading image_file: /home/achref/industrial_amr_ws/install/industrial_amr_navigation/share/industrial_amr_navigation/maps/charger_keepout.pgm
+[map_server-18] [INFO] [1794864678.692142376] [map_io]: Read map /home/achref/industrial_amr_ws/install/industrial_amr_navigation/share/industrial_amr_navigation/maps/charger_keepout.pgm: 208 X 168 map @ 0.05 m/cell
+[lifecycle_manager-20] [INFO] [1794864678.699620870] [lifecycle_manager_costmap_filters]: [34m[1mConfiguring costmap_filter_info_server[0m[0m
+[costmap_filter_info_server-19] [INFO] [1794864678.700324822] [costmap_filter_info_server]: Configuring
+[lifecycle_manager-20] [INFO] [1794864678.709063600] [lifecycle_manager_costmap_filters]: [34m[1mActivating filter_mask_server[0m[0m
+[map_server-18] [INFO] [1794864678.709217431] [filter_mask_server]: Activating
+[map_server-18] [INFO] [1794864678.709399426] [filter_mask_server]: Creating bond (filter_mask_server) to lifecycle manager.
+[INFO] [create-3]: process has finished cleanly [pid 72137]
+[lifecycle_manager-20] [INFO] [1794864678.813791772] [lifecycle_manager_costmap_filters]: Server filter_mask_server connected with bond.
+[lifecycle_manager-20] [INFO] [1794864678.813823792] [lifecycle_manager_costmap_filters]: [34m[1mActivating costmap_filter_info_server[0m[0m
+[costmap_filter_info_server-19] [INFO] [1794864678.814021586] [costmap_filter_info_server]: Activating
+[costmap_filter_info_server-19] [INFO] [1794864678.814129280] [costmap_filter_info_server]: Creating bond (costmap_filter_info_server) to lifecycle manager.
+[lifecycle_manager-20] [INFO] [1794864678.918025127] [lifecycle_manager_costmap_filters]: Server costmap_filter_info_server connected with bond.
+[lifecycle_manager-20] [INFO] [1794864678.918057167] [lifecycle_manager_costmap_filters]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-20] [INFO] [1794864678.918071495] [lifecycle_manager_costmap_filters]: [34m[1mCreating bond timer...[0m[0m
+[parameter_bridge-4] [INFO] [1794864679.566278921] [ros_gz_bridge]: Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1794864679.570115858] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1794864679.574577737] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1794864679.577776627] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1794864679.580274571] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1794864679.581949950] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+[parameter_bridge-4] [INFO] [1794864679.583618756] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[gzserver-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::UserCommands[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::SceneBroadcaster[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Contact[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:697] [0m[1;36mConfiguring Sensors system[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:557] [0m[1;36mSensorsPrivate::Run[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::Sensors[0m[1;36m] for entity [[0m[1;36m1[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:532] [0m[1;36mSensorsPrivate::RenderThread started[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:337] [0m[1;36mWaiting for init[0m[1;36m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mLoaded level [[0m[1;32mdefault[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing world controls on [[0m[1;32m/world/industrial_room[0m[1;32m/control], [[0m[1;32m/world/industrial_room[0m[1;32m/control/state] and [[0m[1;32m/world/industrial_room[0m[1;32m/playback/control][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing GUI information on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mgui/info[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mWorld [[0m[1;32mindustrial_room[0m[1;32m] initialized with [[0m[1;32m1kHz[0m[1;32m] physics profile.[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing world SDF generation service on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mgenerate_world_sdf[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing world names on [[0m[1;32m/gazebo/worlds[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mResource path add service on [[0m[1;32m/gazebo/resource_paths/add[0m[1;32m].[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mResource path get service on [[0m[1;32m/gazebo/resource_paths/get[0m[1;32m].[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mResource path resolve service on [[0m[1;32m/gazebo/resource_paths/resolve[0m[1;32m].[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mResource paths published on [[0m[1;32m/gazebo/resource_paths[0m[1;32m].[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServer control service on [[0m[1;32m/server_control[0m[1;32m].[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mFound no publishers on /stats, adding root stats topic[0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mFound no publishers on /clock, adding root clock topic[0m[1;32m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m4[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="industrial_amr"]/link[@name="base_footprint"]/sensor[@name="camera_sensor"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gzserver-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="industrial_amr"]/link[@name="base_footprint"]/sensor[@name="lidar_sensor"]/gz_frame_id:<urdf-string>:L0]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[lifecycle_manager-17] [INFO] [1794864680.232455185] [lifecycle_manager_navigation]: Waiting for service controller_server/get_state...
+[gzserver-1] [1;32m[Msg] [0m[1;32mDiffDrive subscribing to twist messages on [[0m[1;32mcmd_vel[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::DiffDrive[0m[1;36m] for entity [[0m[1;36m76[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SystemManager.cc:80] [0m[1;36mLoaded system [[0m[1;36mgz::sim::systems::JointStatePublisher[0m[1;36m] for entity [[0m[1;36m76[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [UserCommands.cc:1093] [0m[1;36mCreated entity [[0m[1;36m76[0m[1;36m] named [[0m[1;36mindustrial_amr[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:349] [0m[1;36mInitializing render context[0m[1;36m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mLoading plugin [[0m[1;32mgz-rendering-ogre2[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing scene information on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mscene/info[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing graph information on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mscene/graph[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing full state on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mstate[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mServing full state (async) on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mstate_async[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPublishing scene information on [[0m[1;32m/world/industrial_room/scene/info[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPublishing entity deletions on [[0m[1;32m/world/industrial_room/scene/deletion[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPublishing state changes on [[0m[1;32m/world/industrial_room/state[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPublishing pose messages on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mpose/info[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;32m[Msg] [0m[1;32mPublishing dynamic pose messages on [[0m[1;32m/world/industrial_room[0m[1;32m/[0m[1;32mdynamic_pose/info[0m[1;32m][0m[1;32m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:654] [Dbg] [SimulationRunner.cc:654] [0m[1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m2[0m[1;36mExiting postupdate worker thread ([0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:627] [0m[1;36mCreating PostUpdate worker threads: [0m[1;36m6[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:638] [0m[1;36mCreating postupdate worker thread ([0m[1;36m4[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [EntityComponentManager.cc:1710] [0m[1;36mUpdated state thread iterators: [0m[1;36m12[0m[1;36m threads processing around [0m[1;36m9[0m[1;36m entities each.[0m[1;36m[0m
+[gzserver-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="industrial_amr"]/link[@name="base_footprint"]/sensor[@name="camera_sensor"]/gz_frame_id:<data-string>:L189]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gzserver-1] [1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="industrial_amr"]/link[@name="base_footprint"]/sensor[@name="lidar_sensor"]/gz_frame_id:<data-string>:L217]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[gzserver-1] [1;33m[Wrn] [Ogre2Camera.cc:423] [0m[1;33mOgre2Camera::SetVisibilityMask: Mask bits [0m[1;33mc0000000[0m[1;33m are set but will be ignored as they conflict with the [0m[1;33mreserved bits used internally by the ogre2 backend.[0m[1;33m[0m
+[async_slam_toolbox_node-6] Registering sensor: [Custom Described Lidar]
+[lifecycle_manager-17] [INFO] [1794864680.623031686] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-17] [INFO] [1794864680.623115615] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-7] [INFO] [1794864680.624289846] [controller_server]: Configuring controller interface
+[controller_server-7] [INFO] [1794864680.624372673] [controller_server]: getting progress checker plugins..
+[controller_server-7] [INFO] [1794864680.625297141] [controller_server]: getting goal checker plugins..
+[controller_server-7] [INFO] [1794864680.626258319] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-7] [INFO] [1794864680.626349912] [local_costmap.local_costmap]: Configuring
+[controller_server-7] [INFO] [1794864680.639442144] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-7] [INFO] [1794864680.644228447] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-7] [INFO] [1794864680.649129526] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-7] [INFO] [1794864680.649173990] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-7] [INFO] [1794864680.649792159] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-7] [INFO] [1794864680.649826785] [local_costmap.local_costmap]: Using costmap filter "keepout_filter"
+[controller_server-7] [INFO] [1794864680.654517547] [local_costmap.local_costmap]: Initialized costmap filter "keepout_filter"
+[controller_server-7] [INFO] [1794864680.682990829] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-7] [INFO] [1794864680.683352463] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[controller_server-7] [INFO] [1794864680.683926158] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-7] [INFO] [1794864680.684442264] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-7] [INFO] [1794864680.686184550] [controller_server]: Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+[controller_server-7] [INFO] [1794864680.689160678] [controller_server]: Controller period is equal to model dt. Control sequence shifting is ON
+[controller_server-7] [INFO] [1794864680.691115736] [controller_server]: ConstraintCritic instantiated with 1 power and 4.000000 weight.
+[controller_server-7] [INFO] [1794864680.691179467] [controller_server]: Critic loaded : mppi::critics::ConstraintCritic
+[gzserver-1] [INFO] [1794864680.691540479] [gzserver]: InitializeCanonicalLinks
+[gzserver-1] [INFO] [1794864680.691965403] [gzserver]: Creating services on gzserver
+[controller_server-7] [INFO] [1794864680.692307019] [controller_server]: InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+[controller_server-7] [INFO] [1794864680.692357455] [controller_server]: Critic loaded : mppi::critics::CostCritic
+[controller_server-7] [INFO] [1794864680.692851599] [controller_server]: GoalCritic instantiated with 1 power and 5.000000 weight.
+[controller_server-7] [INFO] [1794864680.692886094] [controller_server]: Critic loaded : mppi::critics::GoalCritic
+[controller_server-7] [INFO] [1794864680.693513170] [controller_server]: GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled
+[controller_server-7] [INFO] [1794864680.693543037] [controller_server]: Critic loaded : mppi::critics::GoalAngleCritic
+[controller_server-7] [INFO] [1794864680.694108396] [controller_server]: ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+[controller_server-7] [INFO] [1794864680.694144975] [controller_server]: Critic loaded : mppi::critics::PathAlignCritic
+[controller_server-7] [INFO] [1794864680.694771270] [controller_server]: Critic loaded : mppi::critics::PathFollowCritic
+[controller_server-7] [INFO] [1794864680.695945942] [controller_server]: PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+[controller_server-7] [INFO] [1794864680.695998241] [controller_server]: Critic loaded : mppi::critics::PathAngleCritic
+[controller_server-7] [INFO] [1794864680.696534485] [controller_server]: PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+[controller_server-7] [INFO] [1794864680.696595811] [controller_server]: Critic loaded : mppi::critics::PreferForwardCritic
+[gzserver-1] [INFO] [1794864680.698630068] [gzserver]: Created service /gzserver/delete_entity
+[controller_server-7] [INFO] [1794864680.700492100] [controller_server]: Optimizer reset
+[gzserver-1] [INFO] [1794864680.700807597] [gzserver]: Created service /gzserver/get_entities
+[gzserver-1] [INFO] [1794864680.702313575] [gzserver]: Created service /gzserver/get_entity_info
+[gzserver-1] [INFO] [1794864680.703871101] [gzserver]: Created service /gzserver/get_entity_state
+[gzserver-1] [INFO] [1794864680.705392919] [gzserver]: Created service /gzserver/get_entities_states
+[gzserver-1] [INFO] [1794864680.706798097] [gzserver]: Created service /gzserver/get_simulation_state
+[controller_server-7] [INFO] [1794864680.710472136] [MPPIController]: Configured MPPI Controller: FollowPath
+[controller_server-7] [INFO] [1794864680.710561054] [controller_server]: Controller Server has FollowPath  controllers available.
+[gzserver-1] [INFO] [1794864680.710937355] [gzserver]: Created service /gzserver/get_simulator_features
+[gzserver-1] [INFO] [1794864680.713925768] [gzserver]: Created service /gzserver/reset_simulation
+[gzserver-1] [INFO] [1794864680.715784543] [gzserver]: Created service /gzserver/set_entity_state
+[gzserver-1] [INFO] [1794864680.717764658] [gzserver]: Created service /gzserver/set_simulation_state
+[gzserver-1] [INFO] [1794864680.720916960] [gzserver]: Created service /gzserver/spawn_entity
+[gzserver-1] [INFO] [1794864680.722743916] [gzserver]: Created service /gzserver/step_simulation
+[lifecycle_manager-17] [INFO] [1794864680.728681175] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[smoother_server-8] [INFO] [1794864680.729198253] [smoother_server]: Configuring smoother server
+[gzserver-1] [INFO] [1794864680.735491686] [gzserver]: Created action /gzserver/simulate_steps
+[smoother_server-8] [INFO] [1794864680.752097844] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-8] [INFO] [1794864680.752838956] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-17] [INFO] [1794864680.762838628] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[planner_server-9] [INFO] [1794864680.763084263] [planner_server]: Configuring
+[planner_server-9] [INFO] [1794864680.763227664] [global_costmap.global_costmap]: Configuring
+[planner_server-9] [INFO] [1794864680.776790175] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-9] [INFO] [1794864680.780958770] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-9] [INFO] [1794864680.783298104] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-9] [INFO] [1794864680.783332088] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-9] [INFO] [1794864680.784045928] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-9] [INFO] [1794864680.789385708] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-9] [INFO] [1794864680.789463765] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-9] [INFO] [1794864680.789987486] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-9] [INFO] [1794864680.790015890] [global_costmap.global_costmap]: Using costmap filter "keepout_filter"
+[planner_server-9] [INFO] [1794864680.794910467] [global_costmap.global_costmap]: Initialized costmap filter "keepout_filter"
+[planner_server-9] [INFO] [1794864680.823083712] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[planner_server-9] [INFO] [1794864680.823142774] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1794864680.824239278] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-17] [INFO] [1794864680.837564961] [lifecycle_manager_navigation]: [34m[1mConfiguring route_server[0m[0m
+[route_server-10] [INFO] [1794864680.837845461] [route_server]: Configuring
+[route_server-10] [INFO] [1794864680.877687376] [route_server]: Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+[route_server-10] [INFO] [1794864680.877735827] [route_server]: Configuring geojson graph file loader
+[route_server-10] [INFO] [1794864680.877748552] [route_server]: No graph file provided to load yet.
+[route_server-10] [INFO] [1794864680.881194609] [route_server]: Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+[route_server-10] [INFO] [1794864680.881261065] [route_server]: Configuring distance scorer.
+[route_server-10] [INFO] [1794864680.881708892] [route_server]: Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+[route_server-10] [INFO] [1794864680.881743007] [route_server]: Configuring costmap scorer.
+[route_server-10] [INFO] [1794864680.884672888] [route_server]: Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+[route_server-10] [INFO] [1794864680.884732691] [route_server]: Configuring Adjust speed limit operation.
+[route_server-10] [INFO] [1794864680.887157978] [route_server]: Created route operation ReroutingService of type nav2_route::ReroutingService
+[route_server-10] [INFO] [1794864680.887210147] [route_server]: Configuring Rerouting service operation.
+[route_server-10] [INFO] [1794864680.890939791] [route_server]: Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+[route_server-10] [INFO] [1794864680.891148395] [route_server]: Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+[lifecycle_manager-17] [INFO] [1794864680.897239015] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[behavior_server-11] [INFO] [1794864680.897466545] [behavior_server]: Configuring
+[behavior_server-11] [INFO] [1794864680.902987798] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[behavior_server-11] [INFO] [1794864680.903973953] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[behavior_server-11] [INFO] [1794864680.904827076] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[behavior_server-11] [INFO] [1794864680.905600840] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[behavior_server-11] [INFO] [1794864680.917619882] [behavior_server]: Configuring spin
+[behavior_server-11] [INFO] [1794864680.930152675] [behavior_server]: Configuring backup
+[behavior_server-11] [INFO] [1794864680.938615161] [behavior_server]: Configuring drive_on_heading
+[behavior_server-11] [INFO] [1794864680.946609922] [behavior_server]: Configuring wait
+[lifecycle_manager-17] [INFO] [1794864680.956342620] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[velocity_smoother-14] [INFO] [1794864680.956744289] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-17] [INFO] [1794864680.964979374] [lifecycle_manager_navigation]: [34m[1mConfiguring collision_monitor[0m[0m
+[collision_monitor-15] [INFO] [1794864680.965341579] [collision_monitor]: Configuring
+[collision_monitor-15] [INFO] [1794864680.972830213] [collision_monitor]: [scan]: Creating Scan
+[collision_monitor-15] [INFO] [1794864680.976893057] [collision_monitor]: [FootprintApproach]: Creating Polygon
+[collision_monitor-15] [INFO] [1794864680.977112603] [collision_monitor]: [FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+[collision_monitor-15] [INFO] [1794864680.977961478] [collision_monitor]: [FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+[lifecycle_manager-17] [INFO] [1794864681.008120759] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[bt_navigator-12] [INFO] [1794864681.008799864] [bt_navigator]: Configuring
+[bt_navigator-12] [INFO] [1794864681.019816339] [bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[bt_navigator-12] [INFO] [1794864681.112424510] [bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[lifecycle_manager-17] [INFO] [1794864681.158087373] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[waypoint_follower-13] [INFO] [1794864681.158739567] [waypoint_follower]: Configuring
+[waypoint_follower-13] [INFO] [1794864681.193454463] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-17] [INFO] [1794864681.194689269] [lifecycle_manager_navigation]: [34m[1mConfiguring docking_server[0m[0m
+[opennav_docking-16] [INFO] [1794864681.195052876] [docking_server]: Configuring docking_server
+[opennav_docking-16] [INFO] [1794864681.195132747] [docking_server]: Controller frequency set to 50.0000Hz
+[opennav_docking-16] [INFO] [1794864681.233798967] [docking_server]: Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+[opennav_docking-16] [WARN] [1794864681.242754405] [docking_server]: Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+[opennav_docking-16] [INFO] [1794864681.242811743] [docking_server]: Docking Server has 1 dock types and 0 dock instances available.
+[lifecycle_manager-17] [INFO] [1794864681.246041071] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[controller_server-7] [INFO] [1794864681.246298318] [controller_server]: Activating
+[controller_server-7] [INFO] [1794864681.246356598] [local_costmap.local_costmap]: Activating
+[controller_server-7] [INFO] [1794864681.246385022] [local_costmap.local_costmap]: Checking transform
+[controller_server-7] [INFO] [1794864681.246525227] [local_costmap.local_costmap]: start
+[controller_server-7] [INFO] [1794864681.247595982] [local_costmap.local_costmap]: KeepoutFilter: Subscribing to "/costmap_filter_info" topic for filter info...
+[controller_server-7] [INFO] [1794864681.259264110] [local_costmap.local_costmap]: KeepoutFilter: Received filter info from /costmap_filter_info topic.
+[controller_server-7] [INFO] [1794864681.259342348] [local_costmap.local_costmap]: KeepoutFilter: Subscribing to "/keepout_filter_mask" topic for filter mask...
+[controller_server-7] [INFO] [1794864681.271195786] [local_costmap.local_costmap]: KeepoutFilter: Received filter mask from /keepout_filter_mask topic.
+[controller_server-7] [WARN] [1794864681.449668514] [controller_server]: Parameter controller_server.verbose not found
+[controller_server-7] [INFO] [1794864681.452406292] [controller_server]: Optimizer reset
+[controller_server-7] [INFO] [1794864681.452734182] [MPPIController]: Activated MPPI Controller: FollowPath
+[controller_server-7] [INFO] [1794864681.452765692] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864681.562949274] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-17] [INFO] [1794864681.563051246] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[smoother_server-8] [INFO] [1794864681.563369949] [smoother_server]: Activating
+[smoother_server-8] [INFO] [1794864681.563422559] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864681.671620966] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-17] [INFO] [1794864681.671675178] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[planner_server-9] [INFO] [1794864681.672167579] [planner_server]: Activating
+[planner_server-9] [INFO] [1794864681.672230639] [global_costmap.global_costmap]: Activating
+[planner_server-9] [INFO] [1794864681.672272187] [global_costmap.global_costmap]: Checking transform
+[planner_server-9] [INFO] [1794864681.672387686] [global_costmap.global_costmap]: start
+[planner_server-9] [INFO] [1794864681.673807862] [global_costmap.global_costmap]: KeepoutFilter: Subscribing to "/costmap_filter_info" topic for filter info...
+[planner_server-9] [INFO] [1794864681.686063220] [global_costmap.global_costmap]: KeepoutFilter: Received filter info from /costmap_filter_info topic.
+[planner_server-9] [INFO] [1794864681.686134876] [global_costmap.global_costmap]: KeepoutFilter: Subscribing to "/keepout_filter_mask" topic for filter mask...
+[planner_server-9] [INFO] [1794864681.698014825] [global_costmap.global_costmap]: KeepoutFilter: Received filter mask from /keepout_filter_mask topic.
+[planner_server-9] [INFO] [1794864682.328655095] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+[frontier_explorer-21] [INFO] [1794864682.527484679] [frontier_explorer]: Navigating to frontier (-0.24, -0.50)
+[bt_navigator-12] [INFO] [1794864682.528059426] [bt_navigator]: Action server is inactive. Rejecting the goal.
+[frontier_explorer-21] [WARN] [1794864682.529123789] [frontier_explorer]: Goal rejected by Nav2, retrying.
+[planner_server-9] [INFO] [1794864682.676498588] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1794864682.678698398] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864682.786449867] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-17] [INFO] [1794864682.786515351] [lifecycle_manager_navigation]: [34m[1mActivating route_server[0m[0m
+[route_server-10] [INFO] [1794864682.786818334] [route_server]: Activating
+[route_server-10] [INFO] [1794864682.787017280] [route_server]: Creating bond (route_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864682.894381146] [lifecycle_manager_navigation]: Server route_server connected with bond.
+[lifecycle_manager-17] [INFO] [1794864682.894436531] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[behavior_server-11] [INFO] [1794864682.894781714] [behavior_server]: Activating
+[behavior_server-11] [INFO] [1794864682.894826709] [behavior_server]: Activating spin
+[behavior_server-11] [INFO] [1794864682.894839974] [behavior_server]: Activating backup
+[behavior_server-11] [INFO] [1794864682.894850274] [behavior_server]: Activating drive_on_heading
+[behavior_server-11] [INFO] [1794864682.894869109] [behavior_server]: Activating wait
+[behavior_server-11] [INFO] [1794864682.894889508] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864683.002497866] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-17] [INFO] [1794864683.002563992] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[velocity_smoother-14] [INFO] [1794864683.002895819] [velocity_smoother]: Activating
+[velocity_smoother-14] [INFO] [1794864683.003004926] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[gzserver-1] [1;36m[Dbg] [RenderUtil.cc:2646] [0m[1;36mCreate scene [[0m[1;36mscene[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:391] [0m[1;36mRendering Thread initialized[0m[1;36mRendering Thread initialized[Dbg] [Sensors.cc:953] [0m[1;36mInitialization needed[0m[1;36m[0m
+[gzserver-1] [1;36m[0m
+[gzserver-1] [1;36m[Dbg] [CameraSensor.cc:405] [0m[1;36mCamera images for [[0m[1;36mindustrial_amr::base_footprint::camera_sensor[0m[1;36m] advertised on [[0m[1;36mcamera/image_raw[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [CameraSensor.cc:695] [0m[1;36mCamera info for [[0m[1;36mindustrial_amr::base_footprint::camera_sensor[0m[1;36m] advertised on [[0m[1;36m/camera/camera_info[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Lidar.cc:139] [0m[1;36mLaser scans for [[0m[1;36mindustrial_amr::base_footprint::lidar_sensor[0m[1;36m] advertised on [[0m[1;36mscan[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [GpuLidarSensor.cc:164] [0m[1;36mLidar points for [[0m[1;36mindustrial_amr::base_footprint::lidar_sensor[0m[1;36m] advertised on [[0m[1;36mscan/points[0m[1;36m][0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [CameraSensor.cc:504] [0m[1;36mEnabling camera sensor: '[0m[1;36mindustrial_amr::base_footprint::camera_sensor[0m[1;36m' data [0m[1;36mgeneration.[0m[1;36m[0m
+[lifecycle_manager-17] [INFO] [1794864683.112514657] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-17] [INFO] [1794864683.112573128] [lifecycle_manager_navigation]: [34m[1mActivating collision_monitor[0m[0m
+[collision_monitor-15] [INFO] [1794864683.112951694] [collision_monitor]: Activating
+[collision_monitor-15] [INFO] [1794864683.113009153] [collision_monitor]: Creating bond (collision_monitor) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864683.220266014] [lifecycle_manager_navigation]: Server collision_monitor connected with bond.
+[lifecycle_manager-17] [INFO] [1794864683.220316920] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[bt_navigator-12] [INFO] [1794864683.220633799] [bt_navigator]: Activating
+[bt_navigator-12] [INFO] [1794864683.323809482] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864683.431789250] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-17] [INFO] [1794864683.431851959] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[waypoint_follower-13] [INFO] [1794864683.432197883] [waypoint_follower]: Activating
+[waypoint_follower-13] [INFO] [1794864683.432267124] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[frontier_explorer-21] [INFO] [1794864683.503119485] [frontier_explorer]: Navigating to frontier (-0.24, -0.50)
+[bt_navigator-12] [INFO] [1794864683.504149433] [bt_navigator]: Begin navigating from current location (0.00, -0.00) to (-0.24, -0.50)
+[controller_server-7] [INFO] [1794864683.525013021] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [WARN] [1794864683.525070099] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-7] [WARN] [1794864683.525087953] [controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+[lifecycle_manager-17] [INFO] [1794864683.539396915] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-17] [INFO] [1794864683.539503236] [lifecycle_manager_navigation]: [34m[1mActivating docking_server[0m[0m
+[opennav_docking-16] [INFO] [1794864683.539969318] [docking_server]: Activating docking_server
+[opennav_docking-16] [INFO] [1794864683.555012899] [docking_server]: Creating bond (docking_server) to lifecycle manager.
+[parameter_bridge-4] [INFO] [1794864683.563988795] [ros_gz_bridge]: Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+[lifecycle_manager-17] [INFO] [1794864683.663834009] [lifecycle_manager_navigation]: Server docking_server connected with bond.
+[lifecycle_manager-17] [INFO] [1794864683.663889734] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-17] [INFO] [1794864683.663902538] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[controller_server-7] [INFO] [1794864684.575271555] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864685.625201001] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864686.625207205] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864687.675201954] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864688.571811612] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864688.576328164] [frontier_explorer]: Navigating to frontier (0.98, -1.16)
+[bt_navigator-12] [INFO] [1794864688.584771712] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864688.585025842] [bt_navigator]: Begin navigating from current location (-0.10, -0.33) to (0.98, -1.16)
+[planner_server-9] [INFO] [1794864688.672725225] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864688.675205786] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864689.725208508] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864690.725205159] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864691.775206008] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864692.775257103] [controller_server]: Passing new path to controller.
+[controller_server-7] [ERROR] [1794864693.625378944] [controller_server]: Failed to make progress
+[controller_server-7] [INFO] [1794864693.627814791] [controller_server]: Optimizer reset
+[controller_server-7] [WARN] [1794864693.627878060] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-7] [INFO] [1794864693.644613658] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-7] [INFO] [1794864693.646775045] [local_costmap.local_costmap]: KeepoutFilter: Subscribing to "/costmap_filter_info" topic for filter info...
+[controller_server-7] [INFO] [1794864693.648464059] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1794864693.658301262] [local_costmap.local_costmap]: KeepoutFilter: Received filter info from /costmap_filter_info topic.
+[controller_server-7] [INFO] [1794864693.658388647] [local_costmap.local_costmap]: KeepoutFilter: Subscribing to "/keepout_filter_mask" topic for filter mask...
+[controller_server-7] [WARN] [1794864693.670883585] [local_costmap.local_costmap]: KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+[controller_server-7] [INFO] [1794864693.798593899] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864694.600002954] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864694.605111734] [frontier_explorer]: Navigating to frontier (2.78, -0.01)
+[bt_navigator-12] [INFO] [1794864694.614569710] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864694.614743809] [bt_navigator]: Begin navigating from current location (0.48, -0.65) to (2.78, -0.01)
+[planner_server-9] [INFO] [1794864694.672672863] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 202 X 161 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864694.848594973] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864695.848597124] [controller_server]: Passing new path to controller.
+[planner_server-9] [INFO] [1794864696.672688352] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 202 X 162 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864696.898599020] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864697.898592167] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864698.616595843] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864698.621087486] [frontier_explorer]: Navigating to frontier (3.33, 1.74)
+[bt_navigator-12] [INFO] [1794864698.624791470] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864698.625527822] [bt_navigator]: Begin navigating from current location (1.46, -0.51) to (3.33, 1.74)
+[controller_server-7] [INFO] [1794864698.948603411] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864699.948621938] [controller_server]: Passing new path to controller.
+[planner_server-9] [INFO] [1794864700.672566193] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 202 X 162 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864700.998599940] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864701.998625413] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864702.998591442] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864704.048594005] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864704.654377516] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864704.659424619] [frontier_explorer]: Navigating to frontier (-2.57, 3.02)
+[bt_navigator-12] [INFO] [1794864704.664549008] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864704.664732565] [bt_navigator]: Begin navigating from current location (3.13, 1.47) to (-2.57, 3.02)
+[planner_server-9] [INFO] [1794864704.672553523] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 202 X 162 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864705.048644767] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864706.098594471] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864707.148597401] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864708.148594271] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864709.198593585] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864710.198598163] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864711.248597129] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864712.248601860] [controller_server]: Passing new path to controller.
+[planner_server-9] [INFO] [1794864712.672551518] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 203 X 162 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864713.298644260] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864714.298594172] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864715.348602659] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864716.398605742] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864716.719868882] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864716.725367627] [frontier_explorer]: Navigating to frontier (-2.37, -2.88)
+[bt_navigator-12] [INFO] [1794864716.734556629] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864716.734779340] [bt_navigator]: Begin navigating from current location (-0.47, 2.15) to (-2.37, -2.88)
+[controller_server-7] [INFO] [1794864717.398550204] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864718.448594367] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864719.448610900] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864720.498622032] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864721.498594767] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864722.548592817] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864723.548593881] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864724.598599769] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864725.598653247] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864726.648620504] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864727.648592243] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864728.698595932] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864729.698593716] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864730.748594082] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864731.748595478] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864732.795908599] [frontier_explorer]: Frontier explored before arrival, moving on.
+[controller_server-7] [INFO] [1794864732.798597802] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864732.799962541] [frontier_explorer]: Navigating to frontier (-3.52, -3.13)
+[bt_navigator-12] [INFO] [1794864732.804619423] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864732.804839028] [bt_navigator]: Begin navigating from current location (-1.71, -2.31) to (-3.52, -3.13)
+[controller_server-7] [INFO] [1794864733.798599814] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864734.798593379] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864734.813809560] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864734.817919247] [frontier_explorer]: Navigating to frontier (-4.37, -3.13)
+[bt_navigator-12] [INFO] [1794864734.824642686] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864734.824848935] [bt_navigator]: Begin navigating from current location (-2.29, -2.67) to (-4.37, -3.13)
+[controller_server-7] [INFO] [1794864735.848593660] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864736.848592983] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864737.898627302] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864738.842351278] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864738.846290724] [frontier_explorer]: Navigating to frontier (-4.22, -1.28)
+[bt_navigator-12] [INFO] [1794864738.855019712] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864738.855432592] [bt_navigator]: Begin navigating from current location (-4.11, -3.00) to (-4.22, -1.28)
+[controller_server-7] [INFO] [1794864738.898596563] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864739.198626734] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1794864739.199234883] [controller_server]: Optimizer reset
+[bt_navigator-12] [INFO] [1794864739.224461692] [bt_navigator]: Goal succeeded
+[frontier_explorer-21] [INFO] [1794864739.846262540] [frontier_explorer]: Navigating to frontier (-4.22, -1.28)
+[bt_navigator-12] [INFO] [1794864739.846871390] [bt_navigator]: Begin navigating from current location (-4.23, -3.03) to (-4.22, -1.28)
+[controller_server-7] [INFO] [1794864739.847983342] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-7] [INFO] [1794864740.898500817] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864741.898498078] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864742.948505183] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864743.948499715] [controller_server]: Passing new path to controller.
+[planner_server-9] [INFO] [1794864744.672579795] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 203 X 162 at 0.050000 m/pix
+[frontier_explorer-21] [INFO] [1794864744.877927733] [frontier_explorer]: Frontier explored before arrival, moving on.
+[frontier_explorer-21] [INFO] [1794864744.881271221] [frontier_explorer]: Navigating to frontier (-3.33, 1.72)
+[bt_navigator-12] [INFO] [1794864744.887255211] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864744.887428809] [bt_navigator]: Begin navigating from current location (-4.23, -2.02) to (-3.33, 1.72)
+[controller_server-7] [INFO] [1794864744.998503829] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864745.998530289] [controller_server]: Passing new path to controller.
+[async_slam_toolbox_node-6] WARNING: Logging before InitGoogleLogging() is written to STDERR
+[async_slam_toolbox_node-6] W20261116 22:32:26.007414 72144 preprocessor.cc:67] Specified options.num_threads: 50 exceeds maximum available from the threading model Ceres was compiled with: 12.  Bounding to maximum number available.
+[controller_server-7] [INFO] [1794864747.048501895] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864748.048499667] [controller_server]: Passing new path to controller.
+[planner_server-9] [INFO] [1794864748.672579343] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864749.098506845] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864750.098505045] [controller_server]: Passing new path to controller.
+[planner_server-9] [INFO] [1794864750.672556593] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+[frontier_explorer-21] [INFO] [1794864750.937467245] [frontier_explorer]: Frontier explored before arrival, moving on.
+[controller_server-7] [INFO] [1794864751.098499337] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864752.148499386] [controller_server]: Passing new path to controller.
+[frontier_explorer-21] [INFO] [1794864752.951997512] [frontier_explorer]: Exploration complete, returning to start position.
+[bt_navigator-12] [INFO] [1794864752.957601673] [bt_navigator]: Received goal preemption request
+[bt_navigator-12] [INFO] [1794864752.957996699] [bt_navigator]: Begin navigating from current location (-3.63, 1.57) to (0.00, -0.00)
+[controller_server-7] [INFO] [1794864753.148501640] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864754.198508697] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864755.198508985] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864756.248526678] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864757.248507126] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864758.298520997] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864759.298505421] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864760.298500895] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864761.348502377] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864762.348499513] [controller_server]: Passing new path to controller.
+[planner_server-9] [INFO] [1794864762.672551067] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 204 X 163 at 0.050000 m/pix
+[controller_server-7] [INFO] [1794864763.348503931] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864764.398551536] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864765.448500501] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864766.448518212] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864767.448497801] [controller_server]: Passing new path to controller.
+[controller_server-7] [INFO] [1794864768.148535779] [controller_server]: Reached the goal!
+[controller_server-7] [INFO] [1794864768.149777214] [controller_server]: Optimizer reset
+[bt_navigator-12] [INFO] [1794864768.177137759] [bt_navigator]: Goal succeeded
+[frontier_explorer-21] [INFO] [1794864768.177908175] [frontier_explorer]: Back at start. Save the map with map_saver_cli.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [frontier_explorer-21]: sending signal 'SIGINT' to process[frontier_explorer-21]
+[INFO] [lifecycle_manager-20]: sending signal 'SIGINT' to process[lifecycle_manager-20]
+[INFO] [costmap_filter_info_server-19]: sending signal 'SIGINT' to process[costmap_filter_info_server-19]
+[INFO] [map_server-18]: sending signal 'SIGINT' to process[map_server-18]
+[INFO] [lifecycle_manager-17]: sending signal 'SIGINT' to process[lifecycle_manager-17]
+[INFO] [opennav_docking-16]: sending signal 'SIGINT' to process[opennav_docking-16]
+[INFO] [collision_monitor-15]: sending signal 'SIGINT' to process[collision_monitor-15]
+[INFO] [velocity_smoother-14]: sending signal 'SIGINT' to process[velocity_smoother-14]
+[INFO] [waypoint_follower-13]: sending signal 'SIGINT' to process[waypoint_follower-13]
+[INFO] [bt_navigator-12]: sending signal 'SIGINT' to process[bt_navigator-12]
+[INFO] [behavior_server-11]: sending signal 'SIGINT' to process[behavior_server-11]
+[INFO] [route_server-10]: sending signal 'SIGINT' to process[route_server-10]
+[INFO] [planner_server-9]: sending signal 'SIGINT' to process[planner_server-9]
+[INFO] [smoother_server-8]: sending signal 'SIGINT' to process[smoother_server-8]
+[INFO] [controller_server-7]: sending signal 'SIGINT' to process[controller_server-7]
+[INFO] [async_slam_toolbox_node-6]: sending signal 'SIGINT' to process[async_slam_toolbox_node-6]
+[INFO] [image_bridge-5]: sending signal 'SIGINT' to process[image_bridge-5]
+[INFO] [parameter_bridge-4]: sending signal 'SIGINT' to process[parameter_bridge-4]
+[INFO] [robot_state_publisher-2]: sending signal 'SIGINT' to process[robot_state_publisher-2]
+[INFO] [gzserver-1]: sending signal 'SIGINT' to process[gzserver-1]
+[lifecycle_manager-20] [INFO] [1794864773.373695961] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-20] [INFO] [1794864773.373778367] [lifecycle_manager_costmap_filters]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_costmap_filters)
+[lifecycle_manager-20] [INFO] [1794864773.373886191] [lifecycle_manager_costmap_filters]: [34m[1mTerminating bond timer...[0m[0m
+[costmap_filter_info_server-19] [INFO] [1794864773.376205382] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[costmap_filter_info_server-19] [INFO] [1794864773.376321582] [costmap_filter_info_server]: Running Nav2 LifecycleNode rcl preshutdown (costmap_filter_info_server)
+[costmap_filter_info_server-19] [INFO] [1794864773.376449023] [costmap_filter_info_server]: Deactivating
+[costmap_filter_info_server-19] [INFO] [1794864773.376491673] [costmap_filter_info_server]: Destroying bond (costmap_filter_info_server) to lifecycle manager.
+[map_server-18] [INFO] [1794864773.379039166] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[map_server-18] [INFO] [1794864773.379114288] [filter_mask_server]: Running Nav2 LifecycleNode rcl preshutdown (filter_mask_server)
+[map_server-18] [INFO] [1794864773.379221862] [filter_mask_server]: Deactivating
+[map_server-18] [INFO] [1794864773.379274511] [filter_mask_server]: Destroying bond (filter_mask_server) to lifecycle manager.
+[lifecycle_manager-17] [INFO] [1794864773.381706786] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[lifecycle_manager-17] [INFO] [1794864773.381791206] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[lifecycle_manager-17] [INFO] [1794864773.381843384] [lifecycle_manager_navigation]: [34m[1mTerminating bond timer...[0m[0m
+[opennav_docking-16] [INFO] [1794864773.385285057] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[opennav_docking-16] [INFO] [1794864773.385382150] [docking_server]: Running Nav2 LifecycleNode rcl preshutdown (docking_server)
+[opennav_docking-16] [INFO] [1794864773.386042538] [docking_server]: Deactivating docking_server
+[costmap_filter_info_server-19] [INFO] [1794864773.386971082] [costmap_filter_info_server]: Cleaning up
+[costmap_filter_info_server-19] [INFO] [1794864773.387043439] [costmap_filter_info_server]: Destroying bond (costmap_filter_info_server) to lifecycle manager.
+[collision_monitor-15] [INFO] [1794864773.388593457] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[collision_monitor-15] [INFO] [1794864773.388684930] [collision_monitor]: Running Nav2 LifecycleNode rcl preshutdown (collision_monitor)
+[collision_monitor-15] [INFO] [1794864773.388770001] [collision_monitor]: Deactivating
+[collision_monitor-15] [INFO] [1794864773.388813543] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[map_server-18] [INFO] [1794864773.389670302] [filter_mask_server]: Cleaning up
+[map_server-18] [INFO] [1794864773.389812551] [filter_mask_server]: Destroying bond (filter_mask_server) to lifecycle manager.
+[velocity_smoother-14] [INFO] [1794864773.394297244] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-14] [INFO] [1794864773.394436056] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-14] [INFO] [1794864773.394537487] [velocity_smoother]: Deactivating
+[velocity_smoother-14] [INFO] [1794864773.394586280] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[waypoint_follower-13] [INFO] [1794864773.395593503] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[waypoint_follower-13] [INFO] [1794864773.395706246] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-13] [INFO] [1794864773.395967459] [waypoint_follower]: Deactivating
+[waypoint_follower-13] [INFO] [1794864773.396143682] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[bt_navigator-12] [INFO] [1794864773.398290258] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[bt_navigator-12] [INFO] [1794864773.398376731] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-12] [INFO] [1794864773.398468584] [bt_navigator]: Deactivating
+[bt_navigator-12] [INFO] [1794864773.398517797] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[costmap_filter_info_server-19] [INFO] [1794864773.398513379] [costmap_filter_info_server]: Destroying
+[collision_monitor-15] [INFO] [1794864773.399289285] [collision_monitor]: Cleaning up
+[behavior_server-11] [INFO] [1794864773.402549775] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[behavior_server-11] [INFO] [1794864773.402647009] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-11] [INFO] [1794864773.402734294] [behavior_server]: Deactivating
+[behavior_server-11] [INFO] [1794864773.402780892] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[opennav_docking-16] [INFO] [1794864773.404992430] [docking_server]: Destroying bond (docking_server) to lifecycle manager.
+[velocity_smoother-14] [INFO] [1794864773.405030562] [velocity_smoother]: Cleaning up
+[velocity_smoother-14] [INFO] [1794864773.405099933] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[route_server-10] [INFO] [1794864773.406369762] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[route_server-10] [INFO] [1794864773.406460734] [route_server]: Running Nav2 LifecycleNode rcl preshutdown (route_server)
+[route_server-10] [INFO] [1794864773.407459110] [route_server]: Deactivating
+[route_server-10] [INFO] [1794864773.407519054] [route_server]: Destroying bond (route_server) to lifecycle manager.
+[waypoint_follower-13] [INFO] [1794864773.407185654] [waypoint_follower]: Cleaning up
+[bt_navigator-12] [INFO] [1794864773.408999721] [bt_navigator]: Cleaning up
+[planner_server-9] [INFO] [1794864773.410088688] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[planner_server-9] [INFO] [1794864773.410159733] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-9] [INFO] [1794864773.410243591] [planner_server]: Deactivating
+[planner_server-9] [INFO] [1794864773.410308253] [global_costmap.global_costmap]: Deactivating
+[map_server-18] [INFO] [1794864773.413048340] [filter_mask_server]: Destroying
+[behavior_server-11] [INFO] [1794864773.413153308] [behavior_server]: Cleaning up
+[smoother_server-8] [INFO] [1794864773.415436141] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[smoother_server-8] [INFO] [1794864773.415530820] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-8] [INFO] [1794864773.415612695] [smoother_server]: Deactivating
+[smoother_server-8] [INFO] [1794864773.415650987] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[collision_monitor-15] [INFO] [1794864773.415850564] [collision_monitor]: [FootprintApproach]: Destroying Polygon
+[collision_monitor-15] [INFO] [1794864773.416019063] [collision_monitor]: [scan]: Destroying Scan
+[opennav_docking-16] [INFO] [1794864773.416490333] [docking_server]: Cleaning up docking_server
+[route_server-10] [INFO] [1794864773.419588146] [route_server]: Cleaning up
+[lifecycle_manager-20] [INFO] [1794864773.421760390] [lifecycle_manager_costmap_filters]: Destroying lifecycle_manager_costmap_filters
+[controller_server-7] [INFO] [1794864773.422301081] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-7] [INFO] [1794864773.422466003] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-7] [INFO] [1794864773.424035178] [controller_server]: Deactivating
+[controller_server-7] [INFO] [1794864773.425495647] [MPPIController]: Deactivated MPPI Controller: FollowPath
+[controller_server-7] [INFO] [1794864773.425531755] [local_costmap.local_costmap]: Deactivating
+[collision_monitor-15] [INFO] [1794864773.424880875] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[behavior_server-11] [INFO] [1794864773.426702798] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[smoother_server-8] [INFO] [1794864773.428276541] [smoother_server]: Cleaning up
+[async_slam_toolbox_node-6] [INFO] [1794864773.429713506] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[velocity_smoother-14] [INFO] [1794864773.430089206] [velocity_smoother]: Destroying
+[image_bridge-5] [INFO] [1794864773.433377308] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[image_bridge-5] [FATAL] [1794864773.435846202] [ros_gz_image]: Call to publish() on an invalid image_transport::Publisher
+[parameter_bridge-4] [INFO] [1794864773.437808700] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[robot_state_publisher-2] [INFO] [1794864773.444644956] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[controller_server-7] [INFO] [1794864773.446907190] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[async_slam_toolbox_node-6] Unregistering sensor: Custom Described Lidar
+[frontier_explorer-21] Traceback (most recent call last):
+[frontier_explorer-21]   File "/home/achref/industrial_amr_ws/install/industrial_amr_exploration/lib/industrial_amr_exploration/frontier_explorer", line 33, in <module>
+[frontier_explorer-21]     sys.exit(load_entry_point('industrial-amr-exploration', 'console_scripts', 'frontier_explorer')())
+[frontier_explorer-21]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[frontier_explorer-21]   File "/home/achref/industrial_amr_ws/build/industrial_amr_exploration/industrial_amr_exploration/frontier_explorer.py", line 235, in main
+[frontier_explorer-21]     rclpy.spin(node)
+[frontier_explorer-21]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 247, in spin
+[collision_monitor-15] [INFO] [1794864773.455805291] [collision_monitor]: Destroying
+[frontier_explorer-21]     executor.spin_once()
+[frontier_explorer-21]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 926, in spin_once
+[frontier_explorer-21]     self._spin_once_impl(timeout_sec)
+[frontier_explorer-21]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 918, in _spin_once_impl
+[frontier_explorer-21]     raise handler.exception()
+[frontier_explorer-21]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/task.py", line 286, in _execute_coroutine_step
+[frontier_explorer-21]     result = coro.send(None)
+[frontier_explorer-21]              ^^^^^^^^^^^^^^^
+[frontier_explorer-21]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 584, in handler
+[frontier_explorer-21]     call_coroutine = take_from_wait_list(entity)
+[frontier_explorer-21]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[frontier_explorer-21]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 470, in _take_subscription
+[frontier_explorer-21]     msg_info = sub.handle.take_message(sub.msg_type, sub.raw)
+[frontier_explorer-21]                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[frontier_explorer-21] RuntimeError: Unable to convert call argument '0' to Python object (#define PYBIND11_DETAILED_ERROR_MESSAGES or compile in debug mode for details)
+[controller_server-7] [INFO] [1794864773.460597305] [controller_server]: Cleaning up
+[controller_server-7] [INFO] [1794864773.468357997] [MPPIController]: Cleaned up MPPI Controller: FollowPath
+[controller_server-7] [INFO] [1794864773.468713468] [local_costmap.local_costmap]: Cleaning up
+[opennav_docking-16] [INFO] [1794864773.474560926] [docking_server]: Destroying bond (docking_server) to lifecycle manager.
+[waypoint_follower-13] [INFO] [1794864773.475337393] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[waypoint_follower-13] [INFO] [1794864773.482676639] [waypoint_follower]: Destroying
+[smoother_server-8] [INFO] [1794864773.485995389] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[smoother_server-8] [INFO] [1794864773.496630042] [smoother_server]: Destroying
+[route_server-10] [INFO] [1794864773.496983630] [route_server]: Destroying bond (route_server) to lifecycle manager.
+[opennav_docking-16] [INFO] [1794864773.512433008] [docking_server]: Destroying
+[route_server-10] [INFO] [1794864773.516191349] [route_server]: Destroying
+[behavior_server-11] [INFO] [1794864773.542733876] [behavior_server]: Destroying
+[gzserver-1] [1;36m[Dbg] [SignalHandler.cc:142] [0m[1;36mReceived signal[[0m[1;36m2[0m[1;36m].[0m
+[gzserver-1] [1;36m[Dbg] [ServerPrivate.cc:122] [0m[1;36mServer received signal[[0m[1;36m2[0m[1;36m][0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:565] [0m[1;36mSensorsPrivate::Stop[0m[1;36m[0m
+[controller_server-7] [INFO] [1794864773.559076282] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[controller_server-7] [INFO] [1794864773.562521841] [local_costmap.local_costmap]: Destroying
+[controller_server-7] [INFO] [1794864773.568852442] [controller_server]: Destroying
+[INFO] [parameter_bridge-4]: process has finished cleanly [pid 72138]
+[bt_navigator-12] [INFO] [1794864773.584939575] [bt_navigator]: Completed Cleaning up
+[bt_navigator-12] [INFO] [1794864773.585001793] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[INFO] [costmap_filter_info_server-19]: process has finished cleanly [pid 72164]
+[bt_navigator-12] [INFO] [1794864773.590982653] [bt_navigator]: Destroying
+[INFO] [lifecycle_manager-20]: process has finished cleanly [pid 72165]
+[lifecycle_manager-17] [INFO] [1794864773.608720324] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[INFO] [map_server-18]: process has finished cleanly [pid 72162]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 72136]
+[INFO] [image_bridge-5]: process has finished cleanly [pid 72139]
+[INFO] [collision_monitor-15]: process has finished cleanly [pid 72155]
+[INFO] [velocity_smoother-14]: process has finished cleanly [pid 72152]
+[INFO] [waypoint_follower-13]: process has finished cleanly [pid 72151]
+[INFO] [smoother_server-8]: process has finished cleanly [pid 72146]
+[INFO] [route_server-10]: process has finished cleanly [pid 72148]
+[INFO] [opennav_docking-16]: process has finished cleanly [pid 72156]
+[INFO] [async_slam_toolbox_node-6]: process has finished cleanly [pid 72144]
+[INFO] [behavior_server-11]: process has finished cleanly [pid 72149]
+[planner_server-9] [INFO] [1794864773.672604902] [planner_server]: Deactivating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1794864773.672728866] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1794864773.682895594] [planner_server]: Cleaning up
+[planner_server-9] [INFO] [1794864773.686707857] [global_costmap.global_costmap]: Cleaning up
+[INFO] [controller_server-7]: process has finished cleanly [pid 72145]
+[planner_server-9] [INFO] [1794864773.689108432] [planner_server]: Cleaning up plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1794864773.689330552] [planner_server]: Destroying plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1794864773.694503124] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-9] [INFO] [1794864773.696289389] [global_costmap.global_costmap]: Destroying
+[planner_server-9] [INFO] [1794864773.699374939] [planner_server]: Destroying
+[INFO] [bt_navigator-12]: process has finished cleanly [pid 72150]
+[INFO] [lifecycle_manager-17]: process has finished cleanly [pid 72161]
+[ERROR] [frontier_explorer-21]: process has died [pid 72172, exit code 1, cmd '/home/achref/industrial_amr_ws/install/industrial_amr_exploration/lib/industrial_amr_exploration/frontier_explorer --ros-args --params-file /home/achref/industrial_amr_ws/install/industrial_amr_exploration/share/industrial_amr_exploration/config/frontier_explorer.yaml --params-file /tmp/launch_params_hs4r7ash'].
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:551] [0m[1;36mSensorsPrivate::RenderThread stopped[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m4[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m0[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:654] [Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m3[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [SimulationRunner.cc:654] [0m[1;36mExiting postupdate worker thread ([0m[1;36m2[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36mExiting postupdate worker thread ([0m[1;36m1[0m[1;36m)[0m[1;36m[0m
+[gzserver-1] [1;36m[Dbg] [Sensors.cc:565] [0m[1;36mSensorsPrivate::Stop[0m[1;36m[0m
+[INFO] [gzserver-1]: process has finished cleanly [pid 72135]
+[INFO] [planner_server-9]: process has finished cleanly [pid 72147]

@@ -1,0 +1,26 @@
+[WARN] [ros2bag]: Positional "topics" argument deprecated. Please use optional "--topics" argument instead.
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1794872301.392373025] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1794872301.392380299] [rosbag2_recorder]: Event publisher thread: Started
+[INFO] [1794872301.395846428] [rosbag2_recorder]: Starting recording to '/home/achref/industrial_amr_ws/research/rotation_center/data/B/navigation/session_5/bag'
+[INFO] [1794872301.397752574] [rosbag2_recorder]: Subscribed to topic '/rosout'
+[INFO] [1794872301.397839427] [rosbag2_recorder]: Listening for topics...
+[INFO] [1794872301.397861929] [rosbag2_recorder]: Recording...
+[INFO] [1794872301.397898608] [rosbag2_recorder]: Topics discovery started.
+[INFO] [1794872301.982936195] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1794872301.986132307] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1794872303.283295023] [rosbag2_recorder]: Subscribed to topic '/map'
+[INFO] [1794872303.300651910] [rosbag2_recorder]: Subscribed to topic '/amcl_pose'
+[INFO] [1794872303.515856766] [rosbag2_recorder]: Subscribed to topic '/odom'
+[INFO] [1794872303.527991030] [rosbag2_recorder]: Subscribed to topic '/clock'
+[INFO] [1794872304.599171798] [rosbag2_recorder]: Subscribed to topic '/collision_monitor_state'
+[WARN] [1794872304.637993800] [rosbag2_cpp]: Message definition for topic '/navigate_to_pose/_action/feedback' with type 'nav2_msgs/action/NavigateToPose_FeedbackMessage' not found. Message definition will be left empty in bag.
+[INFO] [1794872304.639672788] [rosbag2_recorder]: Subscribed to topic '/navigate_to_pose/_action/feedback'
+[WARN] [1794872304.640896931] [rosbag2_cpp]: Message definition for topic '/navigate_to_pose/_action/status' with type 'action_msgs/msg/GoalStatusArray' not found. Message definition will be left empty in bag.
+[INFO] [1794872304.642775805] [rosbag2_recorder]: Subscribed to topic '/navigate_to_pose/_action/status'
+[INFO] [1794872304.642824877] [rosbag2_recorder]: All requested topics are subscribed. Stopping discovery...
+[INFO] [1794872304.642848451] [rosbag2_recorder]: Topics discovery stopped.
+[INFO] [1794872554.452280579] [rosbag2_recorder]: Pausing recording.
+[INFO] [1794872554.452356622] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1794872554.457721897] [rosbag2_recorder]: Recording stopped
+[WARN] [1794872554.457785667] [rosbag2_recorder]: Number of messages lost on the transport layer: 101
+[INFO] [1794872554.464461934] [rosbag2_recorder]: Event publisher thread: Exited

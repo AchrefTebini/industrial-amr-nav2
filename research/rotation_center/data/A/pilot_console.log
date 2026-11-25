@@ -1,0 +1,9 @@
+[22:01:00] mapping mapping: start (attempt 1)
+[22:01:08] mapping: Nav2 active at sim 3.467
+[22:02:36] mapping mapping: completed 
+[22:02:40] navigation navigation: start (attempt 1)
+[22:02:47] navigation: Nav2 active at sim 3.02
+[22:04:23] navigation navigation: completed 
+[22:04:27] spin spin: start (attempt 1)
+[22:04:35] spin: Nav2 active at sim 3.018
+[22:05:12] spin spin: completed spin_test exit code 0

@@ -1,0 +1,18 @@
+[WARN] [ros2bag]: Positional "topics" argument deprecated. Please use optional "--topics" argument instead.
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1791640833.588132873] [rosbag2_recorder]: Press SPACE for pausing/resuming
+[INFO] [1791640833.588143342] [rosbag2_recorder]: Event publisher thread: Started
+[INFO] [1791640833.591816536] [rosbag2_recorder]: Starting recording to '/home/achref/industrial_amr_ws/paper/data/mapping/run_09/bag'
+[INFO] [1791640833.593998988] [rosbag2_recorder]: Subscribed to topic '/rosout'
+[INFO] [1791640833.594131858] [rosbag2_recorder]: Listening for topics...
+[INFO] [1791640833.594162285] [rosbag2_recorder]: Recording...
+[INFO] [1791640833.594171162] [rosbag2_recorder]: Topics discovery started.
+[INFO] [1791640834.530319968] [rosbag2_recorder]: Subscribed to topic '/tf'
+[INFO] [1791640834.537499502] [rosbag2_recorder]: Subscribed to topic '/tf_static'
+[INFO] [1791640835.622652050] [rosbag2_recorder]: Subscribed to topic '/odom'
+[INFO] [1791640835.633958561] [rosbag2_recorder]: Subscribed to topic '/clock'
+[INFO] [1791640837.511078655] [rosbag2_recorder]: Subscribed to topic '/map'
+[INFO] [1791640953.167084388] [rosbag2_recorder]: Topics discovery stopped.
+[INFO] [1791640953.167259698] [rosbag2_recorder]: Pausing recording.
+[INFO] [1791640953.167318979] [rosbag2_cpp]: Writing remaining messages from cache to the bag. It may take a while
+[INFO] [1791640953.172210231] [rosbag2_recorder]: Recording stopped
+[INFO] [1791640953.174527536] [rosbag2_recorder]: Event publisher thread: Exited

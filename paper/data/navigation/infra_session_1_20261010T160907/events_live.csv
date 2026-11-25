@@ -1,0 +1,363 @@
+wall_t,sim_t,node,level,msg
+1791641218.578,,map_server,20,"
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791641218.581,,map_server,20,Creating
+1791641218.596,,amcl,20,Creating
+1791641218.596,,waypoint_follower,20,"
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791641218.597,,waypoint_follower,20,Creating
+1791641219.314,,controller_server,20,"
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791641219.318,,velocity_smoother,20,"
+	velocity_smoother lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791641219.319,,controller_server,20,Creating controller server
+1791641219.333,,local_costmap.local_costmap,20,"
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791641219.333,,local_costmap.local_costmap,20,Creating Costmap
+1791641219.536,,ros_gz_bridge,20,Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+1791641219.540,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+1791641219.542,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+1791641219.544,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+1791641219.546,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+1791641219.547,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+1791641219.548,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+1791641219.754,,lifecycle_manager_costmap_filters,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791641219.754,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring filter_mask_server[0m[0m
+1791641219.940,,filter_mask_server,20,Configuring
+1791641220.033,,lifecycle_manager_localization,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791641220.034,,lifecycle_manager_localization,20,[34m[1mConfiguring map_server[0m[0m
+1791641220.034,,map_server,20,Configuring
+1791641220.048,,filter_mask_server.rclcpp,30,"failed to send response to /filter_mask_server/change_state (timeout): client will not receive response, at ./src/rmw_response.cpp:153, at ./src/rcl/service.c:400"
+1791641220.053,,rosbag2_recorder,20,Subscribed to topic '/map'
+1791641220.153,,map_server.rclcpp,30,"failed to send response to /map_server/change_state (timeout): client will not receive response, at ./src/rmw_response.cpp:153, at ./src/rcl/service.c:400"
+1791641220.452,,lifecycle_manager_navigation,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791641220.452,,lifecycle_manager_navigation,20,[34m[1mConfiguring controller_server[0m[0m
+1791641220.452,,controller_server,20,Configuring controller interface
+1791641220.452,,controller_server,20,getting progress checker plugins..
+1791641220.453,,controller_server,20,getting goal checker plugins..
+1791641220.453,,controller_server,20,Controller frequency set to 20.0000Hz
+1791641220.453,,local_costmap.local_costmap,20,Configuring
+1791641220.461,,local_costmap.local_costmap,20,"Using plugin ""obstacle_layer"""
+1791641220.465,,local_costmap.local_costmap,20,Subscribed to Topics: scan
+1791641220.469,,local_costmap.local_costmap,20,"Initialized plugin ""obstacle_layer"""
+1791641220.470,,local_costmap.local_costmap,20,"Using plugin ""inflation_layer"""
+1791641220.470,,local_costmap.local_costmap,20,"Initialized plugin ""inflation_layer"""
+1791641220.470,,local_costmap.local_costmap,20,"Using costmap filter ""keepout_filter"""
+1791641220.473,,local_costmap.local_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1791641220.493,,controller_server,20,Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+1791641220.493,,controller_server,20,Controller Server has progress_checker  progress checkers available.
+1791641220.494,,controller_server,20,Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+1791641220.494,,controller_server,20,Controller Server has general_goal_checker  goal checkers available.
+1791641220.496,,controller_server,20,Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+1791641220.498,,controller_server,20,Controller period is equal to model dt. Control sequence shifting is ON
+1791641220.500,,controller_server,20,ConstraintCritic instantiated with 1 power and 4.000000 weight.
+1791641220.500,,controller_server,20,Critic loaded : mppi::critics::ConstraintCritic
+1791641220.501,,controller_server,20,InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+1791641220.501,,controller_server,20,Critic loaded : mppi::critics::CostCritic
+1791641220.502,,controller_server,20,GoalCritic instantiated with 1 power and 5.000000 weight.
+1791641220.502,,controller_server,20,Critic loaded : mppi::critics::GoalCritic
+1791641220.503,,controller_server,20,"GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled"
+1791641220.503,,controller_server,20,Critic loaded : mppi::critics::GoalAngleCritic
+1791641220.503,,controller_server,20,ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+1791641220.504,,controller_server,20,Critic loaded : mppi::critics::PathAlignCritic
+1791641220.504,,controller_server,20,Critic loaded : mppi::critics::PathFollowCritic
+1791641220.505,,controller_server,20,PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+1791641220.505,,controller_server,20,Critic loaded : mppi::critics::PathAngleCritic
+1791641220.506,,controller_server,20,PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+1791641220.506,,controller_server,20,Critic loaded : mppi::critics::PreferForwardCritic
+1791641220.508,,controller_server,20,Optimizer reset
+1791641220.513,,controller_server,20,Controller Server has FollowPath  controllers available.
+1791641220.521,,lifecycle_manager_navigation,20,[34m[1mConfiguring smoother_server[0m[0m
+1791641220.522,,smoother_server,20,Configuring smoother server
+1791641220.535,,smoother_server,20,Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+1791641220.536,,smoother_server,20,Smoother Server has simple_smoother  smoothers available.
+1791641220.544,0.000,lifecycle_manager_navigation,20,[34m[1mConfiguring planner_server[0m[0m
+1791641220.545,0.000,planner_server,20,Configuring
+1791641220.545,0.000,global_costmap.global_costmap,20,Configuring
+1791641220.555,0.000,global_costmap.global_costmap,20,"Using plugin ""static_layer"""
+1791641220.558,0.000,global_costmap.global_costmap,20,Subscribing to the map topic (/map) with transient local durability
+1791641220.560,0.000,global_costmap.global_costmap,20,"Initialized plugin ""static_layer"""
+1791641220.560,0.000,global_costmap.global_costmap,20,"Using plugin ""obstacle_layer"""
+1791641220.561,0.000,global_costmap.global_costmap,20,Subscribed to Topics: scan
+1791641220.565,0.000,global_costmap.global_costmap,20,"Initialized plugin ""obstacle_layer"""
+1791641220.566,0.000,global_costmap.global_costmap,20,"Using plugin ""inflation_layer"""
+1791641220.566,0.000,global_costmap.global_costmap,20,"Initialized plugin ""inflation_layer"""
+1791641220.566,0.000,global_costmap.global_costmap,20,"Using costmap filter ""keepout_filter"""
+1791641220.570,0.000,global_costmap.global_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1791641220.595,0.000,planner_server,20,Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+1791641220.596,0.000,planner_server,20,Configuring plugin GridBased of type NavfnPlanner
+1791641220.596,0.000,planner_server,20,Planner Server has GridBased  planners available.
+1791641220.609,0.000,lifecycle_manager_navigation,20,[34m[1mConfiguring route_server[0m[0m
+1791641220.610,0.000,route_server,20,Configuring
+1791641220.643,0.000,route_server,20,Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+1791641220.644,0.000,route_server,20,Configuring geojson graph file loader
+1791641220.644,0.000,route_server,20,No graph file provided to load yet.
+1791641220.646,0.000,route_server,20,Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+1791641220.646,0.000,route_server,20,Configuring distance scorer.
+1791641220.646,0.000,route_server,20,Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+1791641220.647,0.000,route_server,20,Configuring costmap scorer.
+1791641220.649,0.000,route_server,20,Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+1791641220.650,0.000,route_server,20,Configuring Adjust speed limit operation.
+1791641220.651,0.000,route_server,20,Created route operation ReroutingService of type nav2_route::ReroutingService
+1791641220.651,0.000,route_server,20,Configuring Rerouting service operation.
+1791641220.654,0.000,route_server,20,Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+1791641220.654,0.000,route_server,20,Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+1791641220.659,0.000,lifecycle_manager_navigation,20,[34m[1mConfiguring behavior_server[0m[0m
+1791641220.660,0.000,behavior_server,20,Configuring
+1791641220.667,0.000,behavior_server,20,Creating behavior plugin spin of type nav2_behaviors::Spin
+1791641220.668,0.000,behavior_server,20,Creating behavior plugin backup of type nav2_behaviors::BackUp
+1791641220.669,0.000,behavior_server,20,Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+1791641220.670,0.000,behavior_server,20,Creating behavior plugin wait of type nav2_behaviors::Wait
+1791641220.683,0.001,behavior_server,20,Configuring spin
+1791641220.697,0.001,behavior_server,20,Configuring backup
+1791641220.704,0.001,behavior_server,20,Configuring drive_on_heading
+1791641220.710,0.001,behavior_server,20,Configuring wait
+1791641220.717,0.001,lifecycle_manager_navigation,20,[34m[1mConfiguring velocity_smoother[0m[0m
+1791641220.717,0.001,velocity_smoother,20,Configuring velocity smoother
+1791641220.723,0.001,lifecycle_manager_navigation,20,[34m[1mConfiguring collision_monitor[0m[0m
+1791641220.723,0.001,collision_monitor,20,Configuring
+1791641220.731,0.001,collision_monitor,20,[scan]: Creating Scan
+1791641220.737,0.001,collision_monitor,20,[FootprintApproach]: Creating Polygon
+1791641220.737,0.001,collision_monitor,20,[FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+1791641220.738,0.001,collision_monitor,20,[FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+1791641220.756,0.001,lifecycle_manager_navigation,20,[34m[1mConfiguring bt_navigator[0m[0m
+1791641220.756,0.001,bt_navigator,20,Configuring
+1791641220.759,0.001,rosbag2_recorder,20,Subscribed to topic '/collision_monitor_state'
+1791641220.766,0.001,bt_navigator,20,Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+1791641220.802,0.001,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/feedback'
+1791641220.804,0.001,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/status'
+1791641220.838,0.001,bt_navigator,20,Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+1791641220.867,0.001,lifecycle_manager_navigation,20,[34m[1mConfiguring waypoint_follower[0m[0m
+1791641220.867,0.001,waypoint_follower,20,Configuring
+1791641220.895,0.002,waypoint_follower,20,Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+1791641220.896,0.002,lifecycle_manager_navigation,20,[34m[1mConfiguring docking_server[0m[0m
+1791641220.896,0.002,docking_server,20,Configuring docking_server
+1791641220.897,0.002,docking_server,20,Controller frequency set to 50.0000Hz
+1791641220.928,0.002,docking_server,20,Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+1791641220.936,0.002,docking_server,30,Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+1791641220.936,0.002,docking_server,20,Docking Server has 1 dock types and 0 dock instances available.
+1791641220.938,0.002,lifecycle_manager_navigation,20,[34m[1mActivating controller_server[0m[0m
+1791641220.938,0.002,controller_server,20,Activating
+1791641220.938,0.002,local_costmap.local_costmap,20,Activating
+1791641220.938,0.002,local_costmap.local_costmap,20,Checking transform
+1791641220.939,0.002,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1791641221.119,0.106,gzserver,20,InitializeCanonicalLinks
+1791641221.122,0.106,gzserver,20,Creating services on gzserver
+1791641221.126,0.106,gzserver,20,Created service /gzserver/delete_entity
+1791641221.128,0.106,gzserver,20,Created service /gzserver/get_entities
+1791641221.129,0.106,gzserver,20,Created service /gzserver/get_entity_info
+1791641221.131,0.106,gzserver,20,Created service /gzserver/get_entity_state
+1791641221.133,0.106,gzserver,20,Created service /gzserver/get_entities_states
+1791641221.134,0.106,gzserver,20,Created service /gzserver/get_simulation_state
+1791641221.136,0.106,gzserver,20,Created service /gzserver/get_simulator_features
+1791641221.137,0.106,gzserver,20,Created service /gzserver/reset_simulation
+1791641221.139,0.106,gzserver,20,Created service /gzserver/set_entity_state
+1791641221.140,0.106,gzserver,20,Created service /gzserver/set_simulation_state
+1791641221.141,0.106,gzserver,20,Created service /gzserver/spawn_entity
+1791641221.143,0.106,gzserver,20,Created service /gzserver/step_simulation
+1791641221.152,0.106,gzserver,20,Created action /gzserver/simulate_steps
+1791641221.438,0.401,local_costmap.local_costmap,20,start
+1791641221.439,0.401,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791641221.496,0.501,rosbag2_recorder,20,Subscribed to topic '/tf'
+1791641221.498,0.501,rosbag2_recorder,20,Subscribed to topic '/odom'
+1791641221.502,0.501,rosbag2_recorder,20,Subscribed to topic '/clock'
+1791641221.503,0.501,rosbag2_recorder,20,Subscribed to topic '/tf_static'
+1791641221.641,0.602,controller_server,30,Parameter controller_server.verbose not found
+1791641221.645,0.602,controller_server,20,Optimizer reset
+1791641221.645,0.602,controller_server,20,Creating bond (controller_server) to lifecycle manager.
+1791641221.752,0.701,lifecycle_manager_navigation,20,Server controller_server connected with bond.
+1791641221.752,0.701,lifecycle_manager_navigation,20,[34m[1mActivating smoother_server[0m[0m
+1791641221.752,0.701,smoother_server,20,Activating
+1791641221.753,0.701,smoother_server,20,Creating bond (smoother_server) to lifecycle manager.
+1791641221.858,0.802,lifecycle_manager_navigation,20,Server smoother_server connected with bond.
+1791641221.858,0.802,lifecycle_manager_navigation,20,[34m[1mActivating planner_server[0m[0m
+1791641221.858,0.802,planner_server,20,Activating
+1791641221.858,0.802,global_costmap.global_costmap,20,Activating
+1791641221.858,0.802,global_costmap.global_costmap,20,Checking transform
+1791641221.859,0.802,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641222.358,1.305,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641222.858,1.808,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641223.039,2.009,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641223.359,2.311,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641223.858,2.813,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641224.358,3.313,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641224.858,3.807,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641225.239,4.210,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641225.358,4.310,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641225.858,4.814,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641226.358,5.318,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641226.858,5.819,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641227.358,6.323,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641227.439,6.423,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641227.858,6.821,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641228.358,7.319,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641228.858,7.824,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641229.358,8.327,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641229.639,8.529,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641229.858,8.829,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641230.358,9.332,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641230.858,9.832,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641231.358,10.326,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641231.839,10.727,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641231.858,10.727,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641232.358,11.229,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641232.858,11.732,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641233.358,12.236,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641233.839,12.739,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641233.858,12.739,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641234.358,13.241,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641234.858,13.738,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641235.358,14.240,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641235.858,14.741,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641236.039,14.943,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641236.358,15.246,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641236.858,15.743,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641237.358,16.246,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641237.858,16.742,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641238.239,17.140,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641238.358,17.241,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641238.858,17.746,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641239.358,18.246,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641239.859,18.750,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641240.358,19.255,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641240.439,19.355,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641240.858,19.756,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641241.358,20.252,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641241.858,20.752,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641242.358,21.254,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641242.639,21.557,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641242.858,21.759,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641243.358,22.262,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641243.858,22.763,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641244.358,23.265,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641244.839,23.659,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641244.858,23.760,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641245.358,24.263,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641245.858,24.765,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641246.358,25.269,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641246.839,25.672,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641246.858,25.773,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641247.358,26.176,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641247.858,26.673,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641248.358,27.172,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641248.858,27.675,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641249.039,27.876,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641249.358,28.178,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641249.858,28.681,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641250.358,29.186,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641250.858,29.689,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641251.239,30.086,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641251.358,30.185,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641251.858,30.689,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641252.358,31.186,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641252.858,31.689,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641253.358,32.192,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641253.439,32.293,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641253.858,32.695,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641254.358,33.197,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641254.858,33.692,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641255.358,34.194,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641255.639,34.496,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641255.858,34.697,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641256.358,35.198,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641256.859,35.700,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641257.358,36.202,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641257.839,36.691,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641257.858,36.691,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641258.358,37.193,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641258.858,37.696,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641259.358,38.198,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641259.839,38.600,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641259.858,38.701,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641260.358,39.203,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641260.858,39.703,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641261.358,40.201,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641261.858,40.605,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641262.039,40.801,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641262.360,41.099,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641262.858,41.601,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641263.358,42.100,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641263.858,42.602,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641264.239,43.000,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641264.358,43.100,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641264.858,43.595,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641265.358,44.099,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641265.858,44.603,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641266.358,45.105,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641266.439,45.206,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641266.858,45.607,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641267.358,46.108,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641267.858,46.604,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641268.358,47.106,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641268.639,47.406,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641268.858,47.607,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641269.358,48.109,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641269.858,48.611,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641270.358,49.115,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641270.839,49.616,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641270.858,49.616,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641271.358,50.112,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641271.858,50.615,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641272.358,51.118,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641272.858,51.621,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641273.039,51.822,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641273.358,52.124,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641273.858,52.627,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641274.358,53.120,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641274.858,53.622,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641275.239,54.024,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641275.358,54.124,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641275.858,54.627,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641276.358,55.131,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641276.858,55.633,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641277.358,56.136,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641277.439,56.136,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641277.858,56.631,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641278.358,57.133,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641278.858,57.636,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641279.358,58.138,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641279.639,58.339,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641279.858,58.540,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641280.358,59.043,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641280.858,59.544,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641281.358,60.040,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641281.839,60.543,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641281.858,60.543,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1791641281.858,60.543,global_costmap.global_costmap,40,Failed to activate global_costmap because transform from base_footprint to map did not become available before timeout
+1791641281.859,60.543,lifecycle_manager_navigation,40,Failed to change state for node: planner_server
+1791641281.859,60.543,lifecycle_manager_navigation,40,Failed to bring up all requested nodes. Aborting bringup.
+1791641284.039,62.741,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641286.239,64.943,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641288.439,67.142,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641290.639,69.352,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641292.839,71.556,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641295.039,73.658,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641297.039,75.662,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641299.239,77.861,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641301.439,80.064,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641303.439,82.077,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641305.639,84.264,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641307.839,86.466,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641310.039,88.676,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641312.239,90.784,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641314.439,92.993,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641316.439,95.002,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641318.639,97.202,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641320.839,99.408,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641322.839,101.417,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641325.039,103.623,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641327.239,105.831,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641329.439,107.939,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641331.639,110.143,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641333.839,112.350,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791641336.039,114.556,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received

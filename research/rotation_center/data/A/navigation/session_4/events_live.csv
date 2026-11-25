@@ -1,0 +1,656 @@
+wall_t,sim_t,node,level,msg
+1794866154.040,,rosbag2_recorder,20,Press SPACE for pausing/resuming
+1794866154.040,,rosbag2_recorder,20,Event publisher thread: Started
+1794866154.040,,rosbag2_recorder,20,Starting recording to '/home/achref/industrial_amr_ws/research/rotation_center/data/A/navigation/session_4/bag'
+1794866154.040,,rosbag2_recorder,20,Subscribed to topic '/rosout'
+1794866154.040,,rosbag2_recorder,20,Listening for topics...
+1794866154.040,,rosbag2_recorder,20,Recording...
+1794866154.041,,rosbag2_recorder,20,Topics discovery started.
+1794866154.977,,ros_gz_sim,20,Requesting list of world names.
+1794866154.981,,robot_state_publisher,20,Robot initialized
+1794866154.982,,lifecycle_manager_navigation,20,Creating
+1794866154.985,,lifecycle_manager_navigation,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1794866154.986,,controller_server,20,"
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866154.987,,controller_server,20,Creating controller server
+1794866154.994,,local_costmap.local_costmap,20,"
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866154.995,,local_costmap.local_costmap,20,Creating Costmap
+1794866155.006,,velocity_smoother,20,"
+	velocity_smoother lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.006,,waypoint_follower,20,"
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.007,,waypoint_follower,20,Creating
+1794866155.062,,smoother_server,20,"
+	smoother_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.068,,smoother_server,20,Creating smoother server
+1794866155.085,,ros_gz_sim,20,Waiting messages on topic [robot_description].
+1794866155.086,,bt_navigator,20,"
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.087,,bt_navigator,20,Creating
+1794866155.095,,ros_gz_sim,20,Entity creation successful.
+1794866155.420,,costmap_filter_info_server,20,"
+	costmap_filter_info_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.431,,rosbag2_recorder,20,Subscribed to topic '/map'
+1794866155.823,,costmap_filter_info_server,20,Configuring
+1794866155.848,,ros_gz_bridge,20,Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+1794866155.855,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+1794866155.859,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+1794866155.863,,rosbag2_recorder,20,Subscribed to topic '/odom'
+1794866155.864,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+1794866155.868,,rosbag2_recorder,20,Subscribed to topic '/tf'
+1794866155.869,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+1794866155.871,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+1794866155.873,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+1794866155.878,,rosbag2_recorder,20,Subscribed to topic '/clock'
+1794866155.882,,lifecycle_manager_navigation,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1794866155.882,,lifecycle_manager_navigation,20,[34m[1mConfiguring controller_server[0m[0m
+1794866155.883,,controller_server,20,Configuring controller interface
+1794866155.883,,controller_server,20,getting progress checker plugins..
+1794866155.883,,controller_server,20,getting goal checker plugins..
+1794866155.883,,controller_server,20,Controller frequency set to 20.0000Hz
+1794866155.883,,local_costmap.local_costmap,20,Configuring
+1794866155.892,,local_costmap.local_costmap,20,"Using plugin ""obstacle_layer"""
+1794866155.895,,local_costmap.local_costmap,20,Subscribed to Topics: scan
+1794866155.899,,local_costmap.local_costmap,20,"Initialized plugin ""obstacle_layer"""
+1794866155.899,,local_costmap.local_costmap,20,"Using plugin ""inflation_layer"""
+1794866155.899,,local_costmap.local_costmap,20,"Initialized plugin ""inflation_layer"""
+1794866155.900,,local_costmap.local_costmap,20,"Using costmap filter ""keepout_filter"""
+1794866155.903,,local_costmap.local_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1794866155.922,,controller_server,20,Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+1794866155.922,,controller_server,20,Controller Server has progress_checker  progress checkers available.
+1794866155.923,,controller_server,20,Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+1794866155.923,,controller_server,20,Controller Server has general_goal_checker  goal checkers available.
+1794866155.924,,controller_server,20,Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+1794866155.927,,controller_server,20,Controller period is equal to model dt. Control sequence shifting is ON
+1794866155.928,,controller_server,20,ConstraintCritic instantiated with 1 power and 4.000000 weight.
+1794866155.928,,controller_server,20,Critic loaded : mppi::critics::ConstraintCritic
+1794866155.929,,controller_server,20,InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+1794866155.929,,controller_server,20,Critic loaded : mppi::critics::CostCritic
+1794866155.930,,controller_server,20,GoalCritic instantiated with 1 power and 5.000000 weight.
+1794866155.930,,controller_server,20,Critic loaded : mppi::critics::GoalCritic
+1794866155.930,,controller_server,20,"GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled"
+1794866155.930,,controller_server,20,Critic loaded : mppi::critics::GoalAngleCritic
+1794866155.931,,controller_server,20,ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+1794866155.931,,controller_server,20,Critic loaded : mppi::critics::PathAlignCritic
+1794866155.932,,controller_server,20,Critic loaded : mppi::critics::PathFollowCritic
+1794866155.932,,controller_server,20,PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+1794866155.932,,controller_server,20,Critic loaded : mppi::critics::PathAngleCritic
+1794866155.933,,controller_server,20,PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+1794866155.933,,controller_server,20,Critic loaded : mppi::critics::PreferForwardCritic
+1794866155.934,,costmap_filter_info_server,20,Activating
+1794866155.934,,costmap_filter_info_server,20,Creating bond (costmap_filter_info_server) to lifecycle manager.
+1794866155.937,,controller_server,20,Optimizer reset
+1794866155.942,,controller_server,20,Controller Server has FollowPath  controllers available.
+1794866155.950,,lifecycle_manager_navigation,20,[34m[1mConfiguring smoother_server[0m[0m
+1794866155.950,,smoother_server,20,Configuring smoother server
+1794866155.970,,smoother_server,20,Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+1794866155.973,,collision_monitor,20,"
+	collision_monitor lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.974,,lifecycle_manager_localization,20,Creating
+1794866155.974,,lifecycle_manager_localization,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1794866155.974,,amcl,20,"
+	amcl lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.974,,amcl,20,Creating
+1794866155.975,,docking_server,20,"
+	docking_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866155.975,,docking_server,20,Creating docking_server
+1794866155.975,,lifecycle_manager_localization,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1794866155.975,,lifecycle_manager_localization,20,[34m[1mConfiguring map_server[0m[0m
+1794866155.976,,lifecycle_manager_localization,20,[34m[1mConfiguring amcl[0m[0m
+1794866155.977,,amcl,20,Configuring
+1794866155.977,,amcl,20,initTransforms
+1794866155.977,,amcl,20,initPubSub
+1794866155.978,,amcl,20,Subscribed to map topic.
+1794866155.978,,lifecycle_manager_localization,20,[34m[1mActivating map_server[0m[0m
+1794866155.978,,amcl,20,Received a 205 X 163 map @ 0.050 m/pix
+1794866155.978,,lifecycle_manager_localization,20,Server map_server connected with bond.
+1794866155.978,,lifecycle_manager_localization,20,[34m[1mActivating amcl[0m[0m
+1794866155.979,,amcl,20,Activating
+1794866155.979,,amcl,20,initialPoseReceived
+1794866155.979,,amcl,20,Setting pose (0.000000): 0.000 0.000 0.000
+1794866155.979,,amcl,20,Creating bond (amcl) to lifecycle manager.
+1794866155.979,,lifecycle_manager_localization,20,Server amcl connected with bond.
+1794866155.980,,lifecycle_manager_localization,20,[34m[1mManaged nodes are active[0m[0m
+1794866155.980,,lifecycle_manager_localization,20,[34m[1mCreating bond timer...[0m[0m
+1794866155.980,,smoother_server,20,Smoother Server has simple_smoother  smoothers available.
+1794866155.984,,lifecycle_manager_navigation,20,[34m[1mConfiguring planner_server[0m[0m
+1794866156.044,,lifecycle_manager_navigation,20,[34m[1mConfiguring route_server[0m[0m
+1794866156.089,,lifecycle_manager_navigation,20,[34m[1mConfiguring behavior_server[0m[0m
+1794866156.125,,lifecycle_manager_navigation,20,[34m[1mConfiguring velocity_smoother[0m[0m
+1794866156.126,,velocity_smoother,20,Configuring velocity smoother
+1794866156.131,,lifecycle_manager_navigation,20,[34m[1mConfiguring collision_monitor[0m[0m
+1794866156.131,,collision_monitor,20,Configuring
+1794866156.139,,collision_monitor,20,[scan]: Creating Scan
+1794866156.142,,collision_monitor,20,[FootprintApproach]: Creating Polygon
+1794866156.142,,collision_monitor,20,[FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+1794866156.143,,collision_monitor,20,[FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+1794866156.157,,lifecycle_manager_navigation,20,[34m[1mConfiguring bt_navigator[0m[0m
+1794866156.158,,bt_navigator,20,Configuring
+1794866156.158,,route_server,20,"
+	route_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866156.159,,route_server,20,Configuring
+1794866156.159,,route_server,20,Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+1794866156.159,,planner_server,20,"
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866156.159,,planner_server,20,Creating
+1794866156.160,,planner_server,20,Configuring
+1794866156.160,,planner_server,20,Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+1794866156.160,,planner_server,20,Configuring plugin GridBased of type NavfnPlanner
+1794866156.160,,planner_server,20,Planner Server has GridBased  planners available.
+1794866156.160,,route_server,20,Configuring geojson graph file loader
+1794866156.160,,route_server,20,No graph file provided to load yet.
+1794866156.161,,route_server,20,Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+1794866156.161,,route_server,20,Configuring distance scorer.
+1794866156.161,,route_server,20,Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+1794866156.161,,route_server,20,Configuring costmap scorer.
+1794866156.161,,route_server,20,Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+1794866156.161,,global_costmap.global_costmap,20,"
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866156.162,,global_costmap.global_costmap,20,Creating Costmap
+1794866156.162,,global_costmap.global_costmap,20,Configuring
+1794866156.162,,global_costmap.global_costmap,20,"Using plugin ""static_layer"""
+1794866156.162,,global_costmap.global_costmap,20,Subscribing to the map topic (/map) with transient local durability
+1794866156.162,,global_costmap.global_costmap,20,"Initialized plugin ""static_layer"""
+1794866156.162,,global_costmap.global_costmap,20,"Using plugin ""obstacle_layer"""
+1794866156.163,,global_costmap.global_costmap,20,Subscribed to Topics: scan
+1794866156.163,,global_costmap.global_costmap,20,"Initialized plugin ""obstacle_layer"""
+1794866156.163,,global_costmap.global_costmap,20,"Using plugin ""inflation_layer"""
+1794866156.163,,global_costmap.global_costmap,20,"Initialized plugin ""inflation_layer"""
+1794866156.164,,global_costmap.global_costmap,20,"Using costmap filter ""keepout_filter"""
+1794866156.164,,global_costmap.global_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1794866156.164,,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 205 X 163 at 0.050000 m/pix
+1794866156.164,,route_server,20,Configuring Adjust speed limit operation.
+1794866156.164,,route_server,20,Created route operation ReroutingService of type nav2_route::ReroutingService
+1794866156.164,,route_server,20,Configuring Rerouting service operation.
+1794866156.165,,route_server,20,Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+1794866156.165,,route_server,20,Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+1794866156.165,,rosbag2_recorder,20,Subscribed to topic '/collision_monitor_state'
+1794866156.166,,bt_navigator,20,Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+1794866156.245,,bt_navigator,20,Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+1794866156.274,,lifecycle_manager_navigation,20,[34m[1mConfiguring waypoint_follower[0m[0m
+1794866156.274,,waypoint_follower,20,Configuring
+1794866156.304,,waypoint_follower,20,Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+1794866156.305,,lifecycle_manager_navigation,20,[34m[1mConfiguring docking_server[0m[0m
+1794866156.305,,docking_server,20,Configuring docking_server
+1794866156.305,,docking_server,20,Controller frequency set to 50.0000Hz
+1794866156.343,,docking_server,20,Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+1794866156.350,,docking_server,30,Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+1794866156.350,,docking_server,20,Docking Server has 1 dock types and 0 dock instances available.
+1794866156.352,,lifecycle_manager_navigation,20,[34m[1mActivating controller_server[0m[0m
+1794866156.352,,controller_server,20,Activating
+1794866156.352,,local_costmap.local_costmap,20,Activating
+1794866156.353,,local_costmap.local_costmap,20,Checking transform
+1794866156.353,,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1794866156.396,,behavior_server,20,"
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866156.397,,filter_mask_server,20,"
+	filter_mask_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866156.397,,filter_mask_server,20,Creating
+1794866156.397,,filter_mask_server,20,Configuring
+1794866156.397,,filter_mask_server,20,Activating
+1794866156.397,,filter_mask_server,20,Creating bond (filter_mask_server) to lifecycle manager.
+1794866156.397,,behavior_server,20,Configuring
+1794866156.398,,behavior_server,20,Creating behavior plugin spin of type nav2_behaviors::Spin
+1794866156.398,,behavior_server,20,Creating behavior plugin backup of type nav2_behaviors::BackUp
+1794866156.398,,behavior_server,20,Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+1794866156.398,,behavior_server,20,Creating behavior plugin wait of type nav2_behaviors::Wait
+1794866156.398,,behavior_server,20,Configuring spin
+1794866156.398,,behavior_server,20,Configuring backup
+1794866156.398,,behavior_server,20,Configuring drive_on_heading
+1794866156.399,,behavior_server,20,Configuring wait
+1794866156.403,,map_server,20,"
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794866156.404,,map_server,20,Creating
+1794866156.404,,map_server,20,Configuring
+1794866156.404,,map_server,20,Activating
+1794866156.404,,map_server,20,Creating bond (map_server) to lifecycle manager.
+1794866156.853,0.002,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1794866157.059,0.115,amcl,20,createLaserObject
+1794866157.139,0.211,gzserver,20,InitializeCanonicalLinks
+1794866157.139,0.211,gzserver,20,Creating services on gzserver
+1794866157.140,0.211,lifecycle_manager_costmap_filters,20,Creating
+1794866157.141,0.211,lifecycle_manager_costmap_filters,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1794866157.141,0.211,lifecycle_manager_costmap_filters,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1794866157.141,0.211,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring filter_mask_server[0m[0m
+1794866157.141,0.211,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring costmap_filter_info_server[0m[0m
+1794866157.141,0.211,lifecycle_manager_costmap_filters,20,[34m[1mActivating filter_mask_server[0m[0m
+1794866157.141,0.211,lifecycle_manager_costmap_filters,20,Server filter_mask_server connected with bond.
+1794866157.142,0.211,lifecycle_manager_costmap_filters,20,[34m[1mActivating costmap_filter_info_server[0m[0m
+1794866157.142,0.211,lifecycle_manager_costmap_filters,20,Server costmap_filter_info_server connected with bond.
+1794866157.142,0.211,lifecycle_manager_costmap_filters,20,[34m[1mManaged nodes are active[0m[0m
+1794866157.142,0.211,lifecycle_manager_costmap_filters,20,[34m[1mCreating bond timer...[0m[0m
+1794866157.144,0.211,gzserver,20,Created service /gzserver/delete_entity
+1794866157.146,0.211,gzserver,20,Created service /gzserver/get_entities
+1794866157.148,0.211,gzserver,20,Created service /gzserver/get_entity_info
+1794866157.150,0.211,gzserver,20,Created service /gzserver/get_entity_state
+1794866157.152,0.211,gzserver,20,Created service /gzserver/get_entities_states
+1794866157.155,0.211,gzserver,20,Created service /gzserver/get_simulation_state
+1794866157.157,0.211,gzserver,20,Created service /gzserver/get_simulator_features
+1794866157.159,0.211,gzserver,20,Created service /gzserver/reset_simulation
+1794866157.161,0.211,gzserver,20,Created service /gzserver/set_entity_state
+1794866157.163,0.211,gzserver,20,Created service /gzserver/set_simulation_state
+1794866157.164,0.211,gzserver,20,Created service /gzserver/spawn_entity
+1794866157.167,0.211,gzserver,20,Created service /gzserver/step_simulation
+1794866157.181,0.211,gzserver,20,Created action /gzserver/simulate_steps
+1794866157.354,0.401,local_costmap.local_costmap,20,start
+1794866157.357,0.401,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1794866157.379,0.401,local_costmap.local_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1794866157.379,0.401,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1794866157.393,0.401,local_costmap.local_costmap,20,KeepoutFilter: Received filter mask from /keepout_filter_mask topic.
+1794866157.566,0.591,controller_server,30,Parameter controller_server.verbose not found
+1794866157.569,0.591,controller_server,20,Optimizer reset
+1794866157.569,0.591,controller_server,20,Creating bond (controller_server) to lifecycle manager.
+1794866157.679,0.682,lifecycle_manager_navigation,20,Server controller_server connected with bond.
+1794866157.679,0.682,lifecycle_manager_navigation,20,[34m[1mActivating smoother_server[0m[0m
+1794866157.679,0.682,smoother_server,20,Activating
+1794866157.680,0.682,smoother_server,20,Creating bond (smoother_server) to lifecycle manager.
+1794866157.786,0.783,lifecycle_manager_navigation,20,Server smoother_server connected with bond.
+1794866157.786,0.783,lifecycle_manager_navigation,20,[34m[1mActivating planner_server[0m[0m
+1794866157.786,0.783,planner_server,20,Activating
+1794866157.787,0.783,global_costmap.global_costmap,20,Activating
+1794866157.787,0.783,global_costmap.global_costmap,20,Checking transform
+1794866157.787,0.783,global_costmap.global_costmap,20,start
+1794866157.788,0.783,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1794866157.800,0.783,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1794866157.800,0.783,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1794866157.811,0.783,global_costmap.global_costmap,20,KeepoutFilter: Received filter mask from /keepout_filter_mask topic.
+1794866157.997,0.984,rosbag2_recorder,20,Subscribed to topic '/tf_static'
+1794866158.001,0.984,rosbag2_recorder,20,Subscribed to topic '/amcl_pose'
+1794866158.006,0.984,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/status'
+1794866158.007,0.984,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/feedback'
+1794866158.007,0.984,rosbag2_recorder,20,All requested topics are subscribed. Stopping discovery...
+1794866158.007,0.984,rosbag2_recorder,20,Topics discovery stopped.
+1794866158.790,1.784,planner_server,20,Activating plugin GridBased of type NavfnPlanner
+1794866158.791,1.784,planner_server,20,Creating bond (planner_server) to lifecycle manager.
+1794866158.897,1.884,lifecycle_manager_navigation,20,Server planner_server connected with bond.
+1794866158.897,1.884,lifecycle_manager_navigation,20,[34m[1mActivating route_server[0m[0m
+1794866158.897,1.884,route_server,20,Activating
+1794866158.898,1.884,route_server,20,Creating bond (route_server) to lifecycle manager.
+1794866159.006,1.984,lifecycle_manager_navigation,20,Server route_server connected with bond.
+1794866159.006,1.984,lifecycle_manager_navigation,20,[34m[1mActivating behavior_server[0m[0m
+1794866159.006,1.984,behavior_server,20,Activating
+1794866159.006,1.984,behavior_server,20,Activating spin
+1794866159.006,1.984,behavior_server,20,Activating backup
+1794866159.007,1.984,behavior_server,20,Activating drive_on_heading
+1794866159.007,1.984,behavior_server,20,Activating wait
+1794866159.007,1.984,behavior_server,20,Creating bond (behavior_server) to lifecycle manager.
+1794866159.113,2.083,lifecycle_manager_navigation,20,Server behavior_server connected with bond.
+1794866159.114,2.083,lifecycle_manager_navigation,20,[34m[1mActivating velocity_smoother[0m[0m
+1794866159.114,2.083,velocity_smoother,20,Activating
+1794866159.114,2.083,velocity_smoother,20,Creating bond (velocity_smoother) to lifecycle manager.
+1794866159.221,2.184,lifecycle_manager_navigation,20,Server velocity_smoother connected with bond.
+1794866159.221,2.184,lifecycle_manager_navigation,20,[34m[1mActivating collision_monitor[0m[0m
+1794866159.222,2.184,collision_monitor,20,Activating
+1794866159.222,2.184,collision_monitor,20,Creating bond (collision_monitor) to lifecycle manager.
+1794866159.330,2.285,lifecycle_manager_navigation,20,Server collision_monitor connected with bond.
+1794866159.330,2.285,lifecycle_manager_navigation,20,[34m[1mActivating bt_navigator[0m[0m
+1794866159.330,2.285,bt_navigator,20,Activating
+1794866159.425,2.386,bt_navigator,20,Creating bond (bt_navigator) to lifecycle manager.
+1794866159.535,2.587,lifecycle_manager_navigation,20,Server bt_navigator connected with bond.
+1794866159.535,2.587,lifecycle_manager_navigation,20,[34m[1mActivating waypoint_follower[0m[0m
+1794866159.535,2.587,waypoint_follower,20,Activating
+1794866159.536,2.587,waypoint_follower,20,Creating bond (waypoint_follower) to lifecycle manager.
+1794866159.646,2.685,lifecycle_manager_navigation,20,Server waypoint_follower connected with bond.
+1794866159.646,2.685,lifecycle_manager_navigation,20,[34m[1mActivating docking_server[0m[0m
+1794866159.646,2.685,docking_server,20,Activating docking_server
+1794866159.659,2.685,docking_server,20,Creating bond (docking_server) to lifecycle manager.
+1794866159.769,2.785,lifecycle_manager_navigation,20,Server docking_server connected with bond.
+1794866159.769,2.785,lifecycle_manager_navigation,20,[34m[1mManaged nodes are active[0m[0m
+1794866159.770,2.785,lifecycle_manager_navigation,20,[34m[1mCreating bond timer...[0m[0m
+1794866163.726,6.649,waypoint_runner,20,"[loop 1/3] waypoint 1/5: (3.00, 2.00, 0.00)"
+1794866163.727,6.649,waypoint_runner,20,Navigating to goal: 3.0 2.0...
+1794866163.728,6.649,bt_navigator,20,"Begin navigating from current location (-0.00, -0.00) to (3.00, 2.00)"
+1794866163.749,6.649,controller_server,20,"Received a goal, begin computing control effort."
+1794866163.749,6.649,controller_server,30,No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+1794866163.749,6.649,controller_server,30,No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+1794866163.775,6.750,ros_gz_bridge,20,Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+1794866164.799,7.749,controller_server,20,Passing new path to controller.
+1794866165.849,8.755,controller_server,20,Passing new path to controller.
+1794866166.849,9.750,controller_server,20,Passing new path to controller.
+1794866167.849,10.747,controller_server,20,Passing new path to controller.
+1794866168.899,11.853,controller_server,20,Passing new path to controller.
+1794866169.899,12.858,controller_server,20,Passing new path to controller.
+1794866170.899,13.847,controller_server,20,Passing new path to controller.
+1794866171.949,14.848,controller_server,20,Passing new path to controller.
+1794866172.949,15.855,controller_server,20,Passing new path to controller.
+1794866173.999,16.849,controller_server,20,Passing new path to controller.
+1794866174.549,17.452,controller_server,20,Reached the goal!
+1794866174.551,17.452,controller_server,20,Optimizer reset
+1794866174.578,17.452,bt_navigator,20,Goal succeeded
+1794866174.579,17.452,waypoint_runner,20,"[loop 1/3] waypoint 2/5: (3.00, -2.50, -1.57)"
+1794866174.580,17.452,waypoint_runner,20,Navigating to goal: 3.0 -2.5...
+1794866174.581,17.452,bt_navigator,20,"Begin navigating from current location (3.07, 1.89) to (3.00, -2.50)"
+1794866174.603,17.452,controller_server,20,"Received a goal, begin computing control effort."
+1794866175.652,18.552,controller_server,20,Passing new path to controller.
+1794866176.702,19.557,controller_server,20,Passing new path to controller.
+1794866177.702,20.548,controller_server,20,Passing new path to controller.
+1794866178.752,21.652,controller_server,20,Passing new path to controller.
+1794866179.752,22.657,controller_server,20,Passing new path to controller.
+1794866180.752,23.647,controller_server,20,Passing new path to controller.
+1794866181.802,24.652,controller_server,20,Passing new path to controller.
+1794866182.802,25.655,controller_server,20,Passing new path to controller.
+1794866183.852,26.655,controller_server,20,Passing new path to controller.
+1794866184.853,27.649,controller_server,20,Passing new path to controller.
+1794866185.852,28.657,controller_server,20,Passing new path to controller.
+1794866186.902,29.757,controller_server,20,Passing new path to controller.
+1794866187.302,30.149,controller_server,20,Reached the goal!
+1794866187.303,30.149,controller_server,20,Optimizer reset
+1794866187.331,30.149,bt_navigator,20,Goal succeeded
+1794866187.333,30.149,waypoint_runner,20,"[loop 1/3] waypoint 3/5: (-3.00, -3.00, 3.14)"
+1794866187.334,30.149,waypoint_runner,20,Navigating to goal: -3.0 -3.0...
+1794866187.334,30.149,bt_navigator,20,"Begin navigating from current location (2.88, -2.49) to (-3.00, -3.00)"
+1794866187.355,30.149,controller_server,20,"Received a goal, begin computing control effort."
+1794866188.405,31.250,controller_server,20,Passing new path to controller.
+1794866189.455,32.254,controller_server,20,Passing new path to controller.
+1794866190.455,33.254,controller_server,20,Passing new path to controller.
+1794866191.505,34.250,controller_server,20,Passing new path to controller.
+1794866192.505,35.253,controller_server,20,Passing new path to controller.
+1794866193.555,36.357,controller_server,20,Passing new path to controller.
+1794866194.555,37.331,controller_server,20,Passing new path to controller.
+1794866195.605,38.335,controller_server,20,Passing new path to controller.
+1794866196.605,39.339,controller_server,20,Passing new path to controller.
+1794866197.655,40.428,controller_server,20,Passing new path to controller.
+1794866198.655,41.436,controller_server,20,Passing new path to controller.
+1794866199.705,42.440,controller_server,20,Passing new path to controller.
+1794866200.705,43.430,controller_server,20,Passing new path to controller.
+1794866201.705,44.436,controller_server,20,Passing new path to controller.
+1794866202.755,45.442,controller_server,20,Passing new path to controller.
+1794866203.755,46.439,controller_server,20,Passing new path to controller.
+1794866204.155,46.836,controller_server,20,Reached the goal!
+1794866204.156,46.836,controller_server,20,Optimizer reset
+1794866204.185,46.936,bt_navigator,20,Goal succeeded
+1794866204.187,46.936,waypoint_runner,20,"[loop 1/3] waypoint 4/5: (-3.70, 2.30, 1.57)"
+1794866204.187,46.936,waypoint_runner,20,Navigating to goal: -3.7 2.3...
+1794866204.188,46.936,bt_navigator,20,"Begin navigating from current location (-2.92, -2.88) to (-3.70, 2.30)"
+1794866204.209,46.936,controller_server,20,"Received a goal, begin computing control effort."
+1794866205.259,47.939,controller_server,20,Passing new path to controller.
+1794866206.309,49.044,controller_server,20,Passing new path to controller.
+1794866207.309,50.038,controller_server,20,Passing new path to controller.
+1794866208.359,51.040,controller_server,20,Passing new path to controller.
+1794866209.359,52.046,controller_server,20,Passing new path to controller.
+1794866210.409,53.040,controller_server,20,Passing new path to controller.
+1794866211.409,54.043,controller_server,20,Passing new path to controller.
+1794866212.459,55.152,controller_server,20,Passing new path to controller.
+1794866213.459,56.158,controller_server,20,Passing new path to controller.
+1794866214.459,57.148,controller_server,20,Passing new path to controller.
+1794866215.509,58.153,controller_server,20,Passing new path to controller.
+1794866216.559,59.259,controller_server,20,Passing new path to controller.
+1794866217.559,60.151,controller_server,20,Passing new path to controller.
+1794866218.559,61.154,controller_server,20,Passing new path to controller.
+1794866219.610,62.260,controller_server,20,Passing new path to controller.
+1794866219.859,62.459,controller_server,20,Reached the goal!
+1794866219.860,62.459,controller_server,20,Optimizer reset
+1794866219.888,62.558,bt_navigator,20,Goal succeeded
+1794866219.890,62.558,waypoint_runner,20,"[loop 1/3] waypoint 5/5: (0.00, -0.30, 0.00)"
+1794866219.891,62.558,waypoint_runner,20,Navigating to goal: 0.0 -0.3...
+1794866219.891,62.558,bt_navigator,20,"Begin navigating from current location (-3.78, 2.23) to (0.00, -0.30)"
+1794866219.912,62.558,controller_server,20,"Received a goal, begin computing control effort."
+1794866220.962,63.548,controller_server,20,Passing new path to controller.
+1794866222.012,64.654,controller_server,20,Passing new path to controller.
+1794866223.012,65.653,controller_server,20,Passing new path to controller.
+1794866224.062,66.647,controller_server,20,Passing new path to controller.
+1794866225.062,67.654,controller_server,20,Passing new path to controller.
+1794866226.062,68.659,controller_server,20,Passing new path to controller.
+1794866227.112,69.752,controller_server,20,Passing new path to controller.
+1794866228.162,70.758,controller_server,20,Passing new path to controller.
+1794866229.163,71.763,controller_server,20,Passing new path to controller.
+1794866230.212,72.765,controller_server,20,Passing new path to controller.
+1794866231.212,73.753,controller_server,20,Passing new path to controller.
+1794866232.262,74.862,controller_server,20,Passing new path to controller.
+1794866233.262,75.865,controller_server,20,Passing new path to controller.
+1794866234.312,76.856,controller_server,20,Passing new path to controller.
+1794866235.312,77.859,controller_server,20,Passing new path to controller.
+1794866236.362,78.966,controller_server,20,Passing new path to controller.
+1794866236.762,79.365,controller_server,20,Reached the goal!
+1794866236.763,79.365,controller_server,20,Optimizer reset
+1794866236.792,79.365,bt_navigator,20,Goal succeeded
+1794866236.793,79.365,waypoint_runner,20,"[loop 2/3] waypoint 1/5: (3.00, 2.00, 0.00)"
+1794866236.794,79.365,waypoint_runner,20,Navigating to goal: 3.0 2.0...
+1794866236.795,79.365,bt_navigator,20,"Begin navigating from current location (-0.05, -0.27) to (3.00, 2.00)"
+1794866236.815,79.365,controller_server,20,"Received a goal, begin computing control effort."
+1794866237.866,80.431,controller_server,20,Passing new path to controller.
+1794866238.866,81.334,controller_server,20,Passing new path to controller.
+1794866239.916,82.438,controller_server,20,Passing new path to controller.
+1794866240.966,83.435,controller_server,20,Passing new path to controller.
+1794866241.966,84.439,controller_server,20,Passing new path to controller.
+1794866243.016,85.542,controller_server,20,Passing new path to controller.
+1794866244.016,86.535,controller_server,20,Passing new path to controller.
+1794866245.066,87.541,controller_server,20,Passing new path to controller.
+1794866246.067,88.549,controller_server,20,Passing new path to controller.
+1794866246.966,89.437,controller_server,20,Reached the goal!
+1794866246.966,89.437,controller_server,20,Optimizer reset
+1794866246.995,89.437,bt_navigator,20,Goal succeeded
+1794866246.996,89.437,waypoint_runner,20,"[loop 2/3] waypoint 2/5: (3.00, -2.50, -1.57)"
+1794866246.997,89.437,waypoint_runner,20,Navigating to goal: 3.0 -2.5...
+1794866246.997,89.437,bt_navigator,20,"Begin navigating from current location (3.07, 1.93) to (3.00, -2.50)"
+1794866247.008,89.437,controller_server,20,"Received a goal, begin computing control effort."
+1794866248.058,90.536,controller_server,20,Passing new path to controller.
+1794866249.058,91.541,controller_server,20,Passing new path to controller.
+1794866250.108,92.543,controller_server,20,Passing new path to controller.
+1794866251.108,93.537,controller_server,20,Passing new path to controller.
+1794866252.159,94.643,controller_server,20,Passing new path to controller.
+1794866253.159,95.645,controller_server,20,Passing new path to controller.
+1794866254.208,96.630,controller_server,20,Passing new path to controller.
+1794866255.209,97.634,controller_server,20,Passing new path to controller.
+1794866256.259,98.638,controller_server,20,Passing new path to controller.
+1794866257.258,99.629,controller_server,20,Passing new path to controller.
+1794866258.258,100.635,controller_server,20,Passing new path to controller.
+1794866259.308,101.735,controller_server,20,Passing new path to controller.
+1794866259.959,102.335,controller_server,20,Reached the goal!
+1794866259.959,102.335,controller_server,20,Optimizer reset
+1794866259.988,102.335,bt_navigator,20,Goal succeeded
+1794866259.990,102.335,waypoint_runner,20,"[loop 2/3] waypoint 3/5: (-3.00, -3.00, 3.14)"
+1794866259.991,102.335,waypoint_runner,20,Navigating to goal: -3.0 -3.0...
+1794866259.992,102.335,bt_navigator,20,"Begin navigating from current location (2.91, -2.50) to (-3.00, -3.00)"
+1794866260.012,102.435,controller_server,20,"Received a goal, begin computing control effort."
+1794866261.063,103.427,controller_server,20,Passing new path to controller.
+1794866262.113,104.531,controller_server,20,Passing new path to controller.
+1794866263.113,105.532,controller_server,20,Passing new path to controller.
+1794866264.163,106.531,controller_server,20,Passing new path to controller.
+1794866265.163,107.539,controller_server,20,Passing new path to controller.
+1794866266.213,108.546,controller_server,20,Passing new path to controller.
+1794866267.213,109.537,controller_server,20,Passing new path to controller.
+1794866268.263,110.639,controller_server,20,Passing new path to controller.
+1794866269.263,111.642,controller_server,20,Passing new path to controller.
+1794866270.313,112.632,controller_server,20,Passing new path to controller.
+1794866271.313,113.635,controller_server,20,Passing new path to controller.
+1794866272.363,114.640,controller_server,20,Passing new path to controller.
+1794866273.363,115.644,controller_server,20,Passing new path to controller.
+1794866274.413,116.739,controller_server,20,Passing new path to controller.
+1794866275.413,117.712,controller_server,20,Passing new path to controller.
+1794866276.413,118.703,controller_server,20,Passing new path to controller.
+1794866277.013,119.301,controller_server,20,Reached the goal!
+1794866277.013,119.301,controller_server,20,Optimizer reset
+1794866277.042,119.301,bt_navigator,20,Goal succeeded
+1794866277.062,119.301,waypoint_runner,20,"[loop 2/3] waypoint 4/5: (-3.70, 2.30, 1.57)"
+1794866277.063,119.301,waypoint_runner,20,Navigating to goal: -3.7 2.3...
+1794866277.063,119.301,bt_navigator,20,"Begin navigating from current location (-2.89, -2.92) to (-3.70, 2.30)"
+1794866277.074,119.301,controller_server,20,"Received a goal, begin computing control effort."
+1794866278.124,120.403,controller_server,20,Passing new path to controller.
+1794866279.175,121.405,controller_server,20,Passing new path to controller.
+1794866280.174,122.401,controller_server,20,Passing new path to controller.
+1794866281.224,123.504,controller_server,20,Passing new path to controller.
+1794866282.224,124.508,controller_server,20,Passing new path to controller.
+1794866283.224,125.411,controller_server,20,Passing new path to controller.
+1794866284.274,126.501,controller_server,20,Passing new path to controller.
+1794866285.274,127.504,controller_server,20,Passing new path to controller.
+1794866286.324,128.506,controller_server,20,Passing new path to controller.
+1794866287.324,129.504,controller_server,20,Passing new path to controller.
+1794866288.374,130.610,controller_server,20,Passing new path to controller.
+1794866289.374,131.605,controller_server,20,Passing new path to controller.
+1794866290.424,132.601,controller_server,20,Passing new path to controller.
+1794866291.424,133.608,controller_server,20,Passing new path to controller.
+1794866292.475,134.609,controller_server,20,Passing new path to controller.
+1794866293.074,135.211,controller_server,20,Reached the goal!
+1794866293.075,135.211,controller_server,20,Optimizer reset
+1794866293.104,135.312,bt_navigator,20,Goal succeeded
+1794866293.106,135.312,waypoint_runner,20,"[loop 2/3] waypoint 5/5: (0.00, -0.30, 0.00)"
+1794866293.107,135.312,waypoint_runner,20,Navigating to goal: 0.0 -0.3...
+1794866293.108,135.312,bt_navigator,20,"Begin navigating from current location (-3.76, 2.23) to (0.00, -0.30)"
+1794866293.128,135.312,controller_server,20,"Received a goal, begin computing control effort."
+1794866294.178,136.303,controller_server,20,Passing new path to controller.
+1794866295.228,137.409,controller_server,20,Passing new path to controller.
+1794866296.228,138.410,controller_server,20,Passing new path to controller.
+1794866297.278,139.402,controller_server,20,Passing new path to controller.
+1794866298.278,140.408,controller_server,20,Passing new path to controller.
+1794866299.328,141.516,controller_server,20,Passing new path to controller.
+1794866300.328,142.409,controller_server,20,Passing new path to controller.
+1794866301.379,143.516,controller_server,20,Passing new path to controller.
+1794866302.378,144.523,controller_server,20,Passing new path to controller.
+1794866303.428,145.520,controller_server,20,Passing new path to controller.
+1794866304.429,146.517,controller_server,20,Passing new path to controller.
+1794866305.478,147.619,controller_server,20,Passing new path to controller.
+1794866306.478,148.622,controller_server,20,Passing new path to controller.
+1794866307.529,149.617,controller_server,20,Passing new path to controller.
+1794866308.529,150.623,controller_server,20,Passing new path to controller.
+1794866309.529,151.623,controller_server,20,Passing new path to controller.
+1794866310.129,152.213,controller_server,20,Reached the goal!
+1794866310.129,152.213,controller_server,20,Optimizer reset
+1794866310.158,152.213,bt_navigator,20,Goal succeeded
+1794866310.159,152.213,waypoint_runner,20,"[loop 3/3] waypoint 1/5: (3.00, 2.00, 0.00)"
+1794866310.160,152.213,waypoint_runner,20,Navigating to goal: 3.0 2.0...
+1794866310.161,152.213,bt_navigator,20,"Begin navigating from current location (-0.03, -0.25) to (3.00, 2.00)"
+1794866310.182,152.213,controller_server,20,"Received a goal, begin computing control effort."
+1794866311.232,153.318,controller_server,20,Passing new path to controller.
+1794866312.231,154.321,controller_server,20,Passing new path to controller.
+1794866313.282,155.321,controller_server,20,Passing new path to controller.
+1794866314.332,156.412,controller_server,20,Passing new path to controller.
+1794866315.332,157.417,controller_server,20,Passing new path to controller.
+1794866316.382,158.411,controller_server,20,Passing new path to controller.
+1794866317.382,159.403,controller_server,20,Passing new path to controller.
+1794866318.432,160.507,controller_server,20,Passing new path to controller.
+1794866319.432,161.505,controller_server,20,Passing new path to controller.
+1794866320.282,162.301,controller_server,20,Reached the goal!
+1794866320.282,162.301,controller_server,20,Optimizer reset
+1794866320.311,162.301,bt_navigator,20,Goal succeeded
+1794866320.312,162.301,waypoint_runner,20,"[loop 3/3] waypoint 2/5: (3.00, -2.50, -1.57)"
+1794866320.313,162.301,waypoint_runner,20,Navigating to goal: 3.0 -2.5...
+1794866320.314,162.301,bt_navigator,20,"Begin navigating from current location (3.08, 1.93) to (3.00, -2.50)"
+1794866320.335,162.301,controller_server,20,"Received a goal, begin computing control effort."
+1794866321.385,163.404,controller_server,20,Passing new path to controller.
+1794866322.385,164.406,controller_server,20,Passing new path to controller.
+1794866323.435,165.359,controller_server,20,Passing new path to controller.
+1794866324.435,166.359,controller_server,20,Passing new path to controller.
+1794866325.435,167.360,controller_server,20,Passing new path to controller.
+1794866326.485,168.454,controller_server,20,Passing new path to controller.
+1794866327.485,169.451,controller_server,20,Passing new path to controller.
+1794866328.536,170.454,controller_server,20,Passing new path to controller.
+1794866329.535,171.459,controller_server,20,Passing new path to controller.
+1794866330.585,172.445,controller_server,20,Passing new path to controller.
+1794866331.585,173.447,controller_server,20,Passing new path to controller.
+1794866332.635,174.553,controller_server,20,Passing new path to controller.
+1794866333.385,175.249,controller_server,20,Reached the goal!
+1794866333.386,175.249,controller_server,20,Optimizer reset
+1794866333.414,175.347,bt_navigator,20,Goal succeeded
+1794866333.416,175.347,waypoint_runner,20,"[loop 3/3] waypoint 3/5: (-3.00, -3.00, 3.14)"
+1794866333.416,175.347,waypoint_runner,20,Navigating to goal: -3.0 -3.0...
+1794866333.417,175.347,bt_navigator,20,"Begin navigating from current location (2.89, -2.50) to (-3.00, -3.00)"
+1794866333.438,175.347,controller_server,20,"Received a goal, begin computing control effort."
+1794866334.489,176.349,controller_server,20,Passing new path to controller.
+1794866335.488,177.355,controller_server,20,Passing new path to controller.
+1794866336.538,178.453,controller_server,20,Passing new path to controller.
+1794866337.539,179.451,controller_server,20,Passing new path to controller.
+1794866338.588,180.456,controller_server,20,Passing new path to controller.
+1794866339.589,181.459,controller_server,20,Passing new path to controller.
+1794866340.638,182.447,controller_server,20,Passing new path to controller.
+1794866341.638,183.451,controller_server,20,Passing new path to controller.
+1794866342.688,184.553,controller_server,20,Passing new path to controller.
+1794866343.688,185.548,controller_server,20,Passing new path to controller.
+1794866344.739,186.551,controller_server,20,Passing new path to controller.
+1794866345.738,187.554,controller_server,20,Passing new path to controller.
+1794866346.788,188.652,controller_server,20,Passing new path to controller.
+1794866347.789,189.656,controller_server,20,Passing new path to controller.
+1794866348.839,190.658,controller_server,20,Passing new path to controller.
+1794866349.838,191.653,controller_server,20,Passing new path to controller.
+1794866350.389,192.151,controller_server,20,Reached the goal!
+1794866350.389,192.151,controller_server,20,Optimizer reset
+1794866350.418,192.252,bt_navigator,20,Goal succeeded
+1794866350.420,192.252,waypoint_runner,20,"[loop 3/3] waypoint 4/5: (-3.70, 2.30, 1.57)"
+1794866350.420,192.252,waypoint_runner,20,Navigating to goal: -3.7 2.3...
+1794866350.421,192.252,bt_navigator,20,"Begin navigating from current location (-2.93, -2.92) to (-3.70, 2.30)"
+1794866350.442,192.252,controller_server,20,"Received a goal, begin computing control effort."
+1794866351.492,193.256,controller_server,20,Passing new path to controller.
+1794866352.542,194.360,controller_server,20,Passing new path to controller.
+1794866353.542,195.353,controller_server,20,Passing new path to controller.
+1794866354.592,196.359,controller_server,20,Passing new path to controller.
+1794866355.593,197.363,controller_server,20,Passing new path to controller.
+1794866356.642,198.457,controller_server,20,Passing new path to controller.
+1794866357.642,199.460,controller_server,20,Passing new path to controller.
+1794866358.692,200.465,controller_server,20,Passing new path to controller.
+1794866359.692,201.465,controller_server,20,Passing new path to controller.
+1794866360.742,202.458,controller_server,20,Passing new path to controller.
+1794866361.742,203.460,controller_server,20,Passing new path to controller.
+1794866362.792,204.563,controller_server,20,Passing new path to controller.
+1794866363.792,205.556,controller_server,20,Passing new path to controller.
+1794866364.792,206.561,controller_server,20,Passing new path to controller.
+1794866365.842,207.567,controller_server,20,Passing new path to controller.
+1794866365.843,207.567,controller_server,20,Reached the goal!
+1794866365.843,207.567,controller_server,20,Optimizer reset
+1794866365.881,207.567,bt_navigator,20,Goal succeeded
+1794866365.883,207.567,waypoint_runner,20,"[loop 3/3] waypoint 5/5: (0.00, -0.30, 0.00)"
+1794866365.884,207.567,waypoint_runner,20,Navigating to goal: 0.0 -0.3...
+1794866365.884,207.667,bt_navigator,20,"Begin navigating from current location (-3.79, 2.18) to (0.00, -0.30)"
+1794866365.905,207.667,controller_server,20,"Received a goal, begin computing control effort."
+1794866366.955,208.659,controller_server,20,Passing new path to controller.
+1794866368.005,209.765,controller_server,20,Passing new path to controller.
+1794866369.005,210.769,controller_server,20,Passing new path to controller.
+1794866370.005,211.656,controller_server,20,Passing new path to controller.
+1794866371.055,212.762,controller_server,20,Passing new path to controller.
+1794866372.105,213.751,controller_server,20,Passing new path to controller.
+1794866373.105,214.748,controller_server,20,Passing new path to controller.
+1794866374.155,215.849,controller_server,20,Passing new path to controller.
+1794866375.155,216.854,controller_server,20,Passing new path to controller.
+1794866376.205,217.851,controller_server,20,Passing new path to controller.
+1794866377.205,218.829,controller_server,20,Passing new path to controller.
+1794866378.255,219.936,controller_server,20,Passing new path to controller.
+1794866379.255,220.840,controller_server,20,Passing new path to controller.
+1794866380.305,221.934,controller_server,20,Passing new path to controller.
+1794866381.306,222.940,controller_server,20,Passing new path to controller.
+1794866381.555,223.141,controller_server,20,Reached the goal!
+1794866381.556,223.141,controller_server,20,Optimizer reset
+1794866381.585,223.242,bt_navigator,20,Goal succeeded
+1794866381.588,223.242,waypoint_runner,20,Done: 15/15 waypoints reached.
+1794866385.051,226.627,global_localizer,20,"amcl/get_state service not available, waiting..."
+1794866389.590,231.142,global_localizer,20,Scattering particles across the whole map...
+1794866389.590,231.142,amcl,20,Initializing with uniform distribution
+1794866389.604,231.142,amcl,20,Global initialisation done!
+1794866389.604,231.142,global_localizer,20,Spinning to converge particles (turn 1/3)...
+1794866389.605,231.142,global_localizer,20,Spinning to angle 6.283185307179586....
+1794866389.606,231.142,behavior_server,20,Running spin
+1794866389.606,231.142,behavior_server,20,Turning 6.28 for spin behavior.
+1794866396.207,237.744,behavior_server,20,spin completed successfully
+1794866396.208,237.744,global_localizer,20,Position std-dev: 0.175 m
+1794866396.208,237.744,global_localizer,20,Localisation converged.

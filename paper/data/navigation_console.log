@@ -1,0 +1,15 @@
+[16:06:57] navigation session_1: start (attempt 1)
+[16:09:07] navigation session_1: infra Nav2 not active within 120 s wall
+[16:09:09] navigation session_1: start (attempt 2)
+[16:09:16] session_1: Nav2 active at sim 3.018
+[16:14:02] navigation session_1: completed 
+[16:14:04] navigation session_2: start (attempt 1)
+[16:14:10] session_2: Nav2 active at sim 3.022
+[16:18:12] navigation session_2: completed 
+[16:18:14] navigation session_3: start (attempt 1)
+[16:20:15] navigation session_3: infra Nav2 not active within 120 s wall
+[16:20:17] navigation session_3: start (attempt 2)
+[16:22:18] navigation session_3: infra Nav2 not active within 120 s wall
+[16:22:20] navigation session_3: start (attempt 3)
+[16:22:26] session_3: Nav2 active at sim 2.917
+[16:26:34] navigation session_3: completed 

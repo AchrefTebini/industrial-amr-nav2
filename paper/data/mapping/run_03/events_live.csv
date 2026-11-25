@@ -1,0 +1,567 @@
+wall_t,sim_t,node,level,msg
+1791639486.699,,route_server,20,"
+	route_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639486.722,,slam_toolbox,20,Node using stack size 40000000
+1791639486.724,,lifecycle_manager_costmap_filters,20,Creating
+1791639486.732,,controller_server,20,"
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639486.749,,lifecycle_manager_costmap_filters,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1791639486.760,,controller_server,20,Creating controller server
+1791639486.764,,waypoint_follower,20,"
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639486.766,,rosbag2_recorder,20,Subscribed to topic '/tf'
+1791639486.768,,waypoint_follower,20,Creating
+1791639486.777,,rosbag2_recorder,20,Subscribed to topic '/tf_static'
+1791639486.781,,bt_navigator,20,"
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639486.787,,robot_state_publisher,20,Robot initialized
+1791639486.788,,bt_navigator,20,Creating
+1791639486.794,,lifecycle_manager_navigation,20,Creating
+1791639486.808,,lifecycle_manager_navigation,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1791639486.820,,lifecycle_manager_costmap_filters,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791639486.821,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring filter_mask_server[0m[0m
+1791639486.825,,docking_server,20,"
+	docking_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639486.827,,docking_server,20,Creating docking_server
+1791639486.830,,local_costmap.local_costmap,20,"
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639486.830,,local_costmap.local_costmap,20,Creating Costmap
+1791639487.165,,slam_toolbox,20,Configuring
+1791639487.172,,slam_toolbox,20,Using solver plugin solver_plugins::CeresSolver
+1791639487.173,,slam_toolbox,20,CeresSolver: Using SCHUR_JACOBI preconditioner.
+1791639487.194,,slam_toolbox,20,Activating
+1791639487.199,,rosbag2_recorder,20,Subscribed to topic '/map'
+1791639487.210,,ros_gz_sim,20,Waiting messages on topic [robot_description].
+1791639487.427,,ros_gz_sim,20,Entity creation successful.
+1791639487.708,,ros_gz_bridge,20,Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+1791639487.711,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+1791639487.713,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+1791639487.715,,rosbag2_recorder,20,Subscribed to topic '/odom'
+1791639487.716,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+1791639487.720,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+1791639487.722,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+1791639487.724,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+1791639487.728,,rosbag2_recorder,20,Subscribed to topic '/clock'
+1791639487.828,,lifecycle_manager_navigation,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791639487.828,,lifecycle_manager_navigation,20,[34m[1mConfiguring controller_server[0m[0m
+1791639487.828,,controller_server,20,Configuring controller interface
+1791639487.828,,controller_server,20,getting progress checker plugins..
+1791639487.828,,controller_server,20,getting goal checker plugins..
+1791639487.828,,controller_server,20,Controller frequency set to 20.0000Hz
+1791639487.829,,local_costmap.local_costmap,20,Configuring
+1791639487.839,,local_costmap.local_costmap,20,"Using plugin ""obstacle_layer"""
+1791639487.843,,local_costmap.local_costmap,20,Subscribed to Topics: scan
+1791639487.848,,local_costmap.local_costmap,20,"Initialized plugin ""obstacle_layer"""
+1791639487.848,,local_costmap.local_costmap,20,"Using plugin ""inflation_layer"""
+1791639487.849,,local_costmap.local_costmap,20,"Initialized plugin ""inflation_layer"""
+1791639487.849,,local_costmap.local_costmap,20,"Using costmap filter ""keepout_filter"""
+1791639487.852,,local_costmap.local_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1791639487.872,,controller_server,20,Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+1791639487.873,,controller_server,20,Controller Server has progress_checker  progress checkers available.
+1791639487.873,,controller_server,20,Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+1791639487.874,,controller_server,20,Controller Server has general_goal_checker  goal checkers available.
+1791639487.875,,controller_server,20,Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+1791639487.878,,controller_server,20,Controller period is equal to model dt. Control sequence shifting is ON
+1791639487.879,,controller_server,20,ConstraintCritic instantiated with 1 power and 4.000000 weight.
+1791639487.880,,controller_server,20,Critic loaded : mppi::critics::ConstraintCritic
+1791639487.881,,controller_server,20,InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+1791639487.881,,controller_server,20,Critic loaded : mppi::critics::CostCritic
+1791639487.881,,controller_server,20,GoalCritic instantiated with 1 power and 5.000000 weight.
+1791639487.881,,controller_server,20,Critic loaded : mppi::critics::GoalCritic
+1791639487.882,,controller_server,20,"GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled"
+1791639487.882,,controller_server,20,Critic loaded : mppi::critics::GoalAngleCritic
+1791639487.883,,controller_server,20,ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+1791639487.883,,controller_server,20,Critic loaded : mppi::critics::PathAlignCritic
+1791639487.884,,controller_server,20,Critic loaded : mppi::critics::PathFollowCritic
+1791639487.884,,controller_server,20,PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+1791639487.885,,controller_server,20,Critic loaded : mppi::critics::PathAngleCritic
+1791639487.885,,controller_server,20,PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+1791639487.885,,controller_server,20,Critic loaded : mppi::critics::PreferForwardCritic
+1791639487.888,,controller_server,20,Optimizer reset
+1791639487.893,,controller_server,20,Controller Server has FollowPath  controllers available.
+1791639487.902,,lifecycle_manager_navigation,20,[34m[1mConfiguring smoother_server[0m[0m
+1791639487.902,,smoother_server,20,Configuring smoother server
+1791639487.915,,smoother_server,20,Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+1791639487.916,,smoother_server,20,Smoother Server has simple_smoother  smoothers available.
+1791639487.923,,lifecycle_manager_navigation,20,[34m[1mConfiguring planner_server[0m[0m
+1791639487.923,,planner_server,20,Configuring
+1791639487.923,,global_costmap.global_costmap,20,Configuring
+1791639487.931,,global_costmap.global_costmap,20,"Using plugin ""static_layer"""
+1791639487.934,,global_costmap.global_costmap,20,Subscribing to the map topic (/map) with transient local durability
+1791639487.936,,global_costmap.global_costmap,20,"Initialized plugin ""static_layer"""
+1791639487.936,,global_costmap.global_costmap,20,"Using plugin ""obstacle_layer"""
+1791639487.937,,global_costmap.global_costmap,20,Subscribed to Topics: scan
+1791639487.941,,global_costmap.global_costmap,20,"Initialized plugin ""obstacle_layer"""
+1791639487.941,,global_costmap.global_costmap,20,"Using plugin ""inflation_layer"""
+1791639487.942,,global_costmap.global_costmap,20,"Initialized plugin ""inflation_layer"""
+1791639487.942,,global_costmap.global_costmap,20,"Using costmap filter ""keepout_filter"""
+1791639487.945,,global_costmap.global_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1791639487.965,,planner_server,20,Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+1791639487.965,,planner_server,20,Configuring plugin GridBased of type NavfnPlanner
+1791639487.966,,planner_server,20,Planner Server has GridBased  planners available.
+1791639487.976,,lifecycle_manager_navigation,20,[34m[1mConfiguring route_server[0m[0m
+1791639487.976,,route_server,20,Configuring
+1791639488.003,,route_server,20,Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+1791639488.004,,route_server,20,Configuring geojson graph file loader
+1791639488.004,,route_server,20,No graph file provided to load yet.
+1791639488.006,,route_server,20,Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+1791639488.006,,route_server,20,Configuring distance scorer.
+1791639488.006,,route_server,20,Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+1791639488.006,,route_server,20,Configuring costmap scorer.
+1791639488.009,,route_server,20,Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+1791639488.009,,route_server,20,Configuring Adjust speed limit operation.
+1791639488.011,,route_server,20,Created route operation ReroutingService of type nav2_route::ReroutingService
+1791639488.012,,route_server,20,Configuring Rerouting service operation.
+1791639488.012,,route_server,20,Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+1791639488.012,,route_server,20,Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+1791639488.017,,lifecycle_manager_navigation,20,[34m[1mConfiguring behavior_server[0m[0m
+1791639488.017,,behavior_server,20,Configuring
+1791639488.021,,behavior_server,20,Creating behavior plugin spin of type nav2_behaviors::Spin
+1791639488.022,,behavior_server,20,Creating behavior plugin backup of type nav2_behaviors::BackUp
+1791639488.023,,behavior_server,20,Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+1791639488.023,,behavior_server,20,Creating behavior plugin wait of type nav2_behaviors::Wait
+1791639488.032,,behavior_server,20,Configuring spin
+1791639488.039,,behavior_server,20,Configuring backup
+1791639488.044,,behavior_server,20,Configuring drive_on_heading
+1791639488.049,,behavior_server,20,Configuring wait
+1791639488.054,,lifecycle_manager_navigation,20,[34m[1mConfiguring velocity_smoother[0m[0m
+1791639488.054,,velocity_smoother,20,Configuring velocity smoother
+1791639488.060,,lifecycle_manager_navigation,20,[34m[1mConfiguring collision_monitor[0m[0m
+1791639488.061,,collision_monitor,20,Configuring
+1791639488.067,,collision_monitor,20,[scan]: Creating Scan
+1791639488.070,,collision_monitor,20,[FootprintApproach]: Creating Polygon
+1791639488.070,,collision_monitor,20,[FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+1791639488.070,,collision_monitor,20,[FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+1791639488.082,,lifecycle_manager_navigation,20,[34m[1mConfiguring bt_navigator[0m[0m
+1791639488.083,,bt_navigator,20,Configuring
+1791639488.089,,bt_navigator,20,Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+1791639488.124,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/feedback'
+1791639488.126,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/status'
+1791639488.153,,bt_navigator,20,Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+1791639488.432,,lifecycle_manager_navigation,20,[34m[1mConfiguring waypoint_follower[0m[0m
+1791639488.432,,waypoint_follower,20,Configuring
+1791639488.457,,waypoint_follower,20,Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+1791639488.457,,lifecycle_manager_navigation,20,[34m[1mConfiguring docking_server[0m[0m
+1791639488.458,,docking_server,20,Configuring docking_server
+1791639488.458,,docking_server,20,Controller frequency set to 50.0000Hz
+1791639488.480,,docking_server,20,Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+1791639488.486,,docking_server,30,Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+1791639488.487,,docking_server,20,Docking Server has 1 dock types and 0 dock instances available.
+1791639488.488,,lifecycle_manager_navigation,20,[34m[1mActivating controller_server[0m[0m
+1791639488.488,,controller_server,20,Activating
+1791639488.488,,local_costmap.local_costmap,20,Activating
+1791639488.488,,local_costmap.local_costmap,20,Checking transform
+1791639488.488,,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1791639488.988,0.002,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1791639489.158,0.124,gzserver,20,InitializeCanonicalLinks
+1791639489.162,0.124,gzserver,20,Creating services on gzserver
+1791639489.166,0.124,gzserver,20,Created service /gzserver/delete_entity
+1791639489.167,0.124,gzserver,20,Created service /gzserver/get_entities
+1791639489.169,0.124,gzserver,20,Created service /gzserver/get_entity_info
+1791639489.170,0.124,gzserver,20,Created service /gzserver/get_entity_state
+1791639489.172,0.124,gzserver,20,Created service /gzserver/get_entities_states
+1791639489.173,0.124,gzserver,20,Created service /gzserver/get_simulation_state
+1791639489.175,0.124,gzserver,20,Created service /gzserver/get_simulator_features
+1791639489.176,0.124,gzserver,20,Created service /gzserver/reset_simulation
+1791639489.178,0.124,gzserver,20,Created service /gzserver/set_entity_state
+1791639489.179,0.124,gzserver,20,Created service /gzserver/set_simulation_state
+1791639489.181,0.124,gzserver,20,Created service /gzserver/spawn_entity
+1791639489.182,0.124,gzserver,20,Created service /gzserver/step_simulation
+1791639489.190,0.124,gzserver,20,Created action /gzserver/simulate_steps
+1791639489.203,0.124,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+1791639489.488,0.415,local_costmap.local_costmap,20,start
+1791639489.492,0.415,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639489.693,0.614,controller_server,30,Parameter controller_server.verbose not found
+1791639489.696,0.614,controller_server,20,Optimizer reset
+1791639489.696,0.614,controller_server,20,Creating bond (controller_server) to lifecycle manager.
+1791639489.805,0.709,lifecycle_manager_navigation,20,Server controller_server connected with bond.
+1791639489.805,0.709,lifecycle_manager_navigation,20,[34m[1mActivating smoother_server[0m[0m
+1791639489.806,0.709,smoother_server,20,Activating
+1791639489.806,0.709,smoother_server,20,Creating bond (smoother_server) to lifecycle manager.
+1791639489.914,0.809,lifecycle_manager_navigation,20,Server smoother_server connected with bond.
+1791639489.914,0.809,lifecycle_manager_navigation,20,[34m[1mActivating planner_server[0m[0m
+1791639489.914,0.809,planner_server,20,Activating
+1791639489.915,0.809,global_costmap.global_costmap,20,Activating
+1791639489.915,0.809,global_costmap.global_costmap,20,Checking transform
+1791639489.915,0.809,global_costmap.global_costmap,20,start
+1791639489.916,0.809,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639490.028,0.909,rosbag2_recorder,20,Subscribed to topic '/collision_monitor_state'
+1791639490.077,1.009,frontier_explorer,20,"Navigating to frontier (-0.20, -0.50)"
+1791639490.078,1.009,bt_navigator,20,Action server is inactive. Rejecting the goal.
+1791639490.080,1.009,frontier_explorer,30,"Goal rejected by Nav2, retrying."
+1791639490.919,1.815,planner_server,20,Activating plugin GridBased of type NavfnPlanner
+1791639490.920,1.815,planner_server,20,Creating bond (planner_server) to lifecycle manager.
+1791639491.028,1.916,lifecycle_manager_navigation,20,Server planner_server connected with bond.
+1791639491.028,1.916,lifecycle_manager_navigation,20,[34m[1mActivating route_server[0m[0m
+1791639491.028,1.916,route_server,20,Activating
+1791639491.028,1.916,route_server,20,Creating bond (route_server) to lifecycle manager.
+1791639491.046,1.916,frontier_explorer,20,"Navigating to frontier (-0.20, -0.50)"
+1791639491.046,1.916,bt_navigator,20,Action server is inactive. Rejecting the goal.
+1791639491.088,2.017,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639491.135,2.017,lifecycle_manager_navigation,20,Server route_server connected with bond.
+1791639491.135,2.017,lifecycle_manager_navigation,20,[34m[1mActivating behavior_server[0m[0m
+1791639491.135,2.017,behavior_server,20,Activating
+1791639491.135,2.017,behavior_server,20,Activating spin
+1791639491.136,2.017,behavior_server,20,Activating backup
+1791639491.136,2.017,behavior_server,20,Activating drive_on_heading
+1791639491.136,2.017,behavior_server,20,Activating wait
+1791639491.136,2.017,behavior_server,20,Creating bond (behavior_server) to lifecycle manager.
+1791639491.245,2.118,lifecycle_manager_navigation,20,Server behavior_server connected with bond.
+1791639491.245,2.118,lifecycle_manager_navigation,20,[34m[1mActivating velocity_smoother[0m[0m
+1791639491.245,2.118,velocity_smoother,20,Activating
+1791639491.245,2.118,velocity_smoother,20,Creating bond (velocity_smoother) to lifecycle manager.
+1791639491.355,2.217,lifecycle_manager_navigation,20,Server velocity_smoother connected with bond.
+1791639491.355,2.217,lifecycle_manager_navigation,20,[34m[1mActivating collision_monitor[0m[0m
+1791639491.356,2.217,collision_monitor,20,Activating
+1791639491.356,2.217,collision_monitor,20,Creating bond (collision_monitor) to lifecycle manager.
+1791639491.464,2.418,lifecycle_manager_navigation,20,Server collision_monitor connected with bond.
+1791639491.464,2.418,lifecycle_manager_navigation,20,[34m[1mActivating bt_navigator[0m[0m
+1791639491.465,2.418,bt_navigator,20,Activating
+1791639491.569,2.518,bt_navigator,20,Creating bond (bt_navigator) to lifecycle manager.
+1791639491.676,2.619,lifecycle_manager_navigation,20,Server bt_navigator connected with bond.
+1791639491.677,2.619,lifecycle_manager_navigation,20,[34m[1mActivating waypoint_follower[0m[0m
+1791639491.677,2.619,waypoint_follower,20,Activating
+1791639491.677,2.619,waypoint_follower,20,Creating bond (waypoint_follower) to lifecycle manager.
+1791639491.784,2.720,lifecycle_manager_navigation,20,Server waypoint_follower connected with bond.
+1791639491.785,2.720,lifecycle_manager_navigation,20,[34m[1mActivating docking_server[0m[0m
+1791639491.785,2.720,docking_server,20,Activating docking_server
+1791639491.798,2.720,docking_server,20,Creating bond (docking_server) to lifecycle manager.
+1791639491.905,2.820,lifecycle_manager_navigation,20,Server docking_server connected with bond.
+1791639491.905,2.820,lifecycle_manager_navigation,20,[34m[1mManaged nodes are active[0m[0m
+1791639491.905,2.820,lifecycle_manager_navigation,20,[34m[1mCreating bond timer...[0m[0m
+1791639491.915,2.820,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639492.047,2.921,frontier_explorer,20,"Navigating to frontier (-0.20, -0.50)"
+1791639492.048,2.921,bt_navigator,20,"Begin navigating from current location (0.00, -0.00) to (-0.20, -0.50)"
+1791639492.069,3.022,controller_server,20,"Received a goal, begin computing control effort."
+1791639492.069,3.022,controller_server,30,No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+1791639492.069,3.022,controller_server,30,No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+1791639492.106,3.022,ros_gz_bridge,20,Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+1791639493.119,4.019,controller_server,20,Passing new path to controller.
+1791639493.288,4.220,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639494.119,5.023,controller_server,20,Passing new path to controller.
+1791639494.915,5.826,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639495.169,6.026,controller_server,20,Passing new path to controller.
+1791639495.489,6.425,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639496.169,7.019,controller_server,20,Passing new path to controller.
+1791639497.019,7.922,controller_server,20,Reached the goal!
+1791639497.021,7.922,controller_server,20,Optimizer reset
+1791639497.048,7.922,bt_navigator,20,Goal succeeded
+1791639497.073,7.922,frontier_explorer,20,"Navigating to frontier (-0.35, 0.45)"
+1791639497.074,7.922,bt_navigator,20,"Begin navigating from current location (-0.33, -0.54) to (-0.35, 0.45)"
+1791639497.085,7.922,controller_server,20,"Received a goal, begin computing control effort."
+1791639497.691,8.521,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639497.915,8.824,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 162 at 0.050000 m/pix
+1791639497.916,8.824,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639498.074,8.925,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639498.078,8.925,frontier_explorer,20,"Navigating to frontier (1.00, -1.27)"
+1791639498.085,8.925,bt_navigator,20,Received goal preemption request
+1791639498.085,8.925,bt_navigator,20,"Begin navigating from current location (-0.24, -0.39) to (1.00, -1.27)"
+1791639498.135,9.026,controller_server,20,Passing new path to controller.
+1791639499.185,10.022,controller_server,20,Passing new path to controller.
+1791639499.892,10.711,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639500.185,11.004,controller_server,20,Passing new path to controller.
+1791639500.915,11.806,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639501.185,12.008,controller_server,20,Passing new path to controller.
+1791639502.090,12.909,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639502.235,13.109,controller_server,20,Passing new path to controller.
+1791639503.235,14.106,controller_server,20,Passing new path to controller.
+1791639503.915,14.709,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 162 at 0.050000 m/pix
+1791639503.916,14.709,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639504.123,14.910,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639504.127,14.910,frontier_explorer,20,"Navigating to frontier (3.44, 0.98)"
+1791639504.135,15.009,bt_navigator,20,Received goal preemption request
+1791639504.135,15.009,bt_navigator,20,"Begin navigating from current location (0.82, -0.99) to (3.44, 0.98)"
+1791639504.235,15.110,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639504.236,15.110,planner_server,30,"GridBased plugin failed to plan from (0.84, -1.02) to (3.44, 0.98): ""Failed to create plan with tolerance of: 0.500000"""
+1791639504.236,15.110,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639504.245,15.110,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639504.247,15.110,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639504.290,15.110,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639504.736,15.613,controller_server,20,Reached the goal!
+1791639504.736,15.613,controller_server,20,Optimizer reset
+1791639504.775,15.613,bt_navigator_navigate_to_pose_rclcpp_node,40,Failed to get result for compute_path_to_pose in node halt!
+1791639504.775,15.613,bt_navigator,20,Goal succeeded
+1791639504.918,15.713,planner_server,20,Goal was canceled. Canceling planning action.
+1791639504.918,15.713,planner_server,20,[compute_path_to_pose] [ActionServer] Client requested to cancel the goal. Cancelling.
+1791639505.129,15.915,frontier_explorer,20,"Navigating to frontier (3.44, 0.98)"
+1791639505.129,15.915,bt_navigator,20,"Begin navigating from current location (0.93, -1.16) to (3.44, 0.98)"
+1791639505.150,16.015,controller_server,20,"Received a goal, begin computing control effort."
+1791639505.915,16.713,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 162 at 0.050000 m/pix
+1791639506.202,17.009,controller_server,20,Passing new path to controller.
+1791639506.488,17.311,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639506.916,17.710,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639507.250,18.113,controller_server,20,Passing new path to controller.
+1791639508.250,19.014,controller_server,20,Passing new path to controller.
+1791639508.688,19.504,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639509.250,19.992,controller_server,20,Passing new path to controller.
+1791639509.916,20.657,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639510.300,21.059,controller_server,20,Passing new path to controller.
+1791639510.888,21.663,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639511.300,22.066,controller_server,20,Passing new path to controller.
+1791639511.916,22.671,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639512.350,23.064,controller_server,20,Passing new path to controller.
+1791639513.088,23.857,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639513.232,23.958,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639513.236,23.958,frontier_explorer,20,"Navigating to frontier (-2.36, 3.12)"
+1791639513.240,23.958,bt_navigator,20,Received goal preemption request
+1791639513.240,23.958,bt_navigator,20,"Begin navigating from current location (2.94, 0.64) to (-2.36, 3.12)"
+1791639513.350,24.058,controller_server,20,Passing new path to controller.
+1791639514.400,25.166,controller_server,20,Passing new path to controller.
+1791639514.916,25.660,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639515.288,25.960,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639515.450,26.160,controller_server,20,Passing new path to controller.
+1791639516.450,27.146,controller_server,20,Passing new path to controller.
+1791639517.488,28.153,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639517.500,28.153,controller_server,20,Passing new path to controller.
+1791639517.916,28.653,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639518.500,29.155,controller_server,20,Passing new path to controller.
+1791639519.550,30.240,controller_server,20,Passing new path to controller.
+1791639519.688,30.340,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639519.915,30.542,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 162 at 0.050000 m/pix
+1791639520.550,31.248,controller_server,20,Passing new path to controller.
+1791639520.915,31.550,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639521.550,32.255,controller_server,20,Passing new path to controller.
+1791639521.888,32.552,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639522.600,33.251,controller_server,20,Passing new path to controller.
+1791639523.600,34.252,controller_server,20,Passing new path to controller.
+1791639523.915,34.554,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+1791639523.916,34.554,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639524.088,34.756,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639524.650,35.260,controller_server,20,Passing new path to controller.
+1791639525.298,35.964,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639525.304,35.964,frontier_explorer,20,"Navigating to frontier (-3.81, 2.37)"
+1791639525.310,35.964,bt_navigator,20,Received goal preemption request
+1791639525.310,35.964,bt_navigator,20,"Begin navigating from current location (-0.48, 2.16) to (-3.81, 2.37)"
+1791639525.650,36.262,controller_server,20,Passing new path to controller.
+1791639525.915,36.559,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+1791639526.288,36.955,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639526.700,37.356,controller_server,20,Passing new path to controller.
+1791639526.916,37.557,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639527.700,38.363,controller_server,20,Passing new path to controller.
+1791639528.489,39.169,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639528.750,39.370,controller_server,20,Passing new path to controller.
+1791639529.750,40.364,controller_server,20,Passing new path to controller.
+1791639529.915,40.566,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+1791639529.916,40.566,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639530.688,41.269,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639530.750,41.370,controller_server,20,Passing new path to controller.
+1791639531.326,41.972,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639531.330,41.972,frontier_explorer,20,"Navigating to frontier (-3.06, -3.14)"
+1791639531.340,41.972,bt_navigator,20,Received goal preemption request
+1791639531.340,41.972,bt_navigator,20,"Begin navigating from current location (-3.28, 2.45) to (-3.06, -3.14)"
+1791639531.800,42.474,controller_server,20,Passing new path to controller.
+1791639531.915,42.575,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+1791639532.760,43.370,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639532.761,43.370,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639532.761,43.370,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639532.780,43.370,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639532.781,43.370,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639532.888,43.471,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639532.916,43.572,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639532.923,43.572,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639532.923,43.572,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639532.923,43.572,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639532.950,43.572,controller_server,20,Cancellation was successful. Stopping the robot.
+1791639532.950,43.572,controller_server,20,[follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+1791639532.951,43.572,local_costmap.local_costmap,20,Received request to clear entirely the local_costmap
+1791639532.952,43.572,controller_server,20,Optimizer reset
+1791639532.953,43.572,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639532.954,43.572,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639532.956,43.572,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639533.918,44.578,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639533.919,44.578,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639533.919,44.578,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639533.930,44.578,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639533.931,44.578,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639534.923,45.583,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639534.923,45.583,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639534.923,45.583,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639534.940,45.583,behavior_server,20,Running spin
+1791639534.940,45.583,behavior_server,20,Turning 1.57 for spin behavior.
+1791639535.088,45.684,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639535.916,46.481,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639536.840,47.481,behavior_server,20,spin completed successfully
+1791639536.860,47.481,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639536.861,47.481,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639536.861,47.481,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639536.880,47.481,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639536.881,47.481,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639536.924,47.481,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639536.924,47.481,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639536.924,47.481,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639536.940,47.582,behavior_server,20,Running wait
+1791639537.288,47.883,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639538.915,49.493,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639539.488,50.089,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639541.488,52.102,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639541.916,52.504,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639542.040,52.604,behavior_server,20,wait completed successfully
+1791639542.060,52.604,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639542.061,52.604,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639542.061,52.604,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639542.080,52.703,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639542.081,52.703,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639542.923,53.503,planner_server,40,Failed to create a plan from potential when a legal potential was found. This shouldn't happen.
+1791639542.923,53.503,planner_server,30,"GridBased plugin failed to plan from (-3.56, 2.38) to (-3.06, -3.14): ""Failed to create plan with tolerance of: 0.500000"""
+1791639542.923,53.503,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639542.940,53.503,behavior_server,20,Running backup
+1791639543.688,54.309,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639544.916,55.518,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639545.040,55.619,behavior_server,20,backup completed successfully
+1791639545.080,55.619,controller_server,20,"Received a goal, begin computing control effort."
+1791639545.889,56.413,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639545.915,56.511,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+1791639546.130,56.708,controller_server,20,Passing new path to controller.
+1791639547.180,57.711,controller_server,20,Passing new path to controller.
+1791639547.916,58.515,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639548.088,58.616,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639548.180,58.717,controller_server,20,Passing new path to controller.
+1791639549.230,59.814,controller_server,20,Passing new path to controller.
+1791639549.915,60.419,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 204 X 163 at 0.050000 m/pix
+1791639550.233,60.820,controller_server,20,Passing new path to controller.
+1791639550.289,60.820,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639550.916,61.424,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639551.231,61.827,controller_server,20,Passing new path to controller.
+1791639552.280,62.827,controller_server,20,Passing new path to controller.
+1791639552.488,63.020,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639553.330,63.822,controller_server,20,Passing new path to controller.
+1791639553.916,64.421,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639554.330,64.824,controller_server,20,Passing new path to controller.
+1791639554.688,65.225,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639555.380,65.928,controller_server,20,Passing new path to controller.
+1791639556.380,66.925,controller_server,20,Passing new path to controller.
+1791639556.888,67.428,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639556.916,67.428,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639557.430,67.931,controller_server,20,Passing new path to controller.
+1791639558.430,68.934,controller_server,20,Passing new path to controller.
+1791639559.088,69.628,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639559.480,70.026,controller_server,20,Passing new path to controller.
+1791639559.916,70.429,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639560.480,71.034,controller_server,20,Passing new path to controller.
+1791639561.288,71.829,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639561.455,71.929,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639561.459,71.929,frontier_explorer,20,"Navigating to frontier (3.97, -1.79)"
+1791639561.460,71.929,bt_navigator,20,Received goal preemption request
+1791639561.460,71.929,bt_navigator,20,"Begin navigating from current location (-2.72, -2.90) to (3.97, -1.79)"
+1791639561.530,72.029,controller_server,20,Passing new path to controller.
+1791639562.530,73.022,controller_server,20,Passing new path to controller.
+1791639562.916,73.422,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639563.488,73.924,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639563.580,74.024,controller_server,20,Passing new path to controller.
+1791639564.580,75.028,controller_server,20,Passing new path to controller.
+1791639564.916,75.430,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639565.630,76.127,controller_server,20,Passing new path to controller.
+1791639565.688,76.127,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639566.630,77.128,controller_server,20,Passing new path to controller.
+1791639567.680,78.122,controller_server,20,Passing new path to controller.
+1791639567.888,78.324,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639567.915,78.324,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 206 X 164 at 0.050000 m/pix
+1791639567.916,78.324,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639568.680,79.124,controller_server,20,Passing new path to controller.
+1791639569.731,80.220,controller_server,20,Passing new path to controller.
+1791639570.088,80.520,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639570.730,81.121,controller_server,20,Passing new path to controller.
+1791639570.916,81.322,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639571.780,82.229,controller_server,20,Passing new path to controller.
+1791639572.289,82.724,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639572.780,83.222,controller_server,20,Passing new path to controller.
+1791639573.830,84.228,controller_server,20,Passing new path to controller.
+1791639573.916,84.329,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639574.488,84.928,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639574.830,85.228,controller_server,20,Passing new path to controller.
+1791639575.880,86.319,controller_server,20,Passing new path to controller.
+1791639576.688,87.124,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639576.881,87.323,controller_server,20,Passing new path to controller.
+1791639576.916,87.323,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639577.915,88.326,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 206 X 163 at 0.050000 m/pix
+1791639577.930,88.326,controller_server,20,Passing new path to controller.
+1791639578.888,89.324,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639578.930,89.324,controller_server,20,Passing new path to controller.
+1791639579.916,90.322,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639579.980,90.322,controller_server,20,Passing new path to controller.
+1791639580.980,91.328,controller_server,20,Passing new path to controller.
+1791639581.088,91.429,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639582.030,92.429,controller_server,20,Passing new path to controller.
+1791639582.916,93.324,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639583.030,93.425,controller_server,20,Passing new path to controller.
+1791639583.288,93.625,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639584.080,94.431,controller_server,20,Passing new path to controller.
+1791639584.916,95.335,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639585.080,95.435,controller_server,20,Passing new path to controller.
+1791639585.489,95.834,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639586.080,96.428,controller_server,20,Passing new path to controller.
+1791639587.130,97.534,controller_server,20,Passing new path to controller.
+1791639587.688,98.037,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639587.916,98.238,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639588.180,98.541,controller_server,20,Passing new path to controller.
+1791639589.180,99.537,controller_server,20,Passing new path to controller.
+1791639589.888,100.242,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639590.230,100.544,controller_server,20,Passing new path to controller.
+1791639590.916,101.247,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639591.230,101.549,controller_server,20,Passing new path to controller.
+1791639591.481,101.850,controller_server,40,Failed to make progress
+1791639591.481,101.850,controller_server,20,Optimizer reset
+1791639591.482,101.850,controller_server,30,[follow_path] [ActionServer] Aborting handle.
+1791639591.500,101.850,local_costmap.local_costmap,20,Received request to clear entirely the local_costmap
+1791639591.501,101.850,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639591.502,101.850,controller_server,20,"Received a goal, begin computing control effort."
+1791639591.698,102.050,controller_server,30,Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 5.1546 Hz.
+1791639592.088,102.449,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639592.248,102.546,controller_server,20,Passing new path to controller.
+1791639592.622,102.942,frontier_explorer,30,"Goal timed out, blacklisting it."
+1791639593.298,103.646,controller_server,20,Passing new path to controller.
+1791639593.916,104.250,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639594.288,104.653,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639594.298,104.653,controller_server,20,Passing new path to controller.
+1791639594.625,104.955,frontier_explorer,20,"Exploration complete, returning to start position."
+1791639594.630,104.955,bt_navigator,20,Received goal preemption request
+1791639594.630,104.955,bt_navigator,20,"Begin navigating from current location (4.02, -2.14) to (0.00, -0.00)"
+1791639595.348,105.648,controller_server,20,Passing new path to controller.
+1791639596.348,106.644,controller_server,20,Passing new path to controller.
+1791639596.488,106.844,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639596.916,107.247,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639597.398,107.749,controller_server,20,Passing new path to controller.
+1791639598.398,108.754,controller_server,20,Passing new path to controller.
+1791639598.689,108.954,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639599.448,109.745,controller_server,20,Passing new path to controller.
+1791639599.916,110.246,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639600.448,110.748,controller_server,20,Passing new path to controller.
+1791639600.888,111.149,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639601.498,111.752,controller_server,20,Passing new path to controller.
+1791639602.498,112.743,controller_server,20,Passing new path to controller.
+1791639602.916,113.146,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639603.088,113.347,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639603.548,113.850,controller_server,20,Passing new path to controller.
+1791639604.548,114.859,controller_server,20,Passing new path to controller.
+1791639604.916,115.160,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639605.288,115.562,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639605.598,115.856,controller_server,20,Passing new path to controller.
+1791639606.598,116.858,controller_server,20,Passing new path to controller.
+1791639607.488,117.764,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639607.648,117.865,controller_server,20,Passing new path to controller.
+1791639607.916,118.166,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639608.648,118.869,controller_server,20,Passing new path to controller.
+1791639609.688,119.960,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639609.698,119.960,controller_server,20,Passing new path to controller.
+1791639609.948,120.148,controller_server,20,Reached the goal!
+1791639609.949,120.148,controller_server,20,Optimizer reset
+1791639609.970,120.248,bt_navigator,20,Goal succeeded
+1791639609.971,120.248,frontier_explorer,20,Back at start. Save the map with map_saver_cli.
+1791639610.916,121.151,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639611.888,122.155,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639613.916,124.131,global_costmap.global_costmap,30,KeepoutFilter: Filter mask was not received
+1791639614.088,124.333,local_costmap.local_costmap,30,KeepoutFilter: Filter mask was not received
+1791639614.711,124.934,map_saver,20,Map saved successfully
+1791639614.713,124.934,map_saver,20,Destroying

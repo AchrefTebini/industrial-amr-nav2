@@ -1,0 +1,35 @@
+run,mode,counted,wall_start,wall_end,outcome,sim_end,notes
+pilot/mapping,mapping,pilot,2026-11-16T23:32:05,2026-11-16T23:33:49,completed,87.8,
+pilot/navigation,navigation,pilot,2026-11-16T23:33:53,2026-11-16T23:35:36,completed,96.8,
+pilot/spin,spin,pilot,2026-11-16T23:35:40,2026-11-16T23:36:21,completed,35.8,spin_test exit code 0
+spin/session_1,spin,yes,2026-11-16T23:36:58,2026-11-16T23:37:49,completed,36.3,spin_test exit code 0
+spin/session_2,spin,yes,2026-11-16T23:37:51,2026-11-16T23:38:33,completed,37.3,spin_test exit code 0
+spin/session_3,spin,yes,2026-11-16T23:38:35,2026-11-16T23:39:17,completed,36.1,spin_test exit code 0
+mapping/run_01,mapping,yes,2026-11-16T23:39:21,2026-11-16T23:40:57,completed,90.3,
+mapping/run_02,mapping,yes,2026-11-16T23:40:59,2026-11-16T23:42:39,completed,95.1,
+mapping/run_03,mapping,yes,2026-11-16T23:42:42,2026-11-16T23:44:37,completed,110.1,
+mapping/run_04,mapping,yes,2026-11-16T23:44:39,2026-11-16T23:46:14,completed,79.9,
+mapping/run_05,mapping,yes,2026-11-16T23:46:16,2026-11-16T23:48:22,completed,110.5,
+mapping/run_06,mapping,yes,2026-11-16T23:48:24,2026-11-16T23:50:10,completed,100.6,
+mapping/run_07,mapping,yes,2026-11-16T23:50:12,2026-11-16T23:51:56,completed,98.1,
+mapping/run_08,mapping,yes,2026-11-16T23:51:58,2026-11-16T23:53:32,completed,87.8,
+infra_run_09_20261116T235546,mapping,no,2026-11-16T23:53:34,2026-11-16T23:55:46,infra,117.3,Nav2 not active within 120 s wall
+mapping/run_09,mapping,yes,2026-11-16T23:55:48,2026-11-16T23:57:18,completed,83.9,
+mapping/run_10,mapping,yes,2026-11-16T23:57:20,2026-11-16T23:59:00,completed,85.1,
+mapping/run_11,mapping,yes,2026-11-16T23:59:02,2026-11-17T00:00:28,completed,79.6,
+mapping/run_12,mapping,yes,2026-11-17T00:00:30,2026-11-17T00:02:29,completed,103.3,
+mapping/run_13,mapping,yes,2026-11-17T00:02:31,2026-11-17T00:04:28,completed,111.1,
+mapping/run_14,mapping,yes,2026-11-17T00:04:30,2026-11-17T00:05:58,completed,83.1,
+mapping/run_15,mapping,yes,2026-11-17T00:06:00,2026-11-17T00:07:28,completed,81.9,
+infra_session_1_20261117T002301,navigation,no,2026-11-17T00:07:32,2026-11-17T00:23:01,infra,921.1,reclassified 2026-11-17: /bt_navigator/get_state reply lost so waypoint_runner never sent a goal (robot did not move); logged as cap
+navigation/session_2,navigation,yes,2026-11-17T00:23:03,2026-11-17T00:27:21,completed,251.5,
+infra_session_3_20261117T002934,navigation,no,2026-11-17T00:27:23,2026-11-17T00:29:34,infra,116.8,Nav2 not active within 120 s wall
+navigation/session_3,navigation,yes,2026-11-17T00:29:36,2026-11-17T00:33:51,completed,248.6,
+navigation/session_4,navigation,yes,2026-11-17T00:33:53,2026-11-17T00:38:18,completed,249.1,
+navigation/session_5,navigation,yes,2026-11-17T00:38:20,2026-11-17T00:42:35,completed,249.0,
+navigation/session_6,navigation,yes,2026-11-17T00:42:37,2026-11-17T00:46:54,completed,250.5,
+navigation/session_7,navigation,yes,2026-11-17T00:46:57,2026-11-17T00:51:12,completed,249.4,
+navigation/session_8,navigation,yes,2026-11-17T00:53:09,2026-11-17T00:57:33,completed,248.5,
+navigation/session_9,navigation,yes,2026-11-17T00:57:35,2026-11-17T01:01:47,completed,246.1,
+navigation/session_10,navigation,yes,2026-11-17T01:01:49,2026-11-17T01:06:13,completed,248.8,
+navigation/session_1,navigation,yes,2026-11-17T01:06:36,2026-11-17T01:10:51,completed,249.1,

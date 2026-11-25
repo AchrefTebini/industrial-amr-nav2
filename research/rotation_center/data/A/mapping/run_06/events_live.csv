@@ -1,0 +1,442 @@
+wall_t,sim_t,node,level,msg
+1794864019.754,,rosbag2_recorder,20,Press SPACE for pausing/resuming
+1794864019.755,,rosbag2_recorder,20,Event publisher thread: Started
+1794864019.755,,rosbag2_recorder,20,Starting recording to '/home/achref/industrial_amr_ws/research/rotation_center/data/A/mapping/run_06/bag'
+1794864019.755,,rosbag2_recorder,20,Subscribed to topic '/rosout'
+1794864019.755,,rosbag2_recorder,20,Listening for topics...
+1794864019.755,,rosbag2_recorder,20,Recording...
+1794864019.755,,rosbag2_recorder,20,Topics discovery started.
+1794864020.324,,rosbag2_recorder,20,Subscribed to topic '/tf'
+1794864020.330,,rosbag2_recorder,20,Subscribed to topic '/tf_static'
+1794864020.453,,robot_state_publisher,20,Robot initialized
+1794864020.544,,lifecycle_manager_costmap_filters,20,Creating
+1794864020.544,,lifecycle_manager_costmap_filters,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1794864020.545,,slam_toolbox,20,Node using stack size 40000000
+1794864020.545,,controller_server,20,"
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.545,,controller_server,20,Creating controller server
+1794864020.546,,slam_toolbox,20,Configuring
+1794864020.568,,slam_toolbox,20,Using solver plugin solver_plugins::CeresSolver
+1794864020.569,,slam_toolbox,20,CeresSolver: Using SCHUR_JACOBI preconditioner.
+1794864020.790,,smoother_server,20,"
+	smoother_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.795,,filter_mask_server,20,"
+	filter_mask_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.795,,filter_mask_server,20,Creating
+1794864020.795,,smoother_server,20,Creating smoother server
+1794864020.796,,bt_navigator,20,"
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.803,,bt_navigator,20,Creating
+1794864020.808,,planner_server,20,"
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.813,,planner_server,20,Creating
+1794864020.821,,costmap_filter_info_server,20,"
+	costmap_filter_info_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.835,,waypoint_follower,20,"
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.838,,waypoint_follower,20,Creating
+1794864020.839,,local_costmap.local_costmap,20,"
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.842,,lifecycle_manager_costmap_filters,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1794864020.848,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring filter_mask_server[0m[0m
+1794864020.848,,local_costmap.local_costmap,20,Creating Costmap
+1794864020.848,,filter_mask_server,20,Configuring
+1794864020.848,,velocity_smoother,20,"
+	velocity_smoother lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.868,,route_server,20,"
+	route_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.901,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring costmap_filter_info_server[0m[0m
+1794864020.902,,docking_server,20,"
+	docking_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.902,,docking_server,20,Creating docking_server
+1794864020.902,,costmap_filter_info_server,20,Configuring
+1794864020.916,,collision_monitor,20,"
+	collision_monitor lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.932,,global_costmap.global_costmap,20,"
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864020.933,,global_costmap.global_costmap,20,Creating Costmap
+1794864020.934,,slam_toolbox,20,Activating
+1794864020.941,,rosbag2_recorder,20,Subscribed to topic '/map'
+1794864020.998,,lifecycle_manager_costmap_filters,20,[34m[1mActivating filter_mask_server[0m[0m
+1794864021.166,,filter_mask_server,20,Activating
+1794864021.166,,filter_mask_server,20,Creating bond (filter_mask_server) to lifecycle manager.
+1794864021.168,,behavior_server,20,"
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864021.271,,lifecycle_manager_costmap_filters,20,Server filter_mask_server connected with bond.
+1794864021.271,,lifecycle_manager_costmap_filters,20,[34m[1mActivating costmap_filter_info_server[0m[0m
+1794864021.271,,costmap_filter_info_server,20,Activating
+1794864021.271,,costmap_filter_info_server,20,Creating bond (costmap_filter_info_server) to lifecycle manager.
+1794864021.376,,lifecycle_manager_costmap_filters,20,Server costmap_filter_info_server connected with bond.
+1794864021.376,,lifecycle_manager_costmap_filters,20,[34m[1mManaged nodes are active[0m[0m
+1794864021.377,,lifecycle_manager_costmap_filters,20,[34m[1mCreating bond timer...[0m[0m
+1794864021.377,,ros_gz_bridge,20,Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+1794864021.383,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+1794864021.387,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+1794864021.389,,rosbag2_recorder,20,Subscribed to topic '/odom'
+1794864021.390,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+1794864021.392,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+1794864021.393,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+1794864021.395,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+1794864021.399,,rosbag2_recorder,20,Subscribed to topic '/clock'
+1794864021.637,,controller_server,20,Configuring controller interface
+1794864021.638,,controller_server,20,getting progress checker plugins..
+1794864021.638,,controller_server,20,getting goal checker plugins..
+1794864021.638,,controller_server,20,Controller frequency set to 20.0000Hz
+1794864021.638,,local_costmap.local_costmap,20,Configuring
+1794864021.646,,local_costmap.local_costmap,20,"Using plugin ""obstacle_layer"""
+1794864021.649,,local_costmap.local_costmap,20,Subscribed to Topics: scan
+1794864021.653,,local_costmap.local_costmap,20,"Initialized plugin ""obstacle_layer"""
+1794864021.653,,local_costmap.local_costmap,20,"Using plugin ""inflation_layer"""
+1794864021.654,,local_costmap.local_costmap,20,"Initialized plugin ""inflation_layer"""
+1794864021.654,,local_costmap.local_costmap,20,"Using costmap filter ""keepout_filter"""
+1794864021.657,,local_costmap.local_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1794864021.675,,controller_server,20,Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+1794864021.675,,controller_server,20,Controller Server has progress_checker  progress checkers available.
+1794864021.676,,controller_server,20,Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+1794864021.676,,controller_server,20,Controller Server has general_goal_checker  goal checkers available.
+1794864021.677,,controller_server,20,Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+1794864021.680,,controller_server,20,Controller period is equal to model dt. Control sequence shifting is ON
+1794864021.682,,controller_server,20,ConstraintCritic instantiated with 1 power and 4.000000 weight.
+1794864021.682,,controller_server,20,Critic loaded : mppi::critics::ConstraintCritic
+1794864021.683,,controller_server,20,InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+1794864021.683,,controller_server,20,Critic loaded : mppi::critics::CostCritic
+1794864021.683,,controller_server,20,GoalCritic instantiated with 1 power and 5.000000 weight.
+1794864021.683,,controller_server,20,Critic loaded : mppi::critics::GoalCritic
+1794864021.684,,controller_server,20,"GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled"
+1794864021.684,,controller_server,20,Critic loaded : mppi::critics::GoalAngleCritic
+1794864021.685,,controller_server,20,ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+1794864021.685,,controller_server,20,Critic loaded : mppi::critics::PathAlignCritic
+1794864021.685,,controller_server,20,Critic loaded : mppi::critics::PathFollowCritic
+1794864021.686,,controller_server,20,PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+1794864021.686,,controller_server,20,Critic loaded : mppi::critics::PathAngleCritic
+1794864021.687,,controller_server,20,PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+1794864021.687,,controller_server,20,Critic loaded : mppi::critics::PreferForwardCritic
+1794864021.689,,controller_server,20,Optimizer reset
+1794864021.693,,controller_server,20,Controller Server has FollowPath  controllers available.
+1794864021.701,,smoother_server,20,Configuring smoother server
+1794864021.714,,smoother_server,20,Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+1794864021.714,,smoother_server,20,Smoother Server has simple_smoother  smoothers available.
+1794864021.722,,planner_server,20,Configuring
+1794864021.722,,global_costmap.global_costmap,20,Configuring
+1794864021.731,,global_costmap.global_costmap,20,"Using plugin ""static_layer"""
+1794864021.735,,global_costmap.global_costmap,20,Subscribing to the map topic (/map) with transient local durability
+1794864021.737,,global_costmap.global_costmap,20,"Initialized plugin ""static_layer"""
+1794864021.737,,global_costmap.global_costmap,20,"Using plugin ""obstacle_layer"""
+1794864021.738,,global_costmap.global_costmap,20,Subscribed to Topics: scan
+1794864021.742,,global_costmap.global_costmap,20,"Initialized plugin ""obstacle_layer"""
+1794864021.742,,global_costmap.global_costmap,20,"Using plugin ""inflation_layer"""
+1794864021.742,,global_costmap.global_costmap,20,"Initialized plugin ""inflation_layer"""
+1794864021.743,,global_costmap.global_costmap,20,"Using costmap filter ""keepout_filter"""
+1794864021.745,,global_costmap.global_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1794864021.770,,planner_server,20,Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+1794864021.770,,planner_server,20,Configuring plugin GridBased of type NavfnPlanner
+1794864021.771,,planner_server,20,Planner Server has GridBased  planners available.
+1794864021.783,,route_server,20,Configuring
+1794864021.811,,route_server,20,Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+1794864021.811,,route_server,20,Configuring geojson graph file loader
+1794864021.811,,route_server,20,No graph file provided to load yet.
+1794864021.813,,route_server,20,Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+1794864021.813,,route_server,20,Configuring distance scorer.
+1794864021.814,,route_server,20,Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+1794864021.814,,route_server,20,Configuring costmap scorer.
+1794864021.817,,route_server,20,Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+1794864021.817,,route_server,20,Configuring Adjust speed limit operation.
+1794864021.819,,route_server,20,Created route operation ReroutingService of type nav2_route::ReroutingService
+1794864021.819,,route_server,20,Configuring Rerouting service operation.
+1794864021.820,,route_server,20,Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+1794864021.820,,route_server,20,Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+1794864021.824,,behavior_server,20,Configuring
+1794864021.829,,behavior_server,20,Creating behavior plugin spin of type nav2_behaviors::Spin
+1794864021.830,,behavior_server,20,Creating behavior plugin backup of type nav2_behaviors::BackUp
+1794864021.831,,behavior_server,20,Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+1794864021.832,,behavior_server,20,Creating behavior plugin wait of type nav2_behaviors::Wait
+1794864021.840,,behavior_server,20,Configuring spin
+1794864021.849,,behavior_server,20,Configuring backup
+1794864021.855,,behavior_server,20,Configuring drive_on_heading
+1794864021.860,,behavior_server,20,Configuring wait
+1794864021.866,,velocity_smoother,20,Configuring velocity smoother
+1794864021.870,,collision_monitor,20,Configuring
+1794864021.876,,collision_monitor,20,[scan]: Creating Scan
+1794864021.879,,collision_monitor,20,[FootprintApproach]: Creating Polygon
+1794864021.879,,collision_monitor,20,[FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+1794864021.880,,collision_monitor,20,[FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+1794864021.893,,bt_navigator,20,Configuring
+1794864021.894,,rosbag2_recorder,20,Subscribed to topic '/collision_monitor_state'
+1794864021.900,,bt_navigator,20,Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+1794864021.933,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/feedback'
+1794864021.936,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/status'
+1794864021.966,,bt_navigator,20,Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+1794864021.991,,waypoint_follower,20,Configuring
+1794864022.014,,waypoint_follower,20,Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+1794864022.016,,docking_server,20,Configuring docking_server
+1794864022.016,,docking_server,20,Controller frequency set to 50.0000Hz
+1794864022.041,,docking_server,20,Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+1794864022.049,,docking_server,30,Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+1794864022.049,,docking_server,20,Docking Server has 1 dock types and 0 dock instances available.
+1794864022.050,,controller_server,20,Activating
+1794864022.051,,local_costmap.local_costmap,20,Activating
+1794864022.051,,local_costmap.local_costmap,20,Checking transform
+1794864022.051,,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1794864022.551,0.001,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1794864022.716,0.020,lifecycle_manager_navigation,20,Creating
+1794864022.716,0.020,lifecycle_manager_navigation,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1794864022.716,0.020,lifecycle_manager_navigation,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1794864022.716,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring controller_server[0m[0m
+1794864022.717,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring smoother_server[0m[0m
+1794864022.717,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring planner_server[0m[0m
+1794864022.717,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring route_server[0m[0m
+1794864022.717,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring behavior_server[0m[0m
+1794864022.717,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring velocity_smoother[0m[0m
+1794864022.717,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring collision_monitor[0m[0m
+1794864022.717,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring bt_navigator[0m[0m
+1794864022.718,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring waypoint_follower[0m[0m
+1794864022.718,0.020,lifecycle_manager_navigation,20,[34m[1mConfiguring docking_server[0m[0m
+1794864022.718,0.020,lifecycle_manager_navigation,20,[34m[1mActivating controller_server[0m[0m
+1794864022.853,0.120,gzserver,20,InitializeCanonicalLinks
+1794864022.854,0.120,gzserver,20,Creating services on gzserver
+1794864022.858,0.120,gzserver,20,Created service /gzserver/delete_entity
+1794864022.859,0.120,gzserver,20,Created service /gzserver/get_entities
+1794864022.861,0.120,gzserver,20,Created service /gzserver/get_entity_info
+1794864022.862,0.120,gzserver,20,Created service /gzserver/get_entity_state
+1794864022.867,0.120,gzserver,20,Created service /gzserver/get_entities_states
+1794864022.867,0.120,gzserver,20,Created service /gzserver/get_simulation_state
+1794864022.869,0.120,gzserver,20,Created service /gzserver/get_simulator_features
+1794864022.871,0.120,gzserver,20,Created service /gzserver/reset_simulation
+1794864022.872,0.120,gzserver,20,Created service /gzserver/set_entity_state
+1794864022.876,0.120,gzserver,20,Created service /gzserver/set_simulation_state
+1794864022.876,0.120,gzserver,20,Created service /gzserver/spawn_entity
+1794864022.877,0.120,gzserver,20,Created service /gzserver/step_simulation
+1794864022.886,0.214,gzserver,20,Created action /gzserver/simulate_steps
+1794864022.953,0.214,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+1794864023.051,0.313,local_costmap.local_costmap,20,start
+1794864023.052,0.313,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1794864023.063,0.313,local_costmap.local_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1794864023.063,0.313,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1794864023.076,0.313,local_costmap.local_costmap,20,KeepoutFilter: Received filter mask from /keepout_filter_mask topic.
+1794864023.253,0.510,controller_server,30,Parameter controller_server.verbose not found
+1794864023.256,0.510,controller_server,20,Optimizer reset
+1794864023.257,0.510,controller_server,20,Creating bond (controller_server) to lifecycle manager.
+1794864023.370,0.609,lifecycle_manager_navigation,20,Server controller_server connected with bond.
+1794864023.370,0.609,lifecycle_manager_navigation,20,[34m[1mActivating smoother_server[0m[0m
+1794864023.370,0.609,smoother_server,20,Activating
+1794864023.370,0.609,smoother_server,20,Creating bond (smoother_server) to lifecycle manager.
+1794864023.476,0.702,lifecycle_manager_navigation,20,Server smoother_server connected with bond.
+1794864023.476,0.702,lifecycle_manager_navigation,20,[34m[1mActivating planner_server[0m[0m
+1794864023.477,0.702,planner_server,20,Activating
+1794864023.477,0.702,global_costmap.global_costmap,20,Activating
+1794864023.477,0.702,global_costmap.global_costmap,20,Checking transform
+1794864023.477,0.702,global_costmap.global_costmap,20,start
+1794864023.478,0.702,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1794864023.489,0.803,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1794864023.490,0.803,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1794864023.501,0.803,global_costmap.global_costmap,20,KeepoutFilter: Received filter mask from /keepout_filter_mask topic.
+1794864024.479,1.703,planner_server,20,Activating plugin GridBased of type NavfnPlanner
+1794864024.481,1.703,planner_server,20,Creating bond (planner_server) to lifecycle manager.
+1794864024.589,1.904,lifecycle_manager_navigation,20,Server planner_server connected with bond.
+1794864024.590,1.904,lifecycle_manager_navigation,20,[34m[1mActivating route_server[0m[0m
+1794864024.590,1.904,route_server,20,Activating
+1794864024.590,1.904,route_server,20,Creating bond (route_server) to lifecycle manager.
+1794864024.700,2.003,lifecycle_manager_navigation,20,Server route_server connected with bond.
+1794864024.700,2.003,lifecycle_manager_navigation,20,[34m[1mActivating behavior_server[0m[0m
+1794864024.701,2.003,behavior_server,20,Activating
+1794864024.701,2.003,behavior_server,20,Activating spin
+1794864024.701,2.003,behavior_server,20,Activating backup
+1794864024.701,2.003,behavior_server,20,Activating drive_on_heading
+1794864024.701,2.003,behavior_server,20,Activating wait
+1794864024.701,2.003,behavior_server,20,Creating bond (behavior_server) to lifecycle manager.
+1794864024.807,2.103,lifecycle_manager_navigation,20,Server behavior_server connected with bond.
+1794864024.808,2.103,lifecycle_manager_navigation,20,[34m[1mActivating velocity_smoother[0m[0m
+1794864024.808,2.103,velocity_smoother,20,Activating
+1794864024.808,2.103,velocity_smoother,20,Creating bond (velocity_smoother) to lifecycle manager.
+1794864024.918,2.202,lifecycle_manager_navigation,20,Server velocity_smoother connected with bond.
+1794864024.918,2.202,lifecycle_manager_navigation,20,[34m[1mActivating collision_monitor[0m[0m
+1794864024.919,2.202,collision_monitor,20,Activating
+1794864024.919,2.202,collision_monitor,20,Creating bond (collision_monitor) to lifecycle manager.
+1794864025.028,2.302,lifecycle_manager_navigation,20,Server collision_monitor connected with bond.
+1794864025.028,2.302,lifecycle_manager_navigation,20,[34m[1mActivating bt_navigator[0m[0m
+1794864025.028,2.302,bt_navigator,20,Activating
+1794864025.159,2.400,bt_navigator,20,Creating bond (bt_navigator) to lifecycle manager.
+1794864025.271,2.497,lifecycle_manager_navigation,20,Server bt_navigator connected with bond.
+1794864025.271,2.497,lifecycle_manager_navigation,20,[34m[1mActivating waypoint_follower[0m[0m
+1794864025.272,2.497,waypoint_follower,20,Activating
+1794864025.272,2.497,waypoint_follower,20,Creating bond (waypoint_follower) to lifecycle manager.
+1794864025.380,2.598,lifecycle_manager_navigation,20,Server waypoint_follower connected with bond.
+1794864025.380,2.598,lifecycle_manager_navigation,20,[34m[1mActivating docking_server[0m[0m
+1794864025.381,2.598,docking_server,20,Activating docking_server
+1794864025.396,2.698,docking_server,20,Creating bond (docking_server) to lifecycle manager.
+1794864025.507,2.799,lifecycle_manager_navigation,20,Server docking_server connected with bond.
+1794864025.508,2.799,lifecycle_manager_navigation,20,[34m[1mManaged nodes are active[0m[0m
+1794864025.508,2.799,lifecycle_manager_navigation,20,[34m[1mCreating bond timer...[0m[0m
+1794864025.720,3.001,frontier_explorer,20,"Navigating to frontier (-0.29, -0.45)"
+1794864025.721,3.001,bt_navigator,20,"Begin navigating from current location (0.00, -0.00) to (-0.29, -0.45)"
+1794864025.742,3.001,controller_server,20,"Received a goal, begin computing control effort."
+1794864025.742,3.001,controller_server,30,No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+1794864025.742,3.001,controller_server,30,No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+1794864025.779,3.001,ros_gz_bridge,20,Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+1794864026.792,4.002,controller_server,20,Passing new path to controller.
+1794864027.792,5.008,controller_server,20,Passing new path to controller.
+1794864028.842,6.102,controller_server,20,Passing new path to controller.
+1794864029.746,6.983,controller_server,20,Reached the goal!
+1794864029.746,6.983,controller_server,20,Optimizer reset
+1794864029.771,6.983,bt_navigator,20,Goal succeeded
+1794864030.753,7.984,frontier_explorer,20,"Navigating to frontier (-0.29, 0.40)"
+1794864030.753,7.984,bt_navigator,20,"Begin navigating from current location (-0.43, -0.50) to (-0.29, 0.40)"
+1794864030.774,7.984,controller_server,20,"Received a goal, begin computing control effort."
+1794864031.477,8.684,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+1794864031.753,8.986,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864031.757,8.986,frontier_explorer,20,"Navigating to frontier (1.01, -1.06)"
+1794864031.764,8.986,bt_navigator,20,Received goal preemption request
+1794864031.765,8.986,bt_navigator,20,"Begin navigating from current location (-0.35, -0.38) to (1.01, -1.06)"
+1794864031.824,8.986,controller_server,20,Passing new path to controller.
+1794864032.824,9.988,controller_server,20,Passing new path to controller.
+1794864033.874,11.088,controller_server,20,Passing new path to controller.
+1794864034.924,12.091,controller_server,20,Passing new path to controller.
+1794864035.477,12.695,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+1794864035.793,12.968,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864035.800,12.968,frontier_explorer,20,"Navigating to frontier (2.50, -0.36)"
+1794864035.804,12.968,bt_navigator,20,Received goal preemption request
+1794864035.804,12.968,bt_navigator,20,"Begin navigating from current location (-0.21, -0.16) to (2.50, -0.36)"
+1794864035.924,13.068,controller_server,20,Passing new path to controller.
+1794864036.974,14.160,controller_server,20,Passing new path to controller.
+1794864037.974,15.167,controller_server,20,Passing new path to controller.
+1794864039.024,16.174,controller_server,20,Passing new path to controller.
+1794864039.477,16.572,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 161 at 0.050000 m/pix
+1794864039.820,16.965,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864039.825,16.965,frontier_explorer,20,"Navigating to frontier (-0.64, 2.88)"
+1794864039.834,16.965,bt_navigator,20,Received goal preemption request
+1794864039.834,16.965,bt_navigator,20,"Begin navigating from current location (1.42, -0.17) to (-0.64, 2.88)"
+1794864040.024,17.164,controller_server,20,Passing new path to controller.
+1794864041.074,18.165,controller_server,20,Passing new path to controller.
+1794864041.477,18.568,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 161 at 0.050000 m/pix
+1794864042.074,19.171,controller_server,20,Passing new path to controller.
+1794864043.124,20.265,controller_server,20,Passing new path to controller.
+1794864044.124,21.269,controller_server,20,Passing new path to controller.
+1794864045.174,22.270,controller_server,20,Passing new path to controller.
+1794864046.176,23.267,controller_server,20,Passing new path to controller.
+1794864047.174,24.264,controller_server,20,Passing new path to controller.
+1794864048.224,25.270,controller_server,20,Passing new path to controller.
+1794864049.274,26.373,controller_server,20,Passing new path to controller.
+1794864049.883,26.958,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864049.888,26.958,frontier_explorer,20,"Navigating to frontier (-3.74, 2.78)"
+1794864049.894,26.958,bt_navigator,20,Received goal preemption request
+1794864049.894,26.958,bt_navigator,20,"Begin navigating from current location (-0.30, 2.62) to (-3.74, 2.78)"
+1794864050.274,27.360,controller_server,20,Passing new path to controller.
+1794864051.324,28.362,controller_server,20,Passing new path to controller.
+1794864052.324,29.368,controller_server,20,Passing new path to controller.
+1794864053.374,30.451,controller_server,20,Passing new path to controller.
+1794864054.374,31.452,controller_server,20,Passing new path to controller.
+1794864055.424,32.455,controller_server,20,Passing new path to controller.
+1794864056.424,33.451,controller_server,20,Passing new path to controller.
+1794864057.474,34.454,controller_server,20,Passing new path to controller.
+1794864057.477,34.454,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 162 at 0.050000 m/pix
+1794864057.927,34.955,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864057.932,34.955,frontier_explorer,20,"Navigating to frontier (-1.99, -2.87)"
+1794864057.934,34.955,bt_navigator,20,Received goal preemption request
+1794864057.934,34.955,bt_navigator,20,"Begin navigating from current location (-3.36, 2.77) to (-1.99, -2.87)"
+1794864058.474,35.454,controller_server,20,Passing new path to controller.
+1794864059.524,36.554,controller_server,20,Passing new path to controller.
+1794864060.524,37.555,controller_server,20,Passing new path to controller.
+1794864061.574,38.556,controller_server,20,Passing new path to controller.
+1794864062.574,39.560,controller_server,20,Passing new path to controller.
+1794864063.624,40.651,controller_server,20,Passing new path to controller.
+1794864064.624,41.652,controller_server,20,Passing new path to controller.
+1794864065.674,42.653,controller_server,20,Passing new path to controller.
+1794864066.674,43.605,controller_server,20,Passing new path to controller.
+1794864067.724,44.607,controller_server,20,Passing new path to controller.
+1794864068.724,45.612,controller_server,20,Passing new path to controller.
+1794864069.477,46.408,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 162 at 0.050000 m/pix
+1794864069.774,46.704,controller_server,20,Passing new path to controller.
+1794864070.774,47.701,controller_server,20,Passing new path to controller.
+1794864071.774,48.707,controller_server,20,Passing new path to controller.
+1794864072.824,49.706,controller_server,20,Passing new path to controller.
+1794864073.065,50.002,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864073.068,50.002,frontier_explorer,20,"Navigating to frontier (-3.69, -3.07)"
+1794864073.074,50.002,bt_navigator,20,Received goal preemption request
+1794864073.074,50.002,bt_navigator,20,"Begin navigating from current location (-1.72, -2.02) to (-3.69, -3.07)"
+1794864073.824,50.703,controller_server,20,Passing new path to controller.
+1794864074.874,51.708,controller_server,20,Passing new path to controller.
+1794864075.874,52.709,controller_server,20,Passing new path to controller.
+1794864076.924,53.803,controller_server,20,Passing new path to controller.
+1794864077.088,53.904,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864077.092,54.004,frontier_explorer,20,"Navigating to frontier (1.81, -3.47)"
+1794864077.094,54.004,bt_navigator,20,Received goal preemption request
+1794864077.094,54.004,bt_navigator,20,"Begin navigating from current location (-2.64, -2.65) to (1.81, -3.47)"
+1794864077.924,54.810,controller_server,20,Passing new path to controller.
+1794864078.974,55.815,controller_server,20,Passing new path to controller.
+1794864079.974,56.804,controller_server,20,Passing new path to controller.
+1794864081.025,57.909,controller_server,20,Passing new path to controller.
+1794864082.024,58.905,controller_server,20,Passing new path to controller.
+1794864083.074,59.901,controller_server,20,Passing new path to controller.
+1794864084.074,60.908,controller_server,20,Passing new path to controller.
+1794864085.124,61.906,controller_server,20,Passing new path to controller.
+1794864085.477,62.307,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 204 X 163 at 0.050000 m/pix
+1794864086.124,62.904,controller_server,20,Passing new path to controller.
+1794864087.124,63.905,controller_server,20,Passing new path to controller.
+1794864088.174,65.008,controller_server,20,Passing new path to controller.
+1794864089.224,65.988,controller_server,20,Passing new path to controller.
+1794864090.224,66.983,controller_server,20,Passing new path to controller.
+1794864091.198,67.985,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1794864091.274,67.985,controller_server,20,Passing new path to controller.
+1794864092.274,68.984,controller_server,20,Passing new path to controller.
+1794864093.124,69.875,controller_server,20,Reached the goal!
+1794864093.125,69.875,controller_server,20,Optimizer reset
+1794864093.154,69.875,bt_navigator,20,Goal succeeded
+1794864093.222,69.976,frontier_explorer,20,"Exploration complete, returning to start position."
+1794864093.222,69.976,bt_navigator,20,"Begin navigating from current location (1.73, -3.54) to (0.00, -0.00)"
+1794864093.243,69.976,controller_server,20,"Received a goal, begin computing control effort."
+1794864093.477,70.177,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 204 X 163 at 0.050000 m/pix
+1794864094.293,70.979,controller_server,20,Passing new path to controller.
+1794864095.343,72.069,controller_server,20,Passing new path to controller.
+1794864096.343,73.058,controller_server,20,Passing new path to controller.
+1794864097.393,74.052,controller_server,20,Passing new path to controller.
+1794864098.393,75.045,controller_server,20,Passing new path to controller.
+1794864099.443,76.142,controller_server,20,Passing new path to controller.
+1794864099.477,76.142,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 204 X 163 at 0.050000 m/pix
+1794864100.443,77.132,controller_server,20,Passing new path to controller.
+1794864101.493,78.134,controller_server,20,Passing new path to controller.
+1794864102.493,79.140,controller_server,20,Passing new path to controller.
+1794864103.543,80.131,controller_server,20,Passing new path to controller.
+1794864104.543,81.134,controller_server,20,Passing new path to controller.
+1794864105.194,81.839,controller_server,20,Reached the goal!
+1794864105.194,81.839,controller_server,20,Optimizer reset
+1794864105.223,81.839,bt_navigator,20,Goal succeeded
+1794864105.223,81.839,frontier_explorer,20,Back at start. Save the map with map_saver_cli.
+1794864108.858,85.422,map_saver,20,"
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864108.859,85.422,map_saver,20,Creating
+1794864108.859,85.422,map_saver,20,Configuring
+1794864108.859,85.422,map_saver,20,Saving map from 'map' topic to '/home/achref/industrial_amr_ws/research/rotation_center/data/A/mapping/run_06/map' file
+1794864108.859,85.422,map_saver,30,Free threshold unspecified. Setting it to default value: 0.250000
+1794864108.860,85.422,map_saver,30,Occupied threshold unspecified. Setting it to default value: 0.650000
+1794864108.986,85.603,map_saver,20,Map saved successfully
+1794864108.992,85.603,map_saver,20,Destroying

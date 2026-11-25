@@ -1,0 +1,20 @@
+run,mode,counted,wall_start,wall_end,outcome,sim_end,notes
+pilot/mapping,mapping,pilot,2026-10-10T15:27:43,2026-10-10T15:30:15,completed,136.9,
+pilot/navigation,navigation,pilot,2026-10-10T15:30:19,2026-10-10T15:32:13,completed,99.7,
+mapping/run_01,mapping,yes,2026-10-10T15:33:35,2026-10-10T15:35:41,completed,121.5,
+mapping/run_02,mapping,yes,2026-10-10T15:35:43,2026-10-10T15:38:03,completed,134.2,
+mapping/run_03,mapping,yes,2026-10-10T15:38:05,2026-10-10T15:40:25,completed,125.5,
+mapping/run_04,mapping,yes,2026-10-10T15:40:27,2026-10-10T15:50:43,cap,608.8,
+mapping/run_05,mapping,yes,2026-10-10T15:50:45,2026-10-10T15:53:11,completed,139.4,
+mapping/run_06,mapping,yes,2026-10-10T15:53:12,2026-10-10T15:55:37,completed,138.4,
+mapping/run_07,mapping,yes,2026-10-10T15:55:39,2026-10-10T15:57:53,completed,128.5,
+mapping/run_08,mapping,yes,2026-10-10T15:57:54,2026-10-10T16:00:30,completed,139.2,
+infra_run_09_20261010T160244,mapping,no,2026-10-10T16:00:33,2026-10-10T16:02:44,infra,115.9,Nav2 not active within 120 s wall
+mapping/run_09,mapping,yes,2026-10-10T16:02:45,2026-10-10T16:05:01,completed,121.2,
+mapping/run_10,mapping,yes,2026-10-10T16:05:03,2026-10-10T16:06:53,completed,95.9,
+infra_session_1_20261010T160907,navigation,no,2026-10-10T16:06:57,2026-10-10T16:09:07,infra,116.5,Nav2 not active within 120 s wall
+navigation/session_1,navigation,yes,2026-10-10T16:09:09,2026-10-10T16:14:02,completed,287.1,
+navigation/session_2,navigation,yes,2026-10-10T16:14:04,2026-10-10T16:18:12,completed,242.8,
+infra_session_3_20261010T162015,navigation,no,2026-10-10T16:18:14,2026-10-10T16:20:15,infra,116.3,Nav2 not active within 120 s wall
+infra_session_3_20261010T162218,navigation,no,2026-10-10T16:20:17,2026-10-10T16:22:18,infra,116.5,Nav2 not active within 120 s wall
+navigation/session_3,navigation,yes,2026-10-10T16:22:20,2026-10-10T16:26:34,completed,238.9,

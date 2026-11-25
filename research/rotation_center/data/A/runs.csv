@@ -1,0 +1,36 @@
+run,mode,counted,wall_start,wall_end,outcome,sim_end,notes
+pilot/mapping,mapping,pilot,2026-11-16T22:01:00,2026-11-16T22:02:36,completed,90.2,
+pilot/navigation,navigation,pilot,2026-11-16T22:02:40,2026-11-16T22:04:23,completed,97.0,
+pilot/spin,spin,pilot,2026-11-16T22:04:27,2026-11-16T22:05:12,completed,36.4,spin_test exit code 0
+spin/session_1,spin,yes,2026-11-16T22:05:39,2026-11-16T22:06:31,completed,36.7,spin_test exit code 0
+spin/session_2,spin,yes,2026-11-16T22:06:33,2026-11-16T22:07:24,completed,36.9,spin_test exit code 0
+infra_session_3_20261116T220937,spin,no,2026-11-16T22:07:26,2026-11-16T22:09:37,infra,116.7,Nav2 not active within 120 s wall
+spin/session_3,spin,yes,2026-11-16T22:09:40,2026-11-16T22:10:22,completed,36.4,spin_test exit code 0
+mapping/run_01,mapping,yes,2026-11-16T22:10:26,2026-11-16T22:11:51,completed,78.2,
+mapping/run_02,mapping,yes,2026-11-16T22:11:53,2026-11-16T22:13:52,completed,113.6,
+mapping/run_03,mapping,yes,2026-11-16T22:13:54,2026-11-16T22:16:03,completed,113.9,
+mapping/run_04,mapping,yes,2026-11-16T22:16:05,2026-11-16T22:18:08,completed,107.0,
+mapping/run_05,mapping,yes,2026-11-16T22:18:10,2026-11-16T22:20:16,completed,110.1,
+mapping/run_06,mapping,yes,2026-11-16T22:20:18,2026-11-16T22:21:50,completed,86.6,
+mapping/run_07,mapping,yes,2026-11-16T22:21:52,2026-11-16T22:23:32,completed,93.3,
+mapping/run_08,mapping,yes,2026-11-16T22:23:35,2026-11-16T22:25:12,completed,91.5,
+mapping/run_09,mapping,yes,2026-11-16T22:25:14,2026-11-16T22:27:17,completed,107.2,
+infra_run_10_20261116T222921,mapping,no,2026-11-16T22:27:19,2026-11-16T22:29:21,infra,117.0,Nav2 not active within 120 s wall
+mapping/run_10,mapping,yes,2026-11-16T22:29:23,2026-11-16T22:31:14,completed,103.8,
+mapping/run_11,mapping,yes,2026-11-16T22:31:16,2026-11-16T22:32:54,completed,92.3,
+mapping/run_12,mapping,yes,2026-11-16T22:32:56,2026-11-16T22:34:23,completed,81.1,
+mapping/run_13,mapping,yes,2026-11-16T22:34:25,2026-11-16T22:36:07,completed,95.8,
+mapping/run_14,mapping,yes,2026-11-16T22:36:09,2026-11-16T22:37:54,completed,89.6,
+mapping/run_15,mapping,yes,2026-11-16T22:37:56,2026-11-16T22:40:49,completed,157.4,
+infra_session_1_20261116T224512,navigation,no,2026-11-16T22:40:54,2026-11-16T22:45:12,infra,242.8,reclassified 2026-11-17: /costmap_filter_info_server/change_state reply lost so lifecycle_manager_costmap_filters never activated (keepout filter off); logged as completed
+infra_session_2_20261116T224726,navigation,no,2026-11-16T22:45:14,2026-11-16T22:47:26,infra,116.6,Nav2 not active within 120 s wall
+navigation/session_2,navigation,yes,2026-11-16T22:47:28,2026-11-16T22:51:32,completed,237.5,
+navigation/session_3,navigation,yes,2026-11-16T22:51:34,2026-11-16T22:55:50,completed,248.5,
+navigation/session_4,navigation,yes,2026-11-16T22:55:52,2026-11-16T22:59:58,completed,238.9,
+navigation/session_5,navigation,yes,2026-11-16T23:00:00,2026-11-16T23:04:08,completed,241.6,
+navigation/session_6,navigation,yes,2026-11-16T23:04:11,2026-11-16T23:08:29,completed,241.0,
+navigation/session_7,navigation,yes,2026-11-16T23:08:31,2026-11-16T23:12:41,completed,243.3,
+navigation/session_8,navigation,yes,2026-11-16T23:12:43,2026-11-16T23:16:48,completed,239.1,
+navigation/session_9,navigation,yes,2026-11-16T23:16:50,2026-11-16T23:20:56,completed,238.7,
+navigation/session_10,navigation,yes,2026-11-16T23:20:58,2026-11-16T23:27:40,completed,395.1,global_localizer sim_timeout
+navigation/session_1,navigation,yes,2026-11-17T01:11:16,2026-11-17T01:15:20,completed,237.7,

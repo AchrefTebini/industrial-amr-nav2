@@ -1,0 +1,68 @@
+{
+  "condition": "A",
+  "expect_axle_x": -0.2,
+  "prereg": {
+    "path": "/home/achref/industrial_amr_ws/research/rotation_center/README.md",
+    "sha256": "6d17f13c0904a3da91ec4e7e6215f4b8f1b4207dfe063f62b0b0b0444d8475d2"
+  },
+  "command": [
+    "paper/experiments/run_experiments.py",
+    "--data-dir",
+    "research/rotation_center/data/A",
+    "--condition",
+    "A",
+    "--expect-axle-x",
+    "-0.20",
+    "--prereg",
+    "research/rotation_center/README.md",
+    "navigation",
+    "--sessions",
+    "10",
+    "--loops",
+    "3"
+  ],
+  "kernel": "7.0.0-38-generic",
+  "packages": {
+    "libgz-sim8": "8.15.0-1~noble",
+    "ros-jazzy-nav2-amcl": "1.3.13-1noble.20260903.024944",
+    "ros-jazzy-nav2-bringup": "1.3.13-1noble.20260907.023821",
+    "ros-jazzy-nav2-costmap-2d": "1.3.13-1noble.20260903.024922",
+    "ros-jazzy-nav2-mppi-controller": "1.3.13-1noble.20260903.032340",
+    "ros-jazzy-rclpy": "7.1.12-1noble.20260902.053513",
+    "ros-jazzy-ros-gz-sim": "1.0.24-1noble.20260905.085151",
+    "ros-jazzy-rosbag2": "0.26.11-1noble.20260903.092044",
+    "ros-jazzy-slam-toolbox": "2.8.5-1noble.20260905.070219"
+  },
+  "tooling_sha256": {
+    "extract_bag.py": "432be359ef5f09b5d4ccd4b5e21bf444100ec665f82233b5579e2969e9692b1d",
+    "gt_logger.py": "0d1e54f324e2dfe04a1871995c8165d978c711390856b10cbd92648f025a854e",
+    "metrics_mapping.py": "a08b2b5482d633c54abd08e293995e7fed4bd62d75af2da3825b9e7db5c83d91",
+    "metrics_navigation.py": "7f28011fe9dd2062b4e36027d5cfc48269343e9f39b237391faff695ffd1e442",
+    "run_experiments.py": "74640181697bc723118dd554d937313c8e6f90c77fe52c48143ae8d00f54361d",
+    "spin_test.py": "d74ef78166f6a7e9a0f5edb0f7c7279eddcd965e7b35963ff43dde4f1c606cbb",
+    "world_geometry.py": "10c529d65dedee656ca9bd3aa82d757946051601cd8b9a2abd592e28e1b3304e"
+  },
+  "run": "session_2",
+  "wall_start": "2026-11-16T22:45:15",
+  "git_commit": "0bebd9583dc106230494755335776ca8c94071a9",
+  "git_branch": "master",
+  "git_dirty": [
+    " M .vscode/settings.json",
+    " M src/industrial_amr_bringup/rviz/mapping.rviz",
+    " M src/industrial_amr_bringup/rviz/navigation.rviz",
+    " M src/industrial_amr_exploration/config/waypoints.yaml",
+    " M src/industrial_amr_exploration/industrial_amr_exploration/frontier_explorer.py"
+  ],
+  "axle_x": -0.2,
+  "footprint_bounds": [
+    -0.3,
+    0.3,
+    -0.25,
+    0.25
+  ],
+  "snapshot_sha256": {
+    "robot_description.urdf": "3ae2669821c3632592ce63dbb4ba10da085651f1d6524dbfbbaecde1b421af5f",
+    "nav2_params.yaml": "5c89bba315854863257cb9e6bd608f80a627d79233426428aa21e77bfdd3cfd3",
+    "waypoints.yaml": "7ab05710306afd362ed4c2da82a3614a001052fd1b94446437c896dc12fc60f9"
+  }
+}

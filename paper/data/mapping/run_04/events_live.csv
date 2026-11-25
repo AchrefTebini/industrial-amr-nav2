@@ -1,0 +1,447 @@
+wall_t,sim_t,node,level,msg
+1791639628.318,,rosbag2_recorder,20,Subscribed to topic '/tf'
+1791639628.324,,rosbag2_recorder,20,Subscribed to topic '/tf_static'
+1791639628.544,,behavior_server,20,"
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639628.553,,bt_navigator,20,"
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639628.555,,bt_navigator,20,Creating
+1791639628.563,,route_server,20,"
+	route_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639628.579,,velocity_smoother,20,"
+	velocity_smoother lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639628.899,,docking_server,20,"
+	docking_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1791639628.900,,docking_server,20,Creating docking_server
+1791639629.178,,filter_mask_server,20,Configuring
+1791639629.188,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring costmap_filter_info_server[0m[0m
+1791639629.189,,costmap_filter_info_server,20,Configuring
+1791639629.197,,lifecycle_manager_costmap_filters,20,[34m[1mActivating filter_mask_server[0m[0m
+1791639629.197,,filter_mask_server,20,Activating
+1791639629.197,,filter_mask_server,20,Creating bond (filter_mask_server) to lifecycle manager.
+1791639629.305,,lifecycle_manager_costmap_filters,20,Server filter_mask_server connected with bond.
+1791639629.305,,lifecycle_manager_costmap_filters,20,[34m[1mActivating costmap_filter_info_server[0m[0m
+1791639629.305,,costmap_filter_info_server,20,Activating
+1791639629.305,,costmap_filter_info_server,20,Creating bond (costmap_filter_info_server) to lifecycle manager.
+1791639629.411,,lifecycle_manager_costmap_filters,20,Server costmap_filter_info_server connected with bond.
+1791639629.411,,lifecycle_manager_costmap_filters,20,[34m[1mManaged nodes are active[0m[0m
+1791639629.412,,lifecycle_manager_costmap_filters,20,[34m[1mCreating bond timer...[0m[0m
+1791639629.540,,lifecycle_manager_navigation,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1791639629.540,,lifecycle_manager_navigation,20,[34m[1mConfiguring controller_server[0m[0m
+1791639629.570,,rosbag2_recorder,20,Subscribed to topic '/map'
+1791639629.581,,ros_gz_bridge,20,Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+1791639629.585,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+1791639629.588,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+1791639629.591,,rosbag2_recorder,20,Subscribed to topic '/odom'
+1791639629.591,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+1791639629.595,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+1791639629.597,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+1791639629.599,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+1791639629.604,,rosbag2_recorder,20,Subscribed to topic '/clock'
+1791639629.617,,lifecycle_manager_navigation,20,[34m[1mConfiguring smoother_server[0m[0m
+1791639629.617,,smoother_server,20,Configuring smoother server
+1791639629.630,,smoother_server,20,Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+1791639629.631,,smoother_server,20,Smoother Server has simple_smoother  smoothers available.
+1791639629.638,,lifecycle_manager_navigation,20,[34m[1mConfiguring planner_server[0m[0m
+1791639629.695,,lifecycle_manager_navigation,20,[34m[1mConfiguring route_server[0m[0m
+1791639629.695,,route_server,20,Configuring
+1791639629.724,,route_server,20,Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+1791639629.724,,route_server,20,Configuring geojson graph file loader
+1791639629.725,,route_server,20,No graph file provided to load yet.
+1791639629.726,,route_server,20,Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+1791639629.727,,route_server,20,Configuring distance scorer.
+1791639629.727,,route_server,20,Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+1791639629.727,,route_server,20,Configuring costmap scorer.
+1791639629.729,,route_server,20,Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+1791639629.730,,route_server,20,Configuring Adjust speed limit operation.
+1791639629.731,,route_server,20,Created route operation ReroutingService of type nav2_route::ReroutingService
+1791639629.731,,route_server,20,Configuring Rerouting service operation.
+1791639629.733,,route_server,20,Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+1791639629.733,,route_server,20,Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+1791639629.737,,lifecycle_manager_navigation,20,[34m[1mConfiguring behavior_server[0m[0m
+1791639629.737,,behavior_server,20,Configuring
+1791639629.742,,behavior_server,20,Creating behavior plugin spin of type nav2_behaviors::Spin
+1791639629.743,,behavior_server,20,Creating behavior plugin backup of type nav2_behaviors::BackUp
+1791639629.744,,behavior_server,20,Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+1791639629.744,,behavior_server,20,Creating behavior plugin wait of type nav2_behaviors::Wait
+1791639629.752,,behavior_server,20,Configuring spin
+1791639629.760,,behavior_server,20,Configuring backup
+1791639629.765,,behavior_server,20,Configuring drive_on_heading
+1791639629.770,,behavior_server,20,Configuring wait
+1791639629.776,,lifecycle_manager_navigation,20,[34m[1mConfiguring velocity_smoother[0m[0m
+1791639629.776,,velocity_smoother,20,Configuring velocity smoother
+1791639629.781,,lifecycle_manager_navigation,20,[34m[1mConfiguring collision_monitor[0m[0m
+1791639629.781,,collision_monitor,20,Configuring
+1791639629.787,,collision_monitor,20,[scan]: Creating Scan
+1791639629.791,,collision_monitor,20,[FootprintApproach]: Creating Polygon
+1791639629.792,,collision_monitor,20,[FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+1791639629.792,,collision_monitor,20,[FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+1791639629.805,,lifecycle_manager_navigation,20,[34m[1mConfiguring bt_navigator[0m[0m
+1791639629.805,,bt_navigator,20,Configuring
+1791639629.807,,rosbag2_recorder,20,Subscribed to topic '/collision_monitor_state'
+1791639629.812,,bt_navigator,20,Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+1791639629.844,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/feedback'
+1791639629.846,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/status'
+1791639629.875,,bt_navigator,20,Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+1791639629.901,,lifecycle_manager_navigation,20,[34m[1mConfiguring waypoint_follower[0m[0m
+1791639629.901,,waypoint_follower,20,Configuring
+1791639629.927,,waypoint_follower,20,Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+1791639629.927,,lifecycle_manager_navigation,20,[34m[1mConfiguring docking_server[0m[0m
+1791639629.927,,docking_server,20,Configuring docking_server
+1791639629.928,,docking_server,20,Controller frequency set to 50.0000Hz
+1791639629.953,,docking_server,20,Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+1791639629.960,,docking_server,30,Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+1791639629.961,,docking_server,20,Docking Server has 1 dock types and 0 dock instances available.
+1791639629.962,,lifecycle_manager_navigation,20,[34m[1mActivating controller_server[0m[0m
+1791639631.274,0.512,lifecycle_manager_navigation,20,Server controller_server connected with bond.
+1791639631.442,0.709,lifecycle_manager_navigation,20,[34m[1mActivating smoother_server[0m[0m
+1791639631.442,0.709,smoother_server,20,Activating
+1791639631.443,0.709,smoother_server,20,Creating bond (smoother_server) to lifecycle manager.
+1791639631.444,0.709,lifecycle_manager_navigation,20,Server smoother_server connected with bond.
+1791639631.444,0.709,lifecycle_manager_navigation,20,[34m[1mActivating planner_server[0m[0m
+1791639632.366,1.614,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+1791639632.384,1.614,planner_server,20,Activating plugin GridBased of type NavfnPlanner
+1791639632.385,1.614,planner_server,20,Creating bond (planner_server) to lifecycle manager.
+1791639632.492,1.715,lifecycle_manager_navigation,20,Server planner_server connected with bond.
+1791639632.492,1.715,lifecycle_manager_navigation,20,[34m[1mActivating route_server[0m[0m
+1791639632.493,1.715,route_server,20,Activating
+1791639632.493,1.715,route_server,20,Creating bond (route_server) to lifecycle manager.
+1791639632.500,1.715,frontier_explorer,20,Waiting for map → robot transform...
+1791639632.599,1.815,lifecycle_manager_navigation,20,Server route_server connected with bond.
+1791639632.600,1.815,lifecycle_manager_navigation,20,[34m[1mActivating behavior_server[0m[0m
+1791639632.600,1.815,behavior_server,20,Activating
+1791639632.600,1.815,behavior_server,20,Activating spin
+1791639632.600,1.815,behavior_server,20,Activating backup
+1791639632.600,1.815,behavior_server,20,Activating drive_on_heading
+1791639632.600,1.815,behavior_server,20,Activating wait
+1791639632.600,1.815,behavior_server,20,Creating bond (behavior_server) to lifecycle manager.
+1791639632.707,1.915,lifecycle_manager_navigation,20,Server behavior_server connected with bond.
+1791639632.708,1.915,lifecycle_manager_navigation,20,[34m[1mActivating velocity_smoother[0m[0m
+1791639632.708,1.915,velocity_smoother,20,Activating
+1791639632.708,1.915,velocity_smoother,20,Creating bond (velocity_smoother) to lifecycle manager.
+1791639632.729,1.915,frontier_explorer,20,"Navigating to frontier (-0.29, -0.46)"
+1791639632.729,1.915,bt_navigator,20,Action server is inactive. Rejecting the goal.
+1791639632.730,1.915,frontier_explorer,30,"Goal rejected by Nav2, retrying."
+1791639632.819,2.015,lifecycle_manager_navigation,20,Server velocity_smoother connected with bond.
+1791639632.819,2.015,lifecycle_manager_navigation,20,[34m[1mActivating collision_monitor[0m[0m
+1791639632.820,2.015,collision_monitor,20,Activating
+1791639632.820,2.015,collision_monitor,20,Creating bond (collision_monitor) to lifecycle manager.
+1791639632.928,2.115,lifecycle_manager_navigation,20,Server collision_monitor connected with bond.
+1791639632.929,2.115,lifecycle_manager_navigation,20,[34m[1mActivating bt_navigator[0m[0m
+1791639632.929,2.115,bt_navigator,20,Activating
+1791639633.027,2.215,bt_navigator,20,Creating bond (bt_navigator) to lifecycle manager.
+1791639633.138,2.316,lifecycle_manager_navigation,20,Server bt_navigator connected with bond.
+1791639633.139,2.316,lifecycle_manager_navigation,20,[34m[1mActivating waypoint_follower[0m[0m
+1791639633.139,2.316,waypoint_follower,20,Activating
+1791639633.139,2.316,waypoint_follower,20,Creating bond (waypoint_follower) to lifecycle manager.
+1791639633.246,2.518,lifecycle_manager_navigation,20,Server waypoint_follower connected with bond.
+1791639633.247,2.518,lifecycle_manager_navigation,20,[34m[1mActivating docking_server[0m[0m
+1791639633.247,2.518,docking_server,20,Activating docking_server
+1791639633.261,2.518,docking_server,20,Creating bond (docking_server) to lifecycle manager.
+1791639633.369,2.619,lifecycle_manager_navigation,20,Server docking_server connected with bond.
+1791639633.369,2.619,lifecycle_manager_navigation,20,[34m[1mManaged nodes are active[0m[0m
+1791639633.369,2.619,lifecycle_manager_navigation,20,[34m[1mCreating bond timer...[0m[0m
+1791639633.728,2.919,frontier_explorer,20,"Navigating to frontier (-0.29, -0.46)"
+1791639633.729,2.919,bt_navigator,20,"Begin navigating from current location (0.00, -0.00) to (-0.29, -0.46)"
+1791639633.750,3.020,controller_server,20,"Received a goal, begin computing control effort."
+1791639633.750,3.020,controller_server,30,No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+1791639633.751,3.020,controller_server,30,No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+1791639633.768,3.020,ros_gz_bridge,20,Passing message from ROS geometry_msgs/msg/Twist to Gazebo gz.msgs.Twist (showing msg only once per type)
+1791639634.800,4.013,controller_server,20,Passing new path to controller.
+1791639635.851,5.018,controller_server,20,Passing new path to controller.
+1791639636.850,6.020,controller_server,20,Passing new path to controller.
+1791639637.749,6.917,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639637.753,6.917,frontier_explorer,20,"Navigating to frontier (0.96, -1.21)"
+1791639637.760,6.917,bt_navigator,20,Received goal preemption request
+1791639637.760,6.917,bt_navigator,20,"Begin navigating from current location (-0.15, -0.31) to (0.96, -1.21)"
+1791639637.800,7.016,controller_server,20,Reached the goal!
+1791639637.802,7.016,controller_server,20,Optimizer reset
+1791639637.829,7.016,bt_navigator,20,Goal succeeded
+1791639638.381,7.621,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 201 X 161 at 0.050000 m/pix
+1791639638.754,7.922,frontier_explorer,20,"Navigating to frontier (0.96, -1.21)"
+1791639638.754,7.922,bt_navigator,20,"Begin navigating from current location (-0.42, -0.51) to (0.96, -1.21)"
+1791639638.775,8.023,controller_server,20,"Received a goal, begin computing control effort."
+1791639639.826,9.029,controller_server,20,Passing new path to controller.
+1791639640.875,10.032,controller_server,20,Passing new path to controller.
+1791639641.875,11.015,controller_server,20,Passing new path to controller.
+1791639642.876,12.020,controller_server,20,Passing new path to controller.
+1791639643.781,12.925,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639643.786,12.925,frontier_explorer,20,"Navigating to frontier (3.44, 0.92)"
+1791639643.795,12.925,bt_navigator,20,Received goal preemption request
+1791639643.795,12.925,bt_navigator,20,"Begin navigating from current location (0.50, -0.70) to (3.44, 0.92)"
+1791639643.925,13.123,controller_server,20,Passing new path to controller.
+1791639644.381,13.520,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 202 X 162 at 0.050000 m/pix
+1791639644.975,14.116,controller_server,20,Passing new path to controller.
+1791639645.975,15.120,controller_server,20,Passing new path to controller.
+1791639647.025,16.128,controller_server,20,Passing new path to controller.
+1791639648.025,17.124,controller_server,20,Passing new path to controller.
+1791639649.075,18.229,controller_server,20,Passing new path to controller.
+1791639649.811,18.933,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639649.816,18.933,frontier_explorer,20,"Navigating to frontier (0.09, 3.02)"
+1791639649.825,18.933,bt_navigator,20,Received goal preemption request
+1791639649.825,18.933,bt_navigator,20,"Begin navigating from current location (2.02, 0.04) to (0.09, 3.02)"
+1791639650.076,19.233,controller_server,20,Passing new path to controller.
+1791639651.126,20.224,controller_server,20,Passing new path to controller.
+1791639652.126,21.231,controller_server,20,Passing new path to controller.
+1791639652.381,21.533,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 202 X 162 at 0.050000 m/pix
+1791639653.126,22.237,controller_server,20,Passing new path to controller.
+1791639654.175,23.334,controller_server,20,Passing new path to controller.
+1791639655.175,24.333,controller_server,20,Passing new path to controller.
+1791639655.840,24.936,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639655.845,24.936,frontier_explorer,20,"Navigating to frontier (-3.01, 3.06)"
+1791639655.855,24.936,bt_navigator,20,Received goal preemption request
+1791639655.856,24.936,bt_navigator,20,"Begin navigating from current location (1.21, 1.64) to (-3.01, 3.06)"
+1791639656.225,25.339,controller_server,20,Passing new path to controller.
+1791639657.226,26.341,controller_server,20,Passing new path to controller.
+1791639658.276,27.339,controller_server,20,Passing new path to controller.
+1791639659.276,28.343,controller_server,20,Passing new path to controller.
+1791639660.326,29.443,controller_server,20,Passing new path to controller.
+1791639661.326,30.435,controller_server,20,Passing new path to controller.
+1791639661.867,30.939,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639661.871,30.939,frontier_explorer,20,"Navigating to frontier (-4.16, 1.61)"
+1791639661.875,30.939,bt_navigator,20,Received goal preemption request
+1791639661.875,30.939,bt_navigator,20,"Begin navigating from current location (-1.40, 2.44) to (-4.16, 1.61)"
+1791639662.376,31.442,controller_server,20,Passing new path to controller.
+1791639662.381,31.442,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 202 X 162 at 0.050000 m/pix
+1791639663.377,32.450,controller_server,20,Passing new path to controller.
+1791639664.426,33.540,controller_server,20,Passing new path to controller.
+1791639665.426,34.440,controller_server,20,Passing new path to controller.
+1791639665.888,34.943,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639665.892,34.943,frontier_explorer,20,"Navigating to frontier (-3.41, 1.41)"
+1791639665.895,34.943,bt_navigator,20,Received goal preemption request
+1791639665.895,34.943,bt_navigator,20,"Begin navigating from current location (-3.18, 2.36) to (-3.41, 1.41)"
+1791639666.476,35.547,controller_server,20,Passing new path to controller.
+1791639667.476,36.540,controller_server,20,Passing new path to controller.
+1791639668.526,37.538,controller_server,20,Passing new path to controller.
+1791639669.526,38.540,controller_server,20,Passing new path to controller.
+1791639669.909,38.941,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639669.914,38.941,frontier_explorer,20,"Navigating to frontier (-4.26, -1.59)"
+1791639669.915,38.941,bt_navigator,20,Received goal preemption request
+1791639669.916,38.941,bt_navigator,20,"Begin navigating from current location (-3.39, 1.46) to (-4.26, -1.59)"
+1791639670.476,39.542,controller_server,20,Reached the goal!
+1791639670.476,39.542,controller_server,20,Optimizer reset
+1791639670.505,39.542,bt_navigator,20,Goal succeeded
+1791639670.935,39.925,frontier_explorer,20,"Navigating to frontier (-4.26, -1.59)"
+1791639670.936,39.925,bt_navigator,20,"Begin navigating from current location (-3.39, 1.42) to (-4.26, -1.59)"
+1791639670.956,40.023,controller_server,20,"Received a goal, begin computing control effort."
+1791639672.007,41.029,controller_server,20,Passing new path to controller.
+1791639673.007,42.033,controller_server,20,Passing new path to controller.
+1791639674.057,43.034,controller_server,20,Passing new path to controller.
+1791639675.057,44.022,controller_server,20,Passing new path to controller.
+1791639676.107,45.125,controller_server,20,Passing new path to controller.
+1791639676.381,45.326,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 202 X 162 at 0.050000 m/pix
+1791639677.107,46.125,controller_server,20,Passing new path to controller.
+1791639677.976,46.921,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639677.980,46.921,frontier_explorer,20,"Navigating to frontier (-3.92, -3.11)"
+1791639677.986,46.921,bt_navigator,20,Received goal preemption request
+1791639677.987,46.921,bt_navigator,20,"Begin navigating from current location (-4.25, -0.39) to (-3.92, -3.11)"
+1791639678.157,47.122,controller_server,20,Passing new path to controller.
+1791639678.381,47.323,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 202 X 163 at 0.050000 m/pix
+1791639679.157,48.128,controller_server,20,Passing new path to controller.
+1791639680.207,49.134,controller_server,20,Passing new path to controller.
+1791639681.207,50.124,controller_server,20,Passing new path to controller.
+1791639681.992,50.928,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639681.997,50.928,frontier_explorer,20,"Navigating to frontier (-2.77, -2.66)"
+1791639682.007,50.928,bt_navigator,20,Received goal preemption request
+1791639682.007,50.928,bt_navigator,20,"Begin navigating from current location (-4.33, -2.15) to (-2.77, -2.66)"
+1791639682.257,51.230,controller_server,20,Passing new path to controller.
+1791639682.381,51.330,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 202 X 163 at 0.050000 m/pix
+1791639683.257,52.219,controller_server,20,Passing new path to controller.
+1791639684.307,53.208,controller_server,20,Passing new path to controller.
+1791639685.307,54.205,controller_server,20,Passing new path to controller.
+1791639686.036,54.907,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639686.040,54.907,frontier_explorer,20,"Navigating to frontier (1.73, -3.46)"
+1791639686.047,55.007,bt_navigator,20,Received goal preemption request
+1791639686.047,55.007,bt_navigator,20,"Begin navigating from current location (-3.16, -2.65) to (1.73, -3.46)"
+1791639686.357,55.308,controller_server,20,Passing new path to controller.
+1791639687.357,56.308,controller_server,20,Passing new path to controller.
+1791639688.407,57.301,controller_server,20,Passing new path to controller.
+1791639689.407,58.306,controller_server,20,Passing new path to controller.
+1791639690.457,59.312,controller_server,20,Passing new path to controller.
+1791639691.457,60.308,controller_server,20,Passing new path to controller.
+1791639692.507,61.415,controller_server,20,Passing new path to controller.
+1791639693.507,62.420,controller_server,20,Passing new path to controller.
+1791639694.381,63.210,global_costmap.global_costmap,20,StaticLayer: Resizing costmap to 203 X 163 at 0.050000 m/pix
+1791639694.557,63.406,controller_server,20,Passing new path to controller.
+1791639695.557,64.408,controller_server,20,Passing new path to controller.
+1791639696.085,64.910,frontier_explorer,20,"Frontier explored before arrival, moving on."
+1791639696.557,65.413,controller_server,20,Passing new path to controller.
+1791639696.907,65.814,controller_server,20,Reached the goal!
+1791639696.908,65.814,controller_server,20,Optimizer reset
+1791639696.936,65.814,bt_navigator,20,Goal succeeded
+1791639698.106,66.907,frontier_explorer,20,"Exploration complete, returning to start position."
+1791639698.107,66.907,bt_navigator,20,"Begin navigating from current location (1.58, -3.57) to (0.00, -0.00)"
+1791639698.127,67.007,controller_server,20,"Received a goal, begin computing control effort."
+1791639699.178,68.012,controller_server,20,Passing new path to controller.
+1791639700.178,69.016,controller_server,20,Passing new path to controller.
+1791639700.228,69.115,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639700.268,69.115,collision_monitor,20,Robot to continue normal operation
+1791639700.379,69.213,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639701.068,69.907,collision_monitor,20,Robot to continue normal operation
+1791639701.228,70.108,controller_server,20,Passing new path to controller.
+1791639701.228,70.108,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639702.228,71.014,controller_server,20,Passing new path to controller.
+1791639703.237,72.020,planner_server,30,"GridBased plugin failed to plan from (1.22, -3.37) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639703.238,72.020,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639703.257,72.120,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639703.260,72.120,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639703.272,72.120,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639703.272,72.120,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639703.284,72.120,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639703.428,72.221,controller_server,20,Passing new path to controller.
+1791639704.428,73.212,controller_server,20,Passing new path to controller.
+1791639705.478,74.316,controller_server,20,Passing new path to controller.
+1791639706.528,75.322,controller_server,20,Passing new path to controller.
+1791639707.528,76.316,controller_server,20,Passing new path to controller.
+1791639708.578,77.405,controller_server,20,Passing new path to controller.
+1791639709.578,78.410,controller_server,20,Passing new path to controller.
+1791639710.568,79.307,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639710.568,79.307,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639710.587,79.403,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639710.591,79.403,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639710.602,79.403,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639710.602,79.403,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639710.613,79.403,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639711.393,80.205,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639711.393,80.205,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639711.428,80.205,controller_server,20,Cancellation was successful. Stopping the robot.
+1791639711.428,80.205,bt_navigator_navigate_to_pose_rclcpp_node,40,Failed to get result for follow_path in node halt!
+1791639711.428,80.205,controller_server,20,[follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+1791639711.428,80.205,local_costmap.local_costmap,20,Received request to clear entirely the local_costmap
+1791639711.429,80.205,controller_server,20,Optimizer reset
+1791639711.433,80.205,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639711.435,80.205,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639711.439,80.205,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639711.446,80.205,local_costmap.local_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639711.447,80.205,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639711.451,80.205,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639711.451,80.205,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639711.456,80.205,local_costmap.local_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639711.463,80.205,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639711.468,80.205,collision_monitor,20,Robot to continue normal operation
+1791639712.391,81.110,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639712.392,81.110,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639712.410,81.211,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639712.415,81.211,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639712.426,81.211,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639712.426,81.211,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639712.439,81.211,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639713.386,82.117,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639713.386,82.117,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639713.401,82.218,behavior_server,20,Running spin
+1791639713.401,82.218,behavior_server,20,Turning 1.57 for spin behavior.
+1791639713.768,82.517,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639723.501,92.236,behavior_server,30,Exceeded time allowance before reaching the Spin goal - Exiting Spin
+1791639723.501,92.236,behavior_server,30,spin failed
+1791639723.502,92.236,behavior_server,30,[spin] [ActionServer] Aborting handle.
+1791639723.520,92.236,behavior_server,20,Running wait
+1791639723.878,92.632,collision_monitor,20,Robot to continue normal operation
+1791639728.621,97.336,behavior_server,20,wait completed successfully
+1791639728.641,97.336,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639728.641,97.336,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639728.660,97.336,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639728.663,97.336,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639728.675,97.336,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639728.676,97.336,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639728.687,97.336,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639729.385,98.040,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639729.386,98.040,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639729.401,98.141,behavior_server,20,Running backup
+1791639729.418,98.141,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639739.501,108.133,behavior_server,30,Exceeded time allowance before reaching the DriveOnHeading goal - Exiting DriveOnHeading
+1791639739.501,108.133,behavior_server,30,backup failed
+1791639739.501,108.133,behavior_server,30,[backup] [ActionServer] Aborting handle.
+1791639739.520,108.133,local_costmap.local_costmap,20,Received request to clear entirely the local_costmap
+1791639739.523,108.133,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639739.525,108.133,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639739.529,108.133,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639739.535,108.133,local_costmap.local_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639739.535,108.133,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639739.542,108.133,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639739.542,108.133,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639739.547,108.133,local_costmap.local_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639739.554,108.133,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639739.608,108.234,collision_monitor,20,Robot to continue normal operation
+1791639740.383,109.035,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639740.383,109.035,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639740.401,109.035,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639740.405,109.035,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639740.416,109.035,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639740.417,109.035,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639740.428,109.035,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639741.386,110.031,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639741.387,110.031,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639741.401,110.031,behavior_server,20,Running spin
+1791639741.401,110.031,behavior_server,20,Turning 1.57 for spin behavior.
+1791639741.428,110.031,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639751.501,120.030,behavior_server,30,Exceeded time allowance before reaching the Spin goal - Exiting Spin
+1791639751.502,120.030,behavior_server,30,spin failed
+1791639751.502,120.030,behavior_server,30,[spin] [ActionServer] Aborting handle.
+1791639751.520,120.030,behavior_server,20,Running wait
+1791639751.868,120.432,collision_monitor,20,Robot to continue normal operation
+1791639756.621,125.128,behavior_server,20,wait completed successfully
+1791639756.641,125.128,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639756.641,125.128,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639756.660,125.229,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639756.663,125.229,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639756.675,125.229,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639756.676,125.229,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639756.687,125.229,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639757.386,125.920,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639757.387,125.920,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639757.401,125.920,behavior_server,20,Running backup
+1791639757.418,125.920,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639767.501,135.925,behavior_server,30,Exceeded time allowance before reaching the DriveOnHeading goal - Exiting DriveOnHeading
+1791639767.501,135.925,behavior_server,30,backup failed
+1791639767.501,135.925,behavior_server,30,[backup] [ActionServer] Aborting handle.
+1791639767.520,136.025,local_costmap.local_costmap,20,Received request to clear entirely the local_costmap
+1791639767.525,136.025,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639767.526,136.025,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639767.530,136.025,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639767.537,136.025,local_costmap.local_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639767.537,136.025,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639767.545,136.025,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639767.545,136.025,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639767.550,136.025,local_costmap.local_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639767.557,136.025,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639767.629,136.125,collision_monitor,20,Robot to continue normal operation
+1791639768.384,136.830,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639768.384,136.830,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639768.400,136.830,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639768.405,136.830,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639768.416,136.930,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639768.416,136.930,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639768.428,136.930,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639769.386,137.836,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639769.386,137.836,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639769.401,137.836,behavior_server,20,Running spin
+1791639769.401,137.836,behavior_server,20,Turning 1.57 for spin behavior.
+1791639769.428,137.936,collision_monitor,20,Robot to approach for 1.200000 seconds away from collision
+1791639779.501,147.957,behavior_server,30,Exceeded time allowance before reaching the Spin goal - Exiting Spin
+1791639779.501,147.957,behavior_server,30,spin failed
+1791639779.502,147.957,behavior_server,30,[spin] [ActionServer] Aborting handle.
+1791639779.520,147.957,behavior_server,20,Running wait
+1791639779.878,148.259,collision_monitor,20,Robot to continue normal operation
+1791639784.620,153.065,behavior_server,20,wait completed successfully
+1791639784.641,153.065,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639784.641,153.065,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639784.660,153.065,global_costmap.global_costmap,20,Received request to clear entirely the global_costmap
+1791639784.663,153.065,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1791639784.675,153.065,global_costmap.global_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1791639784.675,153.065,global_costmap.global_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1791639784.687,153.065,global_costmap.global_costmap,30,KeepoutFilter: New filter mask arrived from /keepout_filter_mask topic. Updating old filter mask.
+1791639785.385,153.769,planner_server,30,"GridBased plugin failed to plan from (1.09, -3.35) to (0.00, -0.00): ""Failed to create plan with tolerance of: 0.500000"""
+1791639785.386,153.769,planner_server,30,[compute_path_to_pose] [ActionServer] Aborting handle.
+1791639785.410,153.769,bt_navigator,30,[navigate_to_pose] [ActionServer] Aborting handle.
+1791639785.410,153.769,bt_navigator,40,Goal failed
+1791639785.411,153.769,frontier_explorer,30,"Nav2 aborted goal (0.00, -0.00), blacklisting it."

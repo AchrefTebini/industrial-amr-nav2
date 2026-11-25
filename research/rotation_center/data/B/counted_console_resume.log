@@ -1,0 +1,9 @@
+[00:53:09] navigation session_8: start (attempt 1)
+[00:53:16] session_8: Nav2 active at sim 3.001
+[00:57:33] navigation session_8: completed 
+[00:57:35] navigation session_9: start (attempt 1)
+[00:57:43] session_9: Nav2 active at sim 3.226
+[01:01:47] navigation session_9: completed 
+[01:01:49] navigation session_10: start (attempt 1)
+[01:01:57] session_10: Nav2 active at sim 2.922
+[01:06:13] navigation session_10: completed 

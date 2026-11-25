@@ -1,0 +1,16 @@
+[INFO] [1794864963.462757257] [map_saver]: 
+	map_saver lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1794864963.462860182] [map_saver]: Creating
+[INFO] [1794864963.462937898] [map_saver]: Configuring
+[INFO] [1794864963.465811238] [map_saver]: Saving map from 'map' topic to '/home/achref/industrial_amr_ws/research/rotation_center/data/A/mapping/run_13/map' file
+[WARN] [1794864963.465828440] [map_saver]: Free threshold unspecified. Setting it to default value: 0.250000
+[WARN] [1794864963.465835934] [map_saver]: Occupied threshold unspecified. Setting it to default value: 0.650000
+[WARN] [1794864965.644296408] [map_io]: Image format unspecified. Setting it to: pgm
+[INFO] [1794864965.644344389] [map_io]: Received a 204 X 162 map @ 0.05 m/pix
+[INFO] [1794864965.660942615] [map_io]: Writing map occupancy data to /home/achref/industrial_amr_ws/research/rotation_center/data/A/mapping/run_13/map.pgm
+[INFO] [1794864965.661833856] [map_io]: Writing map metadata to /home/achref/industrial_amr_ws/research/rotation_center/data/A/mapping/run_13/map.yaml
+[INFO] [1794864965.661989049] [map_io]: Map saved
+[INFO] [1794864965.662010099] [map_saver]: Map saved successfully
+[INFO] [1794864965.665384673] [map_saver]: Destroying

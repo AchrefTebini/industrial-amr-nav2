@@ -1,0 +1,10 @@
+[INFO] [1794863153.140840858] [spin_test]: approach start: (2.80, 0.50, 0.00)
+[INFO] [1794863153.141821597] [spin_test]: Navigating to goal: 2.8 0.5...
+[INFO] [1794863160.944549383] [spin_test]: approach done: SUCCEEDED
+[INFO] [1794863162.955144332] [spin_test]: spin 1 start: +6.2832 rad
+[INFO] [1794863162.955851348] [spin_test]: Spinning to angle 6.283185307179586....
+[INFO] [1794863169.558156297] [spin_test]: spin 1 done: SUCCEEDED
+[INFO] [1794863171.567750034] [spin_test]: spin 2 start: -6.2832 rad
+[INFO] [1794863171.568572847] [spin_test]: Spinning to angle -6.283185307179586....
+[INFO] [1794863178.170465266] [spin_test]: spin 2 done: SUCCEEDED
+[INFO] [1794863180.169642626] [spin_test]: spin test passed

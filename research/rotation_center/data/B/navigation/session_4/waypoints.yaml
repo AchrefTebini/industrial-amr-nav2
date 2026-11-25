@@ -1,0 +1,16 @@
+# Waypoint circuit for:  ros2 run industrial_amr_exploration waypoint_runner
+waypoint_runner:
+  ros__parameters:
+    use_sim_time: true
+    frame_id: map
+    loops: 1
+    # Flat list of (x, y, yaw) triples in the map frame.  Each point keeps
+    # >= 0.8 m from obstacles (inflation radius 0.55 m + footprint margin);
+    # goals closer to obstacles make the controller fail its progress check.
+    waypoints: [
+       3.0,  2.0,  0.0,     # top right
+       3.0, -2.5, -1.57,    # bottom right
+      -3.0, -3.0,  3.14,    # bottom left, below the L-partition
+      -3.7,  2.3,  1.57,    # top left, beside the crate
+       0.0, -0.3,  0.0,     # back near the start (the origin is 0.64 m from barrel 1)
+    ]

@@ -1,0 +1,83 @@
+[23:36:58] spin session_1: start (attempt 1)
+[23:37:05] session_1: Nav2 active at sim 3.013
+[23:37:49] spin session_1: completed spin_test exit code 0
+[23:37:51] spin session_2: start (attempt 1)
+[23:37:58] session_2: Nav2 active at sim 3.116
+[23:38:33] spin session_2: completed spin_test exit code 0
+[23:38:35] spin session_3: start (attempt 1)
+[23:38:43] session_3: Nav2 active at sim 2.822
+[23:39:17] spin session_3: completed spin_test exit code 0
+[23:39:21] mapping run_01: start (attempt 1)
+[23:39:29] run_01: Nav2 active at sim 2.998
+[23:40:57] mapping run_01: completed 
+[23:40:59] mapping run_02: start (attempt 1)
+[23:41:06] run_02: Nav2 active at sim 3.024
+[23:42:39] mapping run_02: completed 
+[23:42:42] mapping run_03: start (attempt 1)
+[23:42:49] run_03: Nav2 active at sim 3.003
+[23:44:37] mapping run_03: completed 
+[23:44:39] mapping run_04: start (attempt 1)
+[23:44:47] run_04: Nav2 active at sim 3.022
+[23:46:14] mapping run_04: completed 
+[23:46:16] mapping run_05: start (attempt 1)
+[23:46:24] run_05: Nav2 active at sim 2.826
+[23:48:22] mapping run_05: completed 
+[23:48:24] mapping run_06: start (attempt 1)
+[23:48:32] run_06: Nav2 active at sim 3.012
+[23:50:10] mapping run_06: completed 
+[23:50:12] mapping run_07: start (attempt 1)
+[23:50:20] run_07: Nav2 active at sim 3.501
+[23:51:56] mapping run_07: completed 
+[23:51:58] mapping run_08: start (attempt 1)
+[23:52:06] run_08: Nav2 active at sim 2.726
+[23:53:32] mapping run_08: completed 
+[23:53:34] mapping run_09: start (attempt 1)
+[23:55:46] mapping run_09: infra Nav2 not active within 120 s wall
+[23:55:48] mapping run_09: start (attempt 2)
+[23:55:56] run_09: Nav2 active at sim 3.027
+[23:57:18] mapping run_09: completed 
+[23:57:20] mapping run_10: start (attempt 1)
+[23:57:27] run_10: Nav2 active at sim 2.9210000000000003
+[23:59:00] mapping run_10: completed 
+[23:59:02] mapping run_11: start (attempt 1)
+[23:59:10] run_11: Nav2 active at sim 3.113
+[00:00:28] mapping run_11: completed 
+[00:00:30] mapping run_12: start (attempt 1)
+[00:00:38] run_12: Nav2 active at sim 2.824
+[00:02:29] mapping run_12: completed 
+[00:02:31] mapping run_13: start (attempt 1)
+[00:02:38] run_13: Nav2 active at sim 3.02
+[00:04:28] mapping run_13: completed 
+[00:04:30] mapping run_14: start (attempt 1)
+[00:04:36] run_14: Nav2 active at sim 2.527
+[00:05:58] mapping run_14: completed 
+[00:06:00] mapping run_15: start (attempt 1)
+[00:06:07] run_15: Nav2 active at sim 3.115
+[00:07:28] mapping run_15: completed 
+[00:07:32] navigation session_1: start (attempt 1)
+[00:07:39] session_1: Nav2 active at sim 3.143
+[00:22:52] waypoint_runner: no exit 10 s after SIGINT
+[00:22:52] waypoint_runner: sending SIGTERM to leftover PIDs [183180, 183183]
+[00:22:57] waypoint_runner: sending SIGKILL to leftover PIDs [183180, 183183]
+[00:23:01] navigation session_1: cap 
+[00:23:03] navigation session_2: start (attempt 1)
+[00:23:10] session_2: Nav2 active at sim 3.231
+[00:27:21] navigation session_2: completed 
+[00:27:23] navigation session_3: start (attempt 1)
+[00:29:34] navigation session_3: infra Nav2 not active within 120 s wall
+[00:29:36] navigation session_3: start (attempt 2)
+[00:29:44] session_3: Nav2 active at sim 3.13
+[00:33:51] navigation session_3: completed 
+[00:33:53] navigation session_4: start (attempt 1)
+[00:34:00] session_4: Nav2 active at sim 2.726
+[00:38:18] navigation session_4: completed 
+[00:38:20] navigation session_5: start (attempt 1)
+[00:38:28] session_5: Nav2 active at sim 3.116
+[00:42:35] navigation session_5: completed 
+[00:42:37] navigation session_6: start (attempt 1)
+[00:42:45] session_6: Nav2 active at sim 3.207
+[00:46:54] navigation session_6: completed 
+[00:46:57] navigation session_7: start (attempt 1)
+[00:47:04] session_7: Nav2 active at sim 3.119
+[00:51:12] navigation session_7: completed 
+[00:51:13] stale process 191537: appstreamcli refresh --source=os -> SIGTERM

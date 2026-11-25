@@ -1,0 +1,961 @@
+wall_t,sim_t,node,level,msg
+1794864440.764,,rosbag2_recorder,20,Press SPACE for pausing/resuming
+1794864440.764,,rosbag2_recorder,20,Event publisher thread: Started
+1794864440.764,,rosbag2_recorder,20,Starting recording to '/home/achref/industrial_amr_ws/research/rotation_center/data/A/mapping/run_10/bag'
+1794864440.764,,rosbag2_recorder,20,Subscribed to topic '/rosout'
+1794864440.764,,rosbag2_recorder,20,Listening for topics...
+1794864440.765,,rosbag2_recorder,20,Recording...
+1794864440.765,,rosbag2_recorder,20,Topics discovery started.
+1794864441.431,,rosbag2_recorder,20,Subscribed to topic '/tf'
+1794864441.436,,rosbag2_recorder,20,Subscribed to topic '/tf_static'
+1794864441.769,,ros_gz_sim,20,Requesting list of world names.
+1794864441.772,,robot_state_publisher,20,Robot initialized
+1794864441.775,,waypoint_follower,20,"
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.777,,waypoint_follower,20,Creating
+1794864441.778,,bt_navigator,20,"
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.778,,bt_navigator,20,Creating
+1794864441.787,,route_server,20,"
+	route_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.794,,local_costmap.local_costmap,20,"
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.794,,controller_server,20,"
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.795,,velocity_smoother,20,"
+	velocity_smoother lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.795,,smoother_server,20,"
+	smoother_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.795,,smoother_server,20,Creating smoother server
+1794864441.795,,controller_server,20,Creating controller server
+1794864441.796,,local_costmap.local_costmap,20,Creating Costmap
+1794864441.845,,planner_server,20,"
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.848,,slam_toolbox,20,Node using stack size 40000000
+1794864441.849,,planner_server,20,Creating
+1794864441.883,,ros_gz_sim,20,Waiting messages on topic [robot_description].
+1794864441.892,,lifecycle_manager_navigation,20,Creating
+1794864441.903,,filter_mask_server,20,"
+	filter_mask_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.903,,filter_mask_server,20,Creating
+1794864441.912,,lifecycle_manager_navigation,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1794864441.914,,ros_gz_sim,20,Entity creation successful.
+1794864441.916,,global_costmap.global_costmap,20,"
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.920,,docking_server,20,"
+	docking_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864441.920,,docking_server,20,Creating docking_server
+1794864441.920,,global_costmap.global_costmap,20,Creating Costmap
+1794864441.927,,costmap_filter_info_server,20,"
+	costmap_filter_info_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864442.055,,slam_toolbox,20,Configuring
+1794864442.063,,slam_toolbox,20,Using solver plugin solver_plugins::CeresSolver
+1794864442.063,,slam_toolbox,20,CeresSolver: Using SCHUR_JACOBI preconditioner.
+1794864442.185,,slam_toolbox.rclcpp,30,"failed to send response to /slam_toolbox/change_state (timeout): client will not receive response, at ./src/rmw_response.cpp:153, at ./src/rcl/service.c:400"
+1794864442.227,,lifecycle_manager_costmap_filters,20,Creating
+1794864442.237,,lifecycle_manager_costmap_filters,20,[34m[1mCreating and initializing lifecycle service clients[0m[0m
+1794864442.246,,lifecycle_manager_costmap_filters,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1794864442.246,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring filter_mask_server[0m[0m
+1794864442.246,,filter_mask_server,20,Configuring
+1794864442.255,,lifecycle_manager_costmap_filters,20,[34m[1mConfiguring costmap_filter_info_server[0m[0m
+1794864442.256,,costmap_filter_info_server,20,Configuring
+1794864442.262,,lifecycle_manager_costmap_filters,20,[34m[1mActivating filter_mask_server[0m[0m
+1794864442.262,,filter_mask_server,20,Activating
+1794864442.262,,filter_mask_server,20,Creating bond (filter_mask_server) to lifecycle manager.
+1794864442.367,,lifecycle_manager_costmap_filters,20,Server filter_mask_server connected with bond.
+1794864442.367,,lifecycle_manager_costmap_filters,20,[34m[1mActivating costmap_filter_info_server[0m[0m
+1794864442.367,,costmap_filter_info_server,20,Activating
+1794864442.368,,costmap_filter_info_server,20,Creating bond (costmap_filter_info_server) to lifecycle manager.
+1794864442.473,,lifecycle_manager_costmap_filters,20,Server costmap_filter_info_server connected with bond.
+1794864442.709,,lifecycle_manager_costmap_filters,20,[34m[1mManaged nodes are active[0m[0m
+1794864442.710,,lifecycle_manager_costmap_filters,20,[34m[1mCreating bond timer...[0m[0m
+1794864442.724,,behavior_server,20,"
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864442.724,,collision_monitor,20,"
+	collision_monitor lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information."
+1794864442.847,,ros_gz_bridge,20,Creating ROS->GZ Bridge: [cmd_vel (geometry_msgs/msg/Twist) -> /cmd_vel (gz.msgs.Twist)] (Lazy 0)
+1794864442.850,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/odom (gz.msgs.Odometry) -> odom (nav_msgs/msg/Odometry)] (Lazy 0)
+1794864442.854,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/tf (gz.msgs.Pose_V) -> tf (tf2_msgs/msg/TFMessage)] (Lazy 0)
+1794864442.858,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/scan (gz.msgs.LaserScan) -> scan (sensor_msgs/msg/LaserScan)] (Lazy 0)
+1794864442.859,,rosbag2_recorder,20,Subscribed to topic '/odom'
+1794864442.861,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/camera/camera_info (gz.msgs.CameraInfo) -> camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+1794864442.863,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/joint_states (gz.msgs.Model) -> joint_states (sensor_msgs/msg/JointState)] (Lazy 0)
+1794864442.865,,ros_gz_bridge,20,Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+1794864442.869,,rosbag2_recorder,20,Subscribed to topic '/clock'
+1794864442.946,,lifecycle_manager_navigation,20,[34m[1mStarting managed nodes bringup...[0m[0m
+1794864442.946,,lifecycle_manager_navigation,20,[34m[1mConfiguring controller_server[0m[0m
+1794864442.946,,controller_server,20,Configuring controller interface
+1794864442.947,,controller_server,20,getting progress checker plugins..
+1794864442.947,,controller_server,20,getting goal checker plugins..
+1794864442.947,,controller_server,20,Controller frequency set to 20.0000Hz
+1794864442.948,,local_costmap.local_costmap,20,Configuring
+1794864442.961,,local_costmap.local_costmap,20,"Using plugin ""obstacle_layer"""
+1794864442.965,,local_costmap.local_costmap,20,Subscribed to Topics: scan
+1794864442.969,,local_costmap.local_costmap,20,"Initialized plugin ""obstacle_layer"""
+1794864442.969,,local_costmap.local_costmap,20,"Using plugin ""inflation_layer"""
+1794864442.970,,local_costmap.local_costmap,20,"Initialized plugin ""inflation_layer"""
+1794864442.970,,local_costmap.local_costmap,20,"Using costmap filter ""keepout_filter"""
+1794864442.973,,local_costmap.local_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1794864442.993,,controller_server,20,Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+1794864442.993,,controller_server,20,Controller Server has progress_checker  progress checkers available.
+1794864442.994,,controller_server,20,Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+1794864442.994,,controller_server,20,Controller Server has general_goal_checker  goal checkers available.
+1794864442.996,,controller_server,20,Created controller : FollowPath of type nav2_mppi_controller::MPPIController
+1794864442.998,,controller_server,20,Controller period is equal to model dt. Control sequence shifting is ON
+1794864443.000,,controller_server,20,ConstraintCritic instantiated with 1 power and 4.000000 weight.
+1794864443.000,,controller_server,20,Critic loaded : mppi::critics::ConstraintCritic
+1794864443.001,,controller_server,20,InflationCostCritic instantiated with 1 power and 300.000000 / 0.015000 weights. Critic will collision check based on footprint cost.
+1794864443.001,,controller_server,20,Critic loaded : mppi::critics::CostCritic
+1794864443.002,,controller_server,20,GoalCritic instantiated with 1 power and 5.000000 weight.
+1794864443.002,,controller_server,20,Critic loaded : mppi::critics::GoalCritic
+1794864443.003,,controller_server,20,"GoalAngleCritic instantiated with 1 power, 3.000000 weight, 0.500000 angular threshold and symmetric_yaw_tolerance disabled"
+1794864443.003,,controller_server,20,Critic loaded : mppi::critics::GoalAngleCritic
+1794864443.004,,controller_server,20,ReferenceTrajectoryCritic instantiated with 1 power and 14.000000 weight
+1794864443.004,,controller_server,20,Critic loaded : mppi::critics::PathAlignCritic
+1794864443.004,,controller_server,20,Critic loaded : mppi::critics::PathFollowCritic
+1794864443.005,,controller_server,20,PathAngleCritic instantiated with 1 power and 2.000000 weight. Mode set to: Forward Preference
+1794864443.005,,controller_server,20,Critic loaded : mppi::critics::PathAngleCritic
+1794864443.006,,controller_server,20,PreferForwardCritic instantiated with 1 power and 5.000000 weight.
+1794864443.006,,controller_server,20,Critic loaded : mppi::critics::PreferForwardCritic
+1794864443.009,,controller_server,20,Optimizer reset
+1794864443.013,,controller_server,20,Controller Server has FollowPath  controllers available.
+1794864443.023,,lifecycle_manager_navigation,20,[34m[1mConfiguring smoother_server[0m[0m
+1794864443.023,,smoother_server,20,Configuring smoother server
+1794864443.036,,smoother_server,20,Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+1794864443.037,,smoother_server,20,Smoother Server has simple_smoother  smoothers available.
+1794864443.043,,lifecycle_manager_navigation,20,[34m[1mConfiguring planner_server[0m[0m
+1794864443.044,,planner_server,20,Configuring
+1794864443.044,,global_costmap.global_costmap,20,Configuring
+1794864443.052,,global_costmap.global_costmap,20,"Using plugin ""static_layer"""
+1794864443.056,,global_costmap.global_costmap,20,Subscribing to the map topic (/map) with transient local durability
+1794864443.057,,global_costmap.global_costmap,20,"Initialized plugin ""static_layer"""
+1794864443.057,,global_costmap.global_costmap,20,"Using plugin ""obstacle_layer"""
+1794864443.058,,global_costmap.global_costmap,20,Subscribed to Topics: scan
+1794864443.062,,global_costmap.global_costmap,20,"Initialized plugin ""obstacle_layer"""
+1794864443.063,,global_costmap.global_costmap,20,"Using plugin ""inflation_layer"""
+1794864443.063,,global_costmap.global_costmap,20,"Initialized plugin ""inflation_layer"""
+1794864443.063,,global_costmap.global_costmap,20,"Using costmap filter ""keepout_filter"""
+1794864443.066,,global_costmap.global_costmap,20,"Initialized costmap filter ""keepout_filter"""
+1794864443.090,,planner_server,20,Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+1794864443.091,,planner_server,20,Configuring plugin GridBased of type NavfnPlanner
+1794864443.091,,planner_server,20,Planner Server has GridBased  planners available.
+1794864443.102,,lifecycle_manager_navigation,20,[34m[1mConfiguring route_server[0m[0m
+1794864443.102,,route_server,20,Configuring
+1794864443.130,,route_server,20,Created GraphFileLoader GeoJsonGraphFileLoader of type nav2_route::GeoJsonGraphFileLoader
+1794864443.130,,route_server,20,Configuring geojson graph file loader
+1794864443.131,,route_server,20,No graph file provided to load yet.
+1794864443.132,,route_server,20,Created edge cost function plugin DistanceScorer of type nav2_route::DistanceScorer
+1794864443.132,,route_server,20,Configuring distance scorer.
+1794864443.133,,route_server,20,Created edge cost function plugin CostmapScorer of type nav2_route::CostmapScorer
+1794864443.133,,route_server,20,Configuring costmap scorer.
+1794864443.136,,route_server,20,Created route operation AdjustSpeedLimit of type nav2_route::AdjustSpeedLimit
+1794864443.136,,route_server,20,Configuring Adjust speed limit operation.
+1794864443.138,,route_server,20,Created route operation ReroutingService of type nav2_route::ReroutingService
+1794864443.138,,route_server,20,Configuring Rerouting service operation.
+1794864443.140,,route_server,20,Created route operation CollisionMonitor of type nav2_route::CollisionMonitor
+1794864443.141,,route_server,20,Using costmap topic: local_costmap/costmap_raw instead of server costmap topic: global_costmap/costmap_raw for CollisionMonitor.
+1794864443.144,,lifecycle_manager_navigation,20,[34m[1mConfiguring behavior_server[0m[0m
+1794864443.145,,behavior_server,20,Configuring
+1794864443.149,,behavior_server,20,Creating behavior plugin spin of type nav2_behaviors::Spin
+1794864443.150,,behavior_server,20,Creating behavior plugin backup of type nav2_behaviors::BackUp
+1794864443.151,,behavior_server,20,Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+1794864443.151,,behavior_server,20,Creating behavior plugin wait of type nav2_behaviors::Wait
+1794864443.159,,behavior_server,20,Configuring spin
+1794864443.165,,behavior_server,20,Configuring backup
+1794864443.169,,behavior_server,20,Configuring drive_on_heading
+1794864443.174,,behavior_server,20,Configuring wait
+1794864443.179,,lifecycle_manager_navigation,20,[34m[1mConfiguring velocity_smoother[0m[0m
+1794864443.179,,velocity_smoother,20,Configuring velocity smoother
+1794864443.184,,lifecycle_manager_navigation,20,[34m[1mConfiguring collision_monitor[0m[0m
+1794864443.184,,collision_monitor,20,Configuring
+1794864443.191,,collision_monitor,20,[scan]: Creating Scan
+1794864443.193,,collision_monitor,20,[FootprintApproach]: Creating Polygon
+1794864443.193,,collision_monitor,20,[FootprintApproach]: Polygon points are not defined. Using dynamic subscription instead.
+1794864443.194,,collision_monitor,20,[FootprintApproach]: Making footprint subscriber on local_costmap/published_footprint topic
+1794864443.206,,lifecycle_manager_navigation,20,[34m[1mConfiguring bt_navigator[0m[0m
+1794864443.206,,bt_navigator,20,Configuring
+1794864443.208,,rosbag2_recorder,20,Subscribed to topic '/collision_monitor_state'
+1794864443.213,,bt_navigator,20,Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+1794864443.245,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/feedback'
+1794864443.247,,rosbag2_recorder,20,Subscribed to topic '/navigate_to_pose/_action/status'
+1794864443.278,,bt_navigator,20,Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+1794864443.303,,lifecycle_manager_navigation,20,[34m[1mConfiguring waypoint_follower[0m[0m
+1794864443.303,,waypoint_follower,20,Configuring
+1794864443.326,,waypoint_follower,20,Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+1794864443.327,,lifecycle_manager_navigation,20,[34m[1mConfiguring docking_server[0m[0m
+1794864443.327,,docking_server,20,Configuring docking_server
+1794864443.327,,docking_server,20,Controller frequency set to 50.0000Hz
+1794864443.352,,docking_server,20,Created charging dock plugin simple_charging_dock of type opennav_docking::SimpleChargingDock
+1794864443.359,,docking_server,30,Dock database filepath nor dock parameters set. Docking actions can only be executed specifying the dock pose via the action request. Or update the dock database via the reload_database service.
+1794864443.359,,docking_server,20,Docking Server has 1 dock types and 0 dock instances available.
+1794864443.360,,lifecycle_manager_navigation,20,[34m[1mActivating controller_server[0m[0m
+1794864443.361,,controller_server,20,Activating
+1794864443.361,,local_costmap.local_costmap,20,Activating
+1794864443.361,,local_costmap.local_costmap,20,Checking transform
+1794864443.361,,local_costmap.local_costmap,20,"Timed out waiting for transform from base_footprint to odom to become available, tf error: Invalid frame ID ""odom"" passed to canTransform argument target_frame - frame does not exist"
+1794864443.858,0.120,gzserver,20,InitializeCanonicalLinks
+1794864443.859,0.120,gzserver,20,Creating services on gzserver
+1794864443.861,0.120,local_costmap.local_costmap,20,start
+1794864443.862,0.120,gzserver,20,Created service /gzserver/delete_entity
+1794864443.864,0.120,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/costmap_filter_info"" topic for filter info..."
+1794864443.864,0.120,gzserver,20,Created service /gzserver/get_entities
+1794864443.866,0.120,gzserver,20,Created service /gzserver/get_entity_info
+1794864443.867,0.120,gzserver,20,Created service /gzserver/get_entity_state
+1794864443.869,0.120,gzserver,20,Created service /gzserver/get_entities_states
+1794864443.871,0.120,gzserver,20,Created service /gzserver/get_simulation_state
+1794864443.872,0.120,gzserver,20,Created service /gzserver/get_simulator_features
+1794864443.874,0.120,gzserver,20,Created service /gzserver/reset_simulation
+1794864443.875,0.120,gzserver,20,Created service /gzserver/set_entity_state
+1794864443.875,0.120,local_costmap.local_costmap,20,KeepoutFilter: Received filter info from /costmap_filter_info topic.
+1794864443.875,0.120,local_costmap.local_costmap,20,"KeepoutFilter: Subscribing to ""/keepout_filter_mask"" topic for filter mask..."
+1794864443.876,0.120,gzserver,20,Created service /gzserver/set_simulation_state
+1794864443.877,0.120,gzserver,20,Created service /gzserver/spawn_entity
+1794864443.879,0.120,gzserver,20,Created service /gzserver/step_simulation
+1794864443.888,0.120,local_costmap.local_costmap,20,KeepoutFilter: Received filter mask from /keepout_filter_mask topic.
+1794864443.889,0.120,gzserver,20,Created action /gzserver/simulate_steps
+1794864444.163,0.412,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864444.166,0.412,controller_server,30,Parameter controller_server.verbose not found
+1794864444.169,0.412,controller_server,20,Optimizer reset
+1794864444.169,0.412,controller_server,20,Creating bond (controller_server) to lifecycle manager.
+1794864444.276,0.513,lifecycle_manager_navigation,20,Server controller_server connected with bond.
+1794864444.277,0.513,lifecycle_manager_navigation,20,[34m[1mActivating smoother_server[0m[0m
+1794864444.277,0.513,smoother_server,20,Activating
+1794864444.277,0.513,smoother_server,20,Creating bond (smoother_server) to lifecycle manager.
+1794864444.362,0.612,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864444.384,0.612,lifecycle_manager_navigation,20,Server smoother_server connected with bond.
+1794864444.385,0.612,lifecycle_manager_navigation,20,[34m[1mActivating planner_server[0m[0m
+1794864444.385,0.612,planner_server,20,Activating
+1794864444.385,0.612,global_costmap.global_costmap,20,Activating
+1794864444.385,0.612,global_costmap.global_costmap,20,Checking transform
+1794864444.385,0.612,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864444.562,0.808,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864444.762,1.008,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864444.885,1.109,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864444.962,1.210,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864445.162,1.411,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864445.362,1.613,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864445.385,1.613,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864445.562,1.814,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864445.762,2.015,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864445.885,2.116,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864445.962,2.216,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864446.162,2.416,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864446.362,2.618,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864446.385,2.618,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864446.562,2.819,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864446.762,3.019,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864446.885,3.119,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864446.972,3.216,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864447.162,3.416,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864447.372,3.612,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864447.385,3.612,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864447.572,3.811,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864447.762,4.013,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864447.885,4.113,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864447.962,4.213,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864448.175,4.406,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864448.362,4.604,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864448.385,4.604,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864448.562,4.805,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864448.762,5.006,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864448.885,5.107,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864448.962,5.207,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864449.162,5.408,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864449.362,5.610,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864449.385,5.610,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864449.562,5.810,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864449.762,6.011,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864449.885,6.112,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864449.962,6.213,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864450.162,6.414,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864450.362,6.615,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864450.385,6.615,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864450.572,6.813,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864450.772,7.010,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864450.885,7.111,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864450.962,7.212,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864451.162,7.413,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864451.362,7.615,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864451.386,7.615,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864451.562,7.815,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864451.762,8.016,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864451.886,8.117,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864451.962,8.218,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864452.162,8.419,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864452.362,8.620,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864452.385,8.620,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864452.562,8.821,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864452.762,9.023,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864452.885,9.124,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864452.962,9.224,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864453.162,9.426,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864453.362,9.627,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864453.385,9.627,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864453.572,9.826,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864453.762,10.026,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864453.885,10.124,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864453.972,10.222,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864454.162,10.421,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864454.362,10.622,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864454.385,10.622,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864454.562,10.824,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864454.762,11.025,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864454.886,11.126,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864454.962,11.226,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864455.162,11.327,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864455.362,11.528,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864455.386,11.629,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864455.562,11.730,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864455.762,11.931,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864455.885,12.133,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864455.962,12.133,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864456.172,12.434,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864456.362,12.535,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864456.385,12.635,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864456.562,12.735,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864456.762,12.936,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864456.885,13.136,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864456.962,13.136,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864457.172,13.337,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864457.362,13.534,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864457.385,13.633,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864457.562,13.733,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864457.762,13.934,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864457.885,14.136,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864457.962,14.136,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864458.162,14.337,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864458.362,14.537,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864458.385,14.637,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864458.562,14.738,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864458.762,14.939,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864458.885,15.139,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864458.972,15.139,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864459.162,15.339,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864459.362,15.540,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864459.385,15.540,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864459.562,15.741,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864459.762,15.941,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864459.885,16.041,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864459.962,16.142,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864460.162,16.344,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864460.362,16.545,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864460.385,16.545,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864460.572,16.743,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864460.762,16.940,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864460.885,17.040,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864460.962,17.140,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864461.162,17.341,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864461.362,17.543,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864461.385,17.543,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864461.562,17.744,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864461.762,17.945,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864461.885,18.046,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864461.962,18.147,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864462.162,18.349,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864462.362,18.551,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864462.385,18.551,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864462.562,18.752,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864462.762,18.953,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864462.885,19.053,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864462.962,19.152,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864463.162,19.353,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864463.362,19.554,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864463.385,19.554,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864463.562,19.754,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864463.772,19.956,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864463.885,20.053,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864463.962,20.151,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864464.162,20.351,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864464.362,20.553,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864464.385,20.553,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864464.562,20.755,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864464.762,20.955,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864464.885,21.056,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864464.962,21.157,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864465.162,21.358,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864465.362,21.559,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864465.385,21.559,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864465.562,21.759,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864465.762,21.961,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864465.885,22.061,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864465.962,22.162,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864466.162,22.363,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864466.362,22.564,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864466.385,22.564,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864466.562,22.766,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864466.762,22.967,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864466.885,23.066,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864466.962,23.167,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864467.172,23.366,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864467.372,23.562,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864467.385,23.562,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864467.562,23.763,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864467.762,23.964,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864467.885,24.065,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864467.963,24.165,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864468.163,24.366,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864468.362,24.566,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864468.385,24.566,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864468.562,24.766,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864468.762,24.967,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864468.885,25.068,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864468.962,25.169,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864469.162,25.370,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864469.362,25.572,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864469.385,25.572,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864469.562,25.773,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864469.762,25.974,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864469.885,26.075,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864469.962,26.175,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864470.162,26.375,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864470.362,26.577,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864470.385,26.577,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864470.572,26.772,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864470.762,26.972,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864470.885,27.073,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864470.962,27.174,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864471.162,27.375,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864471.362,27.576,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864471.385,27.576,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864471.562,27.778,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864471.762,27.979,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864471.885,28.080,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864471.962,28.180,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864472.162,28.381,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864472.362,28.481,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864472.385,28.582,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864472.562,28.683,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864472.762,28.884,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864472.885,29.085,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864472.962,29.085,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864473.162,29.286,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864473.362,29.488,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864473.385,29.587,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864473.562,29.688,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864473.772,29.986,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864473.885,30.084,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864473.972,30.183,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864474.162,30.284,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864474.362,30.485,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864474.385,30.585,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864474.562,30.686,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864474.762,30.887,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864474.885,31.088,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864474.962,31.088,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864475.162,31.289,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864475.362,31.491,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864475.385,31.592,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864475.562,31.693,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864475.762,31.894,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864475.885,32.095,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864475.962,32.095,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864476.162,32.296,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864476.362,32.497,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864476.385,32.497,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864476.562,32.698,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864476.762,32.899,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864476.885,32.998,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864476.962,33.098,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864477.172,33.296,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864477.362,33.493,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864477.385,33.493,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864477.562,33.694,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864477.762,33.896,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864477.885,33.996,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864477.962,34.096,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864478.162,34.298,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864478.362,34.500,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864478.385,34.500,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864478.562,34.701,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864478.762,34.902,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864478.885,35.003,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864478.962,35.104,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864479.162,35.304,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864479.362,35.505,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864479.385,35.505,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864479.562,35.706,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864479.762,35.907,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864479.885,36.008,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864479.962,36.107,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864480.162,36.306,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864480.373,36.504,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864480.385,36.504,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864480.572,36.701,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864480.762,36.902,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864480.885,37.002,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864480.962,37.101,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864481.162,37.303,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864481.362,37.505,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864481.385,37.505,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864481.562,37.706,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864481.762,37.906,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864481.885,38.007,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864481.962,38.108,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864482.162,38.309,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864482.373,38.509,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864482.385,38.509,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864482.562,38.708,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864482.762,38.910,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864482.885,39.010,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864482.962,39.108,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864483.162,39.309,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864483.372,39.509,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864483.385,39.509,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864483.562,39.709,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864483.772,39.904,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864483.885,40.005,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864483.962,40.105,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864484.162,40.306,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864484.362,40.508,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864484.385,40.508,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864484.562,40.709,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864484.762,40.910,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864484.885,41.009,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864484.962,41.110,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864485.162,41.312,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864485.362,41.513,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864485.385,41.513,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864485.562,41.714,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864485.762,41.915,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864485.885,42.016,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864485.962,42.116,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864486.162,42.317,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864486.362,42.519,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864486.385,42.519,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864486.562,42.719,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864486.762,42.918,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864486.885,43.019,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864486.972,43.116,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864487.162,43.313,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864487.362,43.515,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864487.385,43.515,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864487.562,43.716,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864487.762,43.917,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864487.885,44.018,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864487.962,44.118,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864488.162,44.320,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864488.372,44.519,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864488.385,44.519,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864488.562,44.720,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864488.762,44.921,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864488.885,45.022,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864488.962,45.123,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864489.162,45.324,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864489.362,45.525,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864489.385,45.525,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864489.562,45.727,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864489.762,45.928,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864489.885,46.029,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864489.973,46.128,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864490.162,46.229,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864490.372,46.525,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864490.385,46.525,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864490.562,46.624,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864490.762,46.825,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864490.885,47.025,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864490.962,47.025,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864491.162,47.227,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864491.372,47.526,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864491.385,47.526,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864491.562,47.627,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864491.762,47.827,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864491.885,48.029,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864491.962,48.029,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864492.162,48.230,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864492.372,48.430,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864492.385,48.528,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864492.562,48.629,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864492.762,48.830,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864492.885,49.031,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864492.962,49.031,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864493.162,49.232,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864493.362,49.431,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864493.385,49.532,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864493.572,49.632,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864493.762,49.828,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864493.885,50.027,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864493.962,50.027,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864494.162,50.228,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864494.372,50.420,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864494.385,50.521,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864494.562,50.622,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864494.762,50.822,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864494.885,50.923,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864494.962,51.024,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864495.162,51.226,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864495.362,51.427,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864495.385,51.427,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864495.562,51.628,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864495.762,51.829,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864495.885,51.930,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864495.962,52.029,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864496.162,52.230,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864496.362,52.432,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864496.385,52.432,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864496.562,52.633,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864496.762,52.832,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864496.885,52.932,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864496.972,53.030,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864497.162,53.229,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864497.362,53.429,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864497.385,53.429,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864497.562,53.630,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864497.762,53.831,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864497.885,53.931,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864497.962,54.030,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864498.162,54.232,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864498.372,54.433,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864498.385,54.433,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864498.562,54.632,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864498.762,54.833,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864498.885,54.933,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864498.962,55.033,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864499.162,55.234,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864499.362,55.435,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864499.385,55.435,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864499.562,55.636,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864499.762,55.838,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864499.885,55.939,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864499.962,56.038,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864500.162,56.240,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864500.372,56.435,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864500.385,56.435,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864500.562,56.635,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864500.773,56.818,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864500.885,56.919,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864500.962,57.020,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864501.162,57.222,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864501.362,57.424,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864501.385,57.424,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864501.562,57.626,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864501.762,57.827,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864501.885,57.928,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864501.962,58.028,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864502.162,58.229,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864502.362,58.431,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864502.385,58.431,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864502.562,58.633,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864502.762,58.834,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864502.885,58.935,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864502.962,59.035,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864503.162,59.236,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864503.362,59.435,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864503.385,59.435,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864503.572,59.632,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864503.772,59.829,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864503.885,59.929,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864503.962,60.029,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864504.162,60.231,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864504.362,60.433,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864504.385,60.433,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864504.562,60.634,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864504.762,60.836,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864504.885,60.936,global_costmap.global_costmap,20,"Timed out waiting for transform from base_footprint to map to become available, tf error: Invalid frame ID ""map"" passed to canTransform argument target_frame - frame does not exist"
+1794864504.885,60.936,global_costmap.global_costmap,40,Failed to activate global_costmap because transform from base_footprint to map did not become available before timeout
+1794864504.886,60.936,lifecycle_manager_navigation,40,Failed to change state for node: planner_server
+1794864504.886,60.936,lifecycle_manager_navigation,40,Failed to bring up all requested nodes. Aborting bringup.
+1794864504.962,61.036,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864505.162,61.238,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864505.362,61.440,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864505.562,61.641,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864505.762,61.842,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864505.962,62.044,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864506.162,62.246,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864506.362,62.447,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864506.562,62.647,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864506.762,62.849,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864506.972,63.045,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864507.162,63.244,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864507.372,63.443,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864507.562,63.544,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864507.762,63.746,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864507.963,63.947,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864508.162,64.148,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864508.362,64.349,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864508.562,64.550,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864508.762,64.751,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864508.962,64.953,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864509.162,65.153,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864509.362,65.355,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864509.562,65.557,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864509.762,65.758,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864509.962,65.958,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864510.172,66.159,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864510.362,66.354,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864510.562,66.554,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864510.762,66.755,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864510.962,66.955,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864511.162,67.156,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864511.362,67.357,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864511.562,67.558,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864511.763,67.759,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864511.962,67.961,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864512.162,68.161,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864512.362,68.362,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864512.562,68.563,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864512.762,68.762,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864512.962,68.962,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864513.162,69.164,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864513.362,69.365,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864513.572,69.563,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864513.762,69.760,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864513.962,69.959,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864514.162,70.160,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864514.362,70.362,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864514.562,70.563,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864514.762,70.764,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864514.962,70.966,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864515.162,71.167,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864515.362,71.369,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864515.562,71.571,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864515.762,71.772,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864515.962,71.973,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864516.162,72.174,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864516.372,72.376,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864516.562,72.576,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864516.772,72.778,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864516.972,72.973,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864517.162,73.172,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864517.362,73.373,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864517.562,73.575,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864517.762,73.776,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864517.962,73.976,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864518.162,74.177,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864518.362,74.378,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864518.562,74.579,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864518.762,74.780,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864518.962,74.980,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864519.162,75.181,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864519.362,75.383,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864519.562,75.585,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864519.762,75.785,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864519.962,75.986,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864520.172,76.184,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864520.362,76.381,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864520.562,76.582,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864520.762,76.783,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864520.962,76.984,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864521.162,77.185,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864521.362,77.387,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864521.562,77.588,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864521.762,77.790,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864521.963,77.991,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864522.162,78.192,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864522.362,78.393,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864522.562,78.594,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864522.762,78.795,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864522.962,78.997,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864523.162,79.196,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864523.372,79.397,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864523.562,79.593,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864523.762,79.793,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864523.962,79.994,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864524.162,80.195,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864524.362,80.396,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864524.562,80.597,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864524.762,80.798,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864524.962,80.998,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864525.162,81.199,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864525.362,81.401,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864525.562,81.502,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864525.762,81.704,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864525.962,81.906,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864526.162,82.107,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864526.362,82.308,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864526.562,82.509,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864526.772,82.804,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864526.962,82.903,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864527.162,83.105,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864527.362,83.305,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864527.574,83.504,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864527.762,83.703,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864527.962,83.904,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864528.162,84.105,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864528.373,84.307,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864528.564,84.505,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864528.773,84.707,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864528.978,84.891,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864529.162,85.077,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864529.362,85.278,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864529.562,85.479,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864529.772,85.680,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864529.962,85.880,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864530.172,86.079,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864530.375,86.276,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864530.573,86.456,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864530.773,86.655,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864530.962,86.850,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864531.162,87.052,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864531.362,87.253,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864531.562,87.453,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864531.762,87.653,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864531.962,87.854,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864532.162,88.055,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864532.362,88.257,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864532.562,88.458,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864532.762,88.660,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864532.962,88.861,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864533.162,89.060,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864533.372,89.261,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864533.562,89.457,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864533.762,89.657,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864533.962,89.858,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864534.162,90.059,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864534.362,90.260,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864534.562,90.461,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864534.762,90.662,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864534.962,90.864,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864535.162,91.066,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864535.362,91.266,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864535.562,91.468,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864535.762,91.670,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864535.962,91.872,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864536.162,92.073,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864536.362,92.274,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864536.562,92.474,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864536.772,92.672,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864536.962,92.869,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864537.162,93.070,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864537.362,93.271,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864537.562,93.473,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864537.762,93.675,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864537.962,93.877,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864538.162,94.077,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864538.362,94.278,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864538.562,94.479,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864538.762,94.679,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864538.962,94.881,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864539.162,95.082,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864539.362,95.283,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864539.562,95.484,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864539.762,95.683,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864539.962,95.882,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864540.172,96.078,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864540.362,96.278,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864540.562,96.480,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864540.763,96.682,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864540.962,96.884,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864541.162,97.085,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864541.362,97.287,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864541.562,97.488,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864541.762,97.689,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864541.962,97.890,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864542.162,98.092,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864542.362,98.293,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864542.562,98.394,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864542.762,98.595,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864542.962,98.796,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864543.162,98.994,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864543.373,99.293,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864543.562,99.391,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864543.762,99.592,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864543.962,99.792,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864544.162,99.993,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864544.362,100.195,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864544.562,100.396,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864544.762,100.598,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864544.962,100.799,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864545.162,101.000,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864545.362,101.202,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864545.562,101.402,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864545.762,101.603,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864545.962,101.805,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864546.162,102.006,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864546.362,102.206,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864546.562,102.406,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864546.772,102.602,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864546.962,102.803,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864547.162,103.005,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864547.362,103.206,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864547.562,103.407,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864547.762,103.608,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864547.962,103.809,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864548.162,104.010,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864548.372,104.211,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864548.562,104.410,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864548.762,104.611,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864548.962,104.812,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864549.162,105.013,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864549.372,105.213,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864549.562,105.414,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864549.762,105.613,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864549.972,105.810,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864550.162,106.007,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864550.362,106.208,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864550.562,106.410,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864550.762,106.610,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864550.963,106.811,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864551.162,107.011,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864551.362,107.212,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864551.562,107.412,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864551.762,107.613,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864551.962,107.813,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864552.162,108.013,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864552.362,108.214,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864552.562,108.415,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864552.762,108.617,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864552.962,108.811,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864553.162,109.013,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864553.372,109.208,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864553.562,109.408,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864553.762,109.610,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864553.962,109.811,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864554.162,110.013,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864554.373,110.214,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864554.562,110.414,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864554.762,110.615,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864554.962,110.815,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864555.162,111.017,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864555.372,111.217,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864555.562,111.418,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864555.762,111.620,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864555.962,111.821,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864556.162,112.022,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864556.362,112.222,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864556.573,112.420,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864556.772,112.617,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864556.962,112.818,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864557.162,113.020,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864557.362,113.221,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864557.562,113.422,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864557.762,113.623,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864557.962,113.824,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864558.162,114.025,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864558.362,114.226,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864558.562,114.427,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864558.762,114.628,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864558.962,114.829,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864559.162,115.030,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864559.362,115.231,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864559.562,115.432,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864559.762,115.633,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864559.972,115.828,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "
+1794864560.162,116.028,local_costmap.local_costmap,40,"KeepoutFilter: Failed to get costmap frame (odom) transformation to mask frame (map) with error: ""map"" passed to lookupTransform argument target_frame does not exist. "

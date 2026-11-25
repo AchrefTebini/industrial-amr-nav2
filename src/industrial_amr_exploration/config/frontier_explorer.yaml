@@ -1,0 +1,15 @@
+frontier_explorer:
+  ros__parameters:
+    global_frame: map
+    robot_frame: base_footprint
+    update_period: 1.0        # s, decision loop period
+    min_frontier_size: 0.5    # m, smaller clusters are treated as SLAM noise
+    obstacle_clearance: 0.35  # m, ignore frontier cells closer than this to walls
+    min_goal_distance: 0.5    # m, ignore frontiers right under the robot
+    size_weight: 1.0          # score = size_weight * size[m] - distance_weight * dist[m]
+    distance_weight: 1.0
+    blacklist_radius: 0.5     # m, around goals Nav2 failed to reach
+    explored_radius: 0.3      # m, goal is "explored" once no unknown cells remain here
+    goal_timeout: 30.0        # s, backstop on top of Nav2's progress checker
+    return_to_start: true
+    empty_checks_to_finish: 3 # consecutive frontier-free checks before finishing
